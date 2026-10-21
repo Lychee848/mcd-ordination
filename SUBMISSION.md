@@ -1,0 +1,106 @@
+# 参赛提交清单
+
+> 这个文件是给**你自己**看的操作手册，不是仓库正文。提交完成后可以删掉，或移入 `docs/`。
+
+---
+
+## 0. 三件必须做的事（顺序不能反）
+
+1. 在 GitHub 建仓库 `mcd-ordination`（**Public**，不要勾选任何模板，不要勾 README）。
+2. 把本目录推上去（见下方命令）。
+3. 去赛事仓库提 Issue（见第 3 节），**标题和正文严格按格式**。
+
+---
+
+## 1. 推仓库
+
+```bash
+cd mcd-ordination
+git init
+git add .
+git commit -m "feat: 麦门行传 —— 把麦当劳用户行为编译成一套卡证"
+git branch -M main
+git remote add origin https://github.com/<你的用户名>/mcd-ordination.git
+git push -u origin main
+```
+
+---
+
+## 2. 仓库设置（直接影响能不能被搜到，别跳过）
+
+**About 栏（右上角齿轮）**
+
+- Description：
+  ```
+  麦当劳用户行为 → 专属麦门卡证。九阶品秩 · 教义摘录 · 四版式交换卡 · 可复算的专属暗号。零 Key 可跑。
+  ```
+- Website：可填你的演示页；暂时没有就留空（**别填无效链接**）
+- Topics（按优先级，GitHub 最多 20 个）：
+  ```
+  mcp  mcdonalds  mcdonalds-mcp  workbuddy-skill  mcd
+  generative-art  trading-card-game  python  pillow  svg
+  llm  ai  prompt-engineering  data-visualization  privacy-first
+  ```
+
+> 依据：统计 744 个参赛仓库后发现，`workbuddy-skill` / `mcd` / `mcdonalds-mcp` 三个 topic 的星数中位数最高；
+> `model-context-protocol` / `nutrition` / `meal-planner` 已经是红海（大量 0–3 星项目），不建议占用 topic 位。
+
+**社交预览图**：Settings → Social preview 上传 `docs/samples/three_personas.png`（1200×630 会自动裁切）。
+
+---
+
+## 3. 提 Issue（原文照抄）
+
+仓库：<https://github.com/M-China/mcd-developer-innovation-challenge/issues/new>
+
+### 标题
+
+```
+【参赛申请】麦门行传｜把你的麦当劳用户行为，写成一卷属于你自己的教义
+```
+
+### 正文
+
+```
+标题：麦门行传｜把你的麦当劳用户行为，写成一卷属于你自己的教义
+
+〖参赛申请〗
+项目名称：麦门行传（mcd-ordination）
+项目地址：https://github.com/<你的用户名>/mcd-ordination
+项目简介：麦门行传把「麦当劳用户行为」当作 prompt，为你即时生成一套专属麦门卡证——九阶品秩、教义摘录、四种版式的交换卡（人物/食物/行为/地点），以及一枚只属于你的「麦门暗号」。它不解决吃饭问题，解决「想表达」的问题：频次、时辰、门店、单品偏好这些散落的行为，会被编译成一册可以发出去的东西。三条硬线：卡面每个数字都能追溯到真实数据（不可伪造）、金额不进任何公式（不鼓励消费）、不填任何 Key 也能看见完整卡面（零依赖可跑）。卡面文字、星级、六维、编号全部由代码绘制，AI 只画画面，所以永远不会出现糊字和漂移。附带一个会产生线下行为的闭环：暗号写进订单备注 → 店员回应 → 回报 → 聚合成「友好门店地图」。仓库自带三份人设数据，clone 下来 30 秒就能看到成品卡。
+```
+
+---
+
+## 4. 提交前自检
+
+```bash
+# 0) 装包（editable，不产生第三方依赖）
+pip install -e .
+
+# 1) 零依赖路径能跑（不装 Pillow 也得出完整 SVG）
+python -m mcd_ordination demo --engine svg
+
+# 2) 三种人设都能跑，且卡面不同
+for p in night_owl pilgrim beginner; do python -m mcd_ordination demo --profile $p --engine svg; done
+
+# 3) 暗号确定性：同一周期同一句，跨周必换
+python -m mcd_ordination sign --profile night_owl
+
+# 4) README 里的图片路径都存在
+grep -o 'docs/samples/[a-z_0-9.]*' README.md | sort -u | xargs ls -l
+```
+
+- [ ] `README.md` 首屏能在手机上一屏看完（标题 + 一句话 + 三张卡）
+- [ ] 没有提交 `out/`（已在 `.gitignore` 里）
+- [ ] 没有把 MCP Token 写进任何文件
+- [ ] 仓库是 Public，License 显示 MIT
+- [ ] Issue 标题是 `【参赛申请】…｜…` 格式，正文含「项目名称 / 项目地址 / 项目简介」三行
+
+---
+
+## 5. 提交之后（星数靠这三件事，不靠运气）
+
+1. **首图就是三张并排的卡**，不要再放架构图——卡片本身就是最强的说明。
+2. **发帖时贴暗号，不贴代码**：一句「麦门 6FM3V2｜我在 9 座城唤过这个名字｜脆脆薯条」比任何介绍都容易被转发。
+3. **评论区第一条固定放「30 秒跑起来」那三行命令**，降低别人的尝试成本。

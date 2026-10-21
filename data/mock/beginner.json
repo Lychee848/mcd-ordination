@@ -1,0 +1,234 @@
+{
+ "uid": "u_beginner",
+ "profile": {
+  "birthday": "2003-07-21",
+  "city": "哈尔滨"
+ },
+ "account": {
+  "points": 1503,
+  "expiringPoints": 0
+ },
+ "coupons": {
+  "issued": 3,
+  "used": 3
+ },
+ "prizes": {
+  "tries": 1,
+  "wins": 0
+ },
+ "orders": [
+  {
+   "orderId": "BE2026011007370005",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-01-10T07:37:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "BE2026011619520004",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-01-16T19:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "BE2026050907550002",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-05-09T07:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2046
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2194
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1697
+    }
+   ]
+  },
+  {
+   "orderId": "BE2026061819490001",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-06-18T19:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2436
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2315
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2509
+    }
+   ]
+  },
+  {
+   "orderId": "BE2026062008310008",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-06-20T08:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1676
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2544
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1318
+    }
+   ]
+  },
+  {
+   "orderId": "BE2026071407350006",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-07-14T07:35:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1018
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1029
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1254
+    }
+   ]
+  },
+  {
+   "orderId": "BE2026090308040007",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-09-03T08:04:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "BE2026100408260000",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-10-04T08:26:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "BE2026100919440003",
+   "storeId": "HRB-0031",
+   "storeName": "哈尔滨中央大街店",
+   "city": "哈尔滨",
+   "placedAt": "2026-10-09T19:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2515
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2386
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2137
+    }
+   ]
+  }
+ ]
+}

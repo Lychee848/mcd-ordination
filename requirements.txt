@@ -1,0 +1,3 @@
+# 只要这一行就能跑出全部四种卡与稀有卡动效。
+# 不装也能跑：L0 纯 SVG 渲染器零依赖（python -m mcd_ordination demo --engine svg）。
+Pillow>=10.0

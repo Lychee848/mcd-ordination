@@ -1,0 +1,10709 @@
+{
+ "uid": "u_pilgrim",
+ "profile": {
+  "birthday": "1991-11-03",
+  "city": "成都"
+ },
+ "account": {
+  "points": 1402,
+  "expiringPoints": 40
+ },
+ "coupons": {
+  "issued": 60,
+  "used": 59
+ },
+ "prizes": {
+  "tries": 27,
+  "wins": 3
+ },
+ "orders": [
+  {
+   "orderId": "PI2025102113480284",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-10-21T13:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1039
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2062
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2180
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025102118470095",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-10-21T18:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1602
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1842
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1548
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025102308280174",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-10-23T08:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1634
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2111
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 962
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025102421220010",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-10-24T21:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1386
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1528
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2304
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025102512250381",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-10-25T12:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025102713410033",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-10-27T13:41:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2013
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1484
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2136
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025102718570263",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-10-27T18:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1360
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2208
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1501
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025102819220017",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-10-28T19:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2439
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2491
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 968
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025103008330053",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-10-30T08:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025103008480274",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-10-30T08:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2199
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1769
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1357
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025103012130247",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-10-30T12:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1427
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1140
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2197
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025110107140049",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-11-01T07:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2474
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2035
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2309
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025110118320130",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-01T18:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1995
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1897
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1655
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025110318320328",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-11-03T18:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 963
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1435
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 939
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025110612060216",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-11-06T12:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025110912040145",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-11-09T12:04:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1068
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1314
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1255
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025111113010169",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-11T13:01:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025111308310019",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-13T08:31:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1939
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2697
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1671
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025111613130360",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2025-11-16T13:13:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1834
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 963
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2392
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025111818510250",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2025-11-18T18:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025111918340365",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-11-19T18:34:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025112011550046",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-20T11:55:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1556
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1461
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1388
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025112118580179",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-11-21T18:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1992
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2056
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2162
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025112208520343",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-22T08:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2547
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1566
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2554
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025112421130184",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-11-24T21:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1318
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2689
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1897
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025112512030205",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-25T12:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2350
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2002
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2130
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025112513430306",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-11-25T13:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2417
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2450
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2113
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025112518130065",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-25T18:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025112611440025",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-26T11:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025113021090269",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-11-30T21:09:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1897
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1720
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1603
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120112400391",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-12-01T12:40:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2082
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1498
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2117
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120113480197",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-01T13:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2224
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1711
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2672
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120121420103",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-12-01T21:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1523
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2586
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2200
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120311100104",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-03T11:10:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2070
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 932
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2530
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120412410008",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-04T12:41:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120412440279",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2025-12-04T12:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2618
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2168
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1472
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120413590212",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-12-04T13:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1548
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1804
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1370
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120418320294",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-12-04T18:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1240
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1279
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 972
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120507110265",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-12-05T07:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1630
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1904
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1731
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120512130094",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-12-05T12:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1684
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1161
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1333
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120512520080",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-05T12:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1748
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1384
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1372
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120607480186",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-06T07:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1034
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2539
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2133
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120608560058",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2025-12-06T08:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2565
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1081
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2116
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025120612590223",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-06T12:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025121013410248",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-12-10T13:41:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025121208450376",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-12-12T08:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1559
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1378
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2427
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025121419140077",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-14T19:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025121618580396",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-12-16T18:58:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025121913030020",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-12-19T13:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1518
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2251
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1637
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122011260241",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-20T11:26:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122111350109",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-21T11:35:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2587
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2586
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1173
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122113020198",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-12-21T13:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1284
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1533
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1136
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122119110034",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-12-21T19:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122211440111",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-12-22T11:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122318280027",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-23T18:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1795
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2472
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2310
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122619510001",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2025-12-26T19:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1975
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1859
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2263
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122711010176",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2025-12-27T11:01:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1104
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2424
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1632
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025122818570318",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2025-12-28T18:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025123107540236",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2025-12-31T07:54:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1848
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1094
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1981
+    }
+   ]
+  },
+  {
+   "orderId": "PI2025123118400153",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2025-12-31T18:40:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026010113430194",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-01T13:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2617
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1375
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2117
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026010219280217",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-01-02T19:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2454
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2349
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2144
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026010219330064",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-02T19:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2670
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1318
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 903
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026010319000088",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-01-03T19:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026010618150275",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-01-06T18:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1187
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2204
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2106
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026011213160225",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-12T13:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026011308140304",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-13T08:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2449
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1214
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1279
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026011412400369",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-14T12:40:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1527
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2667
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2192
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026011511270018",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-01-15T11:27:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2589
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1647
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2570
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026011619370331",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-16T19:37:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2067
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1103
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1965
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026011708550386",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-01-17T08:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2151
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1195
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2450
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026011907570081",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-01-19T07:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2442
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1779
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1588
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026011911380280",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-19T11:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1485
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 934
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2667
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026012113220389",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-21T13:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026012312260342",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-01-23T12:26:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2401
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2014
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2192
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026012419580175",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-01-24T19:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1803
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1583
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2002
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026012612320312",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-01-26T12:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1288
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1885
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1370
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026012813450203",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-01-28T13:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026012818550329",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-01-28T18:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1835
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1999
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1877
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026013012300260",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-01-30T12:30:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1989
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1839
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2464
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026013108330122",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-01-31T08:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026020211480358",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-02-02T11:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1321
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1761
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2099
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026020312190383",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-02-03T12:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1524
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1131
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1804
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026020421150262",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-02-04T21:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1054
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2424
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1913
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026020519220382",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-02-05T19:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026020613010387",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-02-06T13:01:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1745
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1750
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1250
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026020811340299",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-02-08T11:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1635
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1737
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1672
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021013070283",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-02-10T13:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1632
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2578
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 933
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021021570255",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-02-10T21:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1313
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1391
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1640
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021212570125",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-02-12T12:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2046
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2004
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2666
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021218410341",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-02-12T18:41:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021307260402",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-02-13T07:26:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021312180117",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-02-13T12:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1242
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1887
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2067
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021407120167",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-02-14T07:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1934
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2137
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2324
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021411150356",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-02-14T11:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2309
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1666
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 968
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021608130014",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-02-16T08:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1985
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1806
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1131
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021811210002",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-02-18T11:21:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1766
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1449
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2466
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021819140367",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-02-18T19:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1620
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1980
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 966
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026021921070254",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-02-19T21:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026022019520015",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-02-20T19:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1233
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2183
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1666
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026022113340134",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-02-21T13:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1011
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 931
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2026
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026022418520162",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-02-24T18:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1668
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1509
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2339
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026022707360059",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-02-27T07:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1033
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2042
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2380
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026022807590209",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-02-28T07:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026030211220272",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-02T11:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2087
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2120
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1600
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026030412090013",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-03-04T12:09:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2130
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2047
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1594
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026030718110347",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-03-07T18:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1095
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 949
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2231
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026030718310288",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-07T18:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1359
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1301
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2668
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026030908210218",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-09T08:21:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026031021450121",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-10T21:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1828
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1941
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2079
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026031319200029",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-13T19:20:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1376
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 987
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2106
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026031321000285",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-03-13T21:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1226
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2575
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2492
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026031419240190",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-03-14T19:24:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2375
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1548
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1397
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026031511190326",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-15T11:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1762
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2213
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1285
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026031519590276",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-03-15T19:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1510
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1776
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1686
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026031913500371",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-03-19T13:50:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1164
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1848
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 973
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032108360037",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-03-21T08:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032111550006",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-21T11:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032118470278",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-21T18:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1177
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1772
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2561
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032212510050",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-03-22T12:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1450
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2125
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2146
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032213070159",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-03-22T13:07:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2270
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1505
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1133
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032307050204",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-23T07:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1977
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2570
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1073
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032312340123",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-03-23T12:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2440
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1313
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2314
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032408420267",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-24T08:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032412590277",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-24T12:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032612340230",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-03-26T12:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2079
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1811
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1170
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032818440229",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-03-28T18:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026032911330390",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-29T11:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026033008010066",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-03-30T08:01:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2075
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1669
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1792
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026033019060286",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-30T19:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1347
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2663
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1946
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026033019430214",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-30T19:43:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2588
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 987
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1246
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026033121090361",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-03-31T21:09:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2203
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 960
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2334
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026040212350366",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-04-02T12:35:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1939
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2198
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2610
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026040318060101",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-03T18:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026040412160087",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-04-04T12:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2189
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1393
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1920
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026040413040320",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-04-04T13:04:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1173
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2444
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1480
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026040508360393",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-05T08:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 936
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2220
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2523
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026040612490070",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-04-06T12:49:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1769
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1917
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1502
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026040613320375",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-06T13:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1882
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1752
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1346
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026040712090039",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-04-07T12:09:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1457
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2372
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1715
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041007330060",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-04-10T07:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1543
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1934
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1128
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041012430067",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-10T12:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1520
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 946
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1881
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041013280057",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-04-10T13:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1378
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1540
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1865
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041107440334",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-11T07:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041108030215",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-04-11T08:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2202
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1251
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1571
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041312180191",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-04-13T12:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1510
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2563
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2129
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041512220116",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-04-15T12:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2262
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1265
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1881
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041518160151",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-04-15T18:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2267
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1214
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1307
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041618480377",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-16T18:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041619350102",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-16T19:35:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2507
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2444
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1375
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026041912300313",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-19T12:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2402
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1703
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2024
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042019500290",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-20T19:50:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 911
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1508
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1027
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042113320040",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-21T13:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2124
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1964
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1001
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042113410251",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-04-21T13:41:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1241
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2291
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2505
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042308340297",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-23T08:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2478
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2698
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2165
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042312170043",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-23T12:17:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042312420133",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-23T12:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042321090003",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-23T21:09:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042412580126",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-04-24T12:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2631
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1075
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 967
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042512440096",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-25T12:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2526
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2297
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1497
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042613470107",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-04-26T13:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1080
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 956
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1877
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042721580163",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-04-27T21:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1986
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1783
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2174
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026042812440219",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-04-28T12:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2094
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2665
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1396
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026050221450079",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-05-02T21:45:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1632
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1254
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1892
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026050512310332",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-05-05T12:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 954
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1318
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1601
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026050618180038",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-05-06T18:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2677
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1020
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2239
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026050713520085",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-07T13:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026050819290245",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-05-08T19:29:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1509
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2269
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2056
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026051208180325",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-12T08:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026051219050405",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-12T19:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2459
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1190
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1373
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026051312140364",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-05-13T12:14:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1751
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2440
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2574
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026051313590052",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-13T13:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2592
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2184
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2462
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026051407240404",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-05-14T07:24:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1553
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1810
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1110
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026051511520139",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-05-15T11:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1964
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1629
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1207
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026051608470373",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-05-16T08:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 947
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 940
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2149
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026051921150232",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-19T21:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052007250166",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-20T07:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2001
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2350
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1996
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052008170110",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-05-20T08:17:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052212540246",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-05-22T12:54:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052421460324",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-05-24T21:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052519380149",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-25T19:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052521160148",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-25T21:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1851
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1868
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1221
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052608470264",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-05-26T08:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1858
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 905
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1785
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052612190208",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-05-26T12:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1022
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1733
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2010
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052811040100",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-05-28T11:04:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1218
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2384
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 945
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052908260351",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-05-29T08:26:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1209
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2362
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1339
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026052912450154",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-05-29T12:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2466
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 931
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2312
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026053007200021",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-30T07:20:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1674
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2314
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1737
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026053121470120",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-05-31T21:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026060221070309",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-06-02T21:07:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1201
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 975
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1580
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026060507310144",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-06-05T07:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2238
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1783
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1537
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026060812280173",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-06-08T12:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1271
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1769
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1012
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026060912510136",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-06-09T12:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1972
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1770
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2490
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026060913510131",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-06-09T13:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2147
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1007
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2574
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061118220084",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-06-11T18:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1859
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1338
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1037
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061121010392",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-06-11T21:01:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1626
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1478
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1306
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061207310195",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-06-12T07:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061221060045",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-06-12T21:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1455
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1240
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1958
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061513470268",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-06-15T13:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1846
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2206
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2371
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061521380044",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-06-15T21:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2189
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2158
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2621
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061608540112",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-06-16T08:54:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1357
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2029
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1694
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061612150352",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-06-16T12:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1690
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1430
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1707
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061711070349",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-06-17T11:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2339
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1214
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1552
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026061908460091",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-06-19T08:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2149
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2479
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1390
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062018480224",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-06-20T18:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2132
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2081
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1092
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062213360201",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-06-22T13:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062319340106",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-06-23T19:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1113
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1398
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1506
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062411300374",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-06-24T11:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1887
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2475
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1739
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062411480295",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-06-24T11:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062707360362",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-06-27T07:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1096
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1891
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 963
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062719140292",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-06-27T19:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1287
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2560
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2624
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062811310185",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-06-28T11:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026062911340258",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-06-29T11:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1214
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1566
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1463
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026063008080146",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-06-30T08:08:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026070108540353",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-07-01T08:54:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026070213470098",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-07-02T13:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1375
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2396
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 970
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026070412550068",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-04T12:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2126
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1042
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2480
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026070418010281",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-07-04T18:01:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1916
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2091
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1094
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026070613340398",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-07-06T13:34:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026070713310291",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-07T13:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1255
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1506
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2641
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026070912320271",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-09T12:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2401
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1079
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1712
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026070919520370",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-07-09T19:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2649
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1531
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2419
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071208040319",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-12T08:04:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071308140346",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-07-13T08:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 977
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2006
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1849
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071311100273",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-13T11:10:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1763
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1217
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2033
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071312480158",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-07-13T12:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1379
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1717
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1378
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071412580082",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-14T12:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2510
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1948
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2474
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071421530337",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-07-14T21:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2056
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2401
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1212
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071513440092",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-15T13:44:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2469
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2601
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1875
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071521540171",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-07-15T21:54:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1503
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1951
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1945
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071607080249",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-07-16T07:08:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071708090355",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-17T08:09:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1418
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2542
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1232
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071712270401",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-07-17T12:27:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071712320063",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-07-17T12:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1551
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1971
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2063
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026071721240030",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-07-17T21:24:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 919
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1081
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1452
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072012200293",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-07-20T12:20:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2526
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1337
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1838
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072119420114",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-21T19:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072121310083",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-21T21:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072213420345",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-07-22T13:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 939
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2273
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2298
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072218000047",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-07-22T18:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2404
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1280
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1128
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072219150012",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-07-22T19:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1207
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 990
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1729
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072508250035",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-07-25T08:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072511110395",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-07-25T11:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072518060298",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-07-25T18:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1028
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1412
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2097
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072618220240",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-07-26T18:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2444
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1426
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1945
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072713580199",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-07-27T13:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1073
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2539
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1252
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072811420400",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-07-28T11:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1546
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1965
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1677
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072812250302",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-07-28T12:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026072908130042",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-07-29T08:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026073012430354",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-07-30T12:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1811
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1640
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1109
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026073112490399",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-07-31T12:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1817
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1233
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2535
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080119570379",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-08-01T19:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1641
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1358
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 931
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080211430316",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-02T11:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2097
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 905
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1353
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080212200005",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-08-02T12:20:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2460
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1156
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2367
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080218380156",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-08-02T18:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080321080403",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-08-03T21:08:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1907
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1989
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2587
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080412580178",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-04T12:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2269
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1334
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1618
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080413480259",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-08-04T13:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1701
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1836
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2345
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080507560115",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-05T07:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2016
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2371
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1413
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080607180270",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-08-06T07:18:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1981
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2149
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1572
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080707500086",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-07T07:50:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080721110410",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-08-07T21:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 900
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2037
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1333
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080807030142",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-08-08T07:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1984
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1560
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1746
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080811300378",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-08-08T11:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1309
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1967
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1930
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080821160155",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-08-08T21:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080821160330",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-08-08T21:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2208
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2287
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2643
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080821540228",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-08T21:54:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026080918250062",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-09T18:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1835
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2697
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1184
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026081119340196",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-08-11T19:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2639
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2286
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2565
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026081213380177",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-08-12T13:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2621
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1449
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1932
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026081519350303",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-15T19:35:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2321
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1329
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2614
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026081611090357",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-08-16T11:09:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026081611230150",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-16T11:23:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1062
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2495
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2097
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026081618210327",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-08-16T18:21:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2665
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1408
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1113
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026081912460023",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-19T12:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 916
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1488
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1477
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082112140213",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-08-21T12:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2247
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1784
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1113
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082113410296",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-21T13:41:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1612
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2017
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2161
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082212100181",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-08-22T12:10:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1318
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1597
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1607
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082212160338",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-22T12:16:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2553
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1953
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1243
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082212270108",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-08-22T12:27:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1180
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2037
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2432
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082307430193",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-23T07:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1843
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2414
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1691
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082519510210",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-25T19:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1764
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1133
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1885
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082608280220",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-26T08:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1363
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2359
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1539
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082612360180",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-08-26T12:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1084
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2031
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2141
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082711130099",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-08-27T11:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082713190256",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-08-27T13:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1148
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2654
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1419
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082713480165",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-08-27T13:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1647
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1136
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1834
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082811390350",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-08-28T11:39:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2234
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1164
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2121
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082818000004",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-08-28T18:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2072
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1762
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1818
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026082921220026",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-08-29T21:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1104
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1430
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2698
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026083012320189",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-30T12:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1869
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1619
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2370
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026083118180202",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-08-31T18:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2320
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2035
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2299
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026083119420041",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-08-31T19:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2247
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1246
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2354
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090207150140",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-02T07:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090307590301",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-09-03T07:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2269
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 977
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1117
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090418540333",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-04T18:54:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090511170183",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-09-05T11:17:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2593
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1180
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 931
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090521010311",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-05T21:01:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1507
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1335
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1241
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090521140000",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-05T21:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2184
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1398
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1816
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090719260372",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-07T19:26:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2626
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2031
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1793
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090818090160",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-08T18:09:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026090919240061",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-09T19:24:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091012220161",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-10T12:22:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1110
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1993
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2332
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091108430157",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-09-11T08:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091111100314",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-11T11:10:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091307570385",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-13T07:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091312240072",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-13T12:24:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1071
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 991
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1445
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091319180032",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-13T19:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2551
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1815
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2670
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091411380359",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-14T11:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2326
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1506
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1735
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091413250380",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-09-14T13:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1254
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1876
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2676
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091507580090",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-15T07:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2345
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1395
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 956
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091511050022",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-15T11:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091512080394",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-15T12:08:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2643
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1826
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1485
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091519580397",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-15T19:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091707410056",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-17T07:41:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1209
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2620
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1807
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091719120031",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-17T19:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1534
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2163
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1209
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091811130243",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-18T11:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1683
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 940
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2304
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091813330113",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-09-18T13:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1976
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2269
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2269
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091819070143",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-18T19:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2374
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2277
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2169
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091912440170",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-09-19T12:44:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1880
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2612
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1330
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091912490252",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-19T12:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2141
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1316
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1498
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026091913030074",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-19T13:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1083
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2345
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 917
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092007310323",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-20T07:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1969
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1555
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1656
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092012530289",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-20T12:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092111520075",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-21T11:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1538
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1210
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1371
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092112070182",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-21T12:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092113090226",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-21T13:09:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092119270308",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-21T19:27:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1382
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1729
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1542
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092121190231",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-21T21:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1080
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2571
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2534
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092207200127",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-22T07:20:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1750
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2082
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1731
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092211120118",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-22T11:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1486
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1552
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1161
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092212020336",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-09-22T12:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1950
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1060
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1872
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092219370388",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-22T19:37:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092307400206",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-09-23T07:40:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2163
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1163
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1119
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092313260227",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-09-23T13:26:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092407290055",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-24T07:29:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1101
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 968
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1077
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092408310141",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-24T08:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1829
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2026
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2439
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092512050135",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-09-25T12:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1386
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1584
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2386
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092608320207",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-26T08:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2446
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2117
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2678
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092612290409",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-26T12:29:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026092613140411",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-09-26T13:14:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1692
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1759
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1715
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026093007030132",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-30T07:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2471
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1369
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2090
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026093019550089",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-30T19:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026093021470244",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-09-30T21:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 991
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2212
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2460
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026093021490007",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-09-30T21:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1058
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1661
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2363
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100108560076",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-01T08:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2625
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1146
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2339
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100111500305",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-01T11:50:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100208510257",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-02T08:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2502
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 936
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2664
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100212150368",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-02T12:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100212410071",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-10-02T12:41:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1254
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1531
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2153
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100307460238",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-03T07:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1400
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1933
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1725
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100407340152",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-04T07:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2620
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 961
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1355
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100408530138",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-10-04T08:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1902
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2031
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1799
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100412500054",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-10-04T12:50:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100512340187",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-05T12:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1258
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1683
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2106
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100518200321",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-05T18:20:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2305
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1603
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2521
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100607160234",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-06T07:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1839
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2555
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2699
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100611020168",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-06T11:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1181
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2593
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1323
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100611300009",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-06T11:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100612250406",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-06T12:25:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1436
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1970
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1353
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100613030242",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-06T13:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100619330322",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-06T19:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2382
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1690
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2061
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100712530172",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-07T12:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100712580222",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-07T12:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2309
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 985
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1278
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100808280344",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-08T08:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2638
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2606
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1953
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100812560011",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-08T12:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1414
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1018
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1678
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100813530300",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-08T13:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1220
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1401
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1083
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100821380097",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-08T21:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1467
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2348
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1702
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100907250335",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-09T07:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1440
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1103
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1491
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100918450016",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-09T18:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1902
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1530
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1007
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026100919520339",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-09T19:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101011330078",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-10T11:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1028
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1783
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 942
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101111450119",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-11T11:45:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2192
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1738
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2147
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101207290384",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-12T07:29:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2487
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1523
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2480
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101211000340",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-12T11:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1401
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2580
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2002
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101213360128",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-12T13:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2200
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1247
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1533
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101218220105",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-12T18:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1527
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2667
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1377
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101219250282",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-12T19:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2632
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1389
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2395
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101221280093",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-10-12T21:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101311380069",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-13T11:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1495
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1047
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1798
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101312280147",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-13T12:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101312320036",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-13T12:32:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1251
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1864
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2253
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101313120192",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-13T13:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1675
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1458
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1851
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101411280287",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-14T11:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101412080188",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-14T12:08:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101413370024",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-14T13:37:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1416
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2218
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1087
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101418330266",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-14T18:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2203
+    },
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 903
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2105
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101418580073",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-14T18:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2041
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1854
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2495
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101419380028",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-14T19:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101419550233",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-14T19:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1555
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1475
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1143
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101421390307",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-14T21:39:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2323
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2236
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2409
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101508430164",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-10-15T08:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2088
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1111
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2459
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101521530315",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-15T21:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1407
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1797
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1946
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101607330317",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-16T07:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1380
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2555
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1587
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101611490261",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-16T11:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101611520211",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-16T11:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2622
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2583
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 1305
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101613190137",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-16T13:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2580
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2520
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 994
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101621390221",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-16T21:39:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 2346
+    },
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2532
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1518
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101711030310",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-17T11:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1495
+    },
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 1724
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2326
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101711080129",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-10-17T11:08:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101712470408",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-17T12:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101713000237",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-17T13:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2550
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1739
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2117
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101721390048",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-17T21:39:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 904
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1691
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1064
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101807570235",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-18T07:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101808300200",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-18T08:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101812060363",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-10-18T12:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 2595
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2584
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2658
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101812360239",
+   "storeId": "CQ-0044",
+   "storeName": "重庆解放碑店",
+   "city": "重庆",
+   "placedAt": "2026-10-18T12:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 921
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1764
+    },
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1622
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101812460051",
+   "storeId": "CD-0088",
+   "storeName": "成都春熙路店",
+   "city": "成都",
+   "placedAt": "2026-10-18T12:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1517
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1915
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1400
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101818230348",
+   "storeId": "CQ-0051",
+   "storeName": "重庆观音桥店",
+   "city": "重庆",
+   "placedAt": "2026-10-18T18:23:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 2222
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1003
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2560
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101819060124",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-18T19:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 2152
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 1577
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2227
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101821250407",
+   "storeId": "CD-0102",
+   "storeName": "成都天府三街店",
+   "city": "成都",
+   "placedAt": "2026-10-18T21:25:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M009",
+     "name": "那么大鸡排",
+     "qty": 1,
+     "unitCents": 1758
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1897
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2086
+    }
+   ]
+  },
+  {
+   "orderId": "PI2026101821460253",
+   "storeId": "XA-0019",
+   "storeName": "西安钟楼店",
+   "city": "西安",
+   "placedAt": "2026-10-18T21:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M004",
+     "name": "脆脆薯条（中）",
+     "qty": 1,
+     "unitCents": 1300
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3313 @@
+{
+ "uid": "u_night_owl",
+ "profile": {
+  "birthday": "1996-04-12",
+  "city": "深圳"
+ },
+ "account": {
+  "points": 1301,
+  "expiringPoints": 1200
+ },
+ "coupons": {
+  "issued": 40,
+  "used": 4
+ },
+ "prizes": {
+  "tries": 14,
+  "wins": 0
+ },
+ "orders": [
+  {
+   "orderId": "NI2025102002390088",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2025-10-20T02:39:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025102302070137",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2025-10-23T02:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025102600570044",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-10-26T00:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025102622060007",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-10-26T22:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2307
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 1938
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2116
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025102712590175",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2025-10-27T12:59:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025102801020055",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2025-10-28T01:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025110102030168",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-11-01T02:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025110523450065",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2025-11-05T23:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025111212380099",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2025-11-12T12:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025111523300172",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2025-11-15T23:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025112000050056",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2025-11-20T00:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025112419360048",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-11-24T19:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025120302030145",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-12-03T02:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025120423340033",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-12-04T23:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025120701160027",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-12-07T01:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025121102270128",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-12-11T02:27:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025121419070134",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2025-12-14T19:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025121502130092",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2025-12-15T02:13:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025121602450030",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-12-16T02:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025121802010102",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2025-12-18T02:01:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2008
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 2065
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2649
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025121900530080",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2025-12-19T00:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025121902570139",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2025-12-19T02:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2025121923030161",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2025-12-19T23:03:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026010601310179",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-01-06T01:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026010619070063",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-01-06T19:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026010923240167",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-01-09T23:24:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026011223250154",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-01-12T23:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026011302300069",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-01-13T02:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026011402040039",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-01-14T02:04:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026011419420098",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-01-14T19:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026012022120020",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-01-20T22:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026012423210141",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-01-24T23:21:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026012501460112",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-01-25T01:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026012600050090",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-01-26T00:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M006",
+     "name": "猪柳蛋麦满分",
+     "qty": 1,
+     "unitCents": 1537
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 2514
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2605
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026012723340186",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-01-27T23:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026013022580132",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-01-30T22:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026020612480157",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-02-06T12:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026021202330100",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-02-12T02:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026021323450107",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-02-13T23:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026022102330117",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-02-21T02:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026022622510004",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-02-26T22:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026022823160123",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-02-28T23:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026030119190166",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-03-01T19:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026030500460121",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-03-05T00:46:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026030600130086",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-03-06T00:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026030800170142",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-03-08T00:17:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026031123050057",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-03-11T23:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026031200560138",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-03-12T00:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026031501520184",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-03-15T01:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026031602420060",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-03-16T02:42:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026031723550003",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-03-17T23:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026031912190076",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-03-19T12:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026032302070040",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-03-23T02:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026032412330160",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-03-24T12:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026032522550006",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-03-25T22:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026032902490067",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-03-29T02:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026040201330115",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-04-02T01:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026040500410036",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-04-05T00:41:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026040512340018",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-04-05T12:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026040612020064",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-04-06T12:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026040722550129",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-04-07T22:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026041202480147",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-04-12T02:48:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026041622460029",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-04-16T22:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026041819200077",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-04-18T19:20:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026041919080176",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-04-19T19:08:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026041922020016",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-04-19T22:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026042123570163",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-04-21T23:57:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026042302560131",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-04-23T02:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026042402470162",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-04-24T02:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026042623500181",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-04-26T23:50:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026050102040015",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-05-01T02:04:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026050122520169",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-05-01T22:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026050219490085",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-05-02T19:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026050222510152",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-05-02T22:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026050502270110",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-05-05T02:27:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026050723450023",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-05-07T23:45:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026050902020005",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-05-09T02:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026050912330025",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-05-09T12:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026051123360013",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-05-11T23:36:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026051219070119",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-05-12T19:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026051812180149",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-05-18T12:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026051900280171",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-05-19T00:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026052402430126",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-05-24T02:43:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026052422330054",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-05-24T22:33:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026052712470104",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-05-27T12:47:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026053002100101",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-05-30T02:10:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 1102
+    },
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1685
+    },
+    {
+     "sku": "M005",
+     "name": "麦旋风",
+     "qty": 1,
+     "unitCents": 2372
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026053002120106",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-05-30T02:12:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026053022380038",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-05-30T22:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026061102560105",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-06-11T02:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026061400020096",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-06-14T00:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026061412380094",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-06-14T12:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026061602550118",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-06-16T02:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026061819490061",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-06-18T19:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026062623120008",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-06-26T23:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026070100020066",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-07-01T00:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026070102220021",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-07-01T02:22:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026070402000073",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-07-04T02:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026070502160049",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-07-05T02:16:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026070922250183",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-07-09T22:25:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026071002070177",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-07-10T02:07:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026071102170108",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-07-11T02:17:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026071123120148",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-07-11T23:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026071502390182",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-07-15T02:39:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026071700110037",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-07-17T00:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026072023000140",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-07-20T23:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026072302000031",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-07-23T02:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2353
+    },
+    {
+     "sku": "M012",
+     "name": "鲜煮咖啡",
+     "qty": 1,
+     "unitCents": 1528
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 1623
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026072422300012",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-07-24T22:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1492
+    },
+    {
+     "sku": "M010",
+     "name": "热香饼",
+     "qty": 1,
+     "unitCents": 2289
+    },
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 987
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026072922130024",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-07-29T22:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026073023110178",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-07-30T23:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026073101110165",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-07-31T01:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026080312430019",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-08-03T12:43:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026080323310120",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-08-03T23:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026080402580045",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-08-04T02:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026080423290041",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-08-04T23:29:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026080502130130",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-08-05T02:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026081019210002",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-08-10T19:21:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026081501120155",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-08-15T01:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026081812540068",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-08-18T12:54:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082000350116",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-08-20T00:35:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082300280109",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-08-23T00:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082323010050",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-08-23T23:01:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082401150135",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-08-24T01:15:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082500120009",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-08-25T00:12:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082522300026",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-08-25T22:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082619550011",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-08-26T19:55:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082902130072",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-08-29T02:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026082902170083",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-08-29T02:17:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026083000020059",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-08-30T00:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026083001190127",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-08-30T01:19:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026083102320144",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-08-31T02:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026090119500111",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-09-01T19:50:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026090600110093",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-06T00:11:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026090619050079",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-09-06T19:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026090900180180",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-09-09T00:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091022300051",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-10T22:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091022560143",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-09-10T22:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091101080159",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-09-11T01:08:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091202580047",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-09-12T02:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091212170173",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-12T12:17:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091401490070",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-14T01:49:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091402300082",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-14T02:30:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091402560153",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-14T02:56:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091501530114",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-09-15T01:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091600270014",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-09-16T00:27:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091601340151",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-09-16T01:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091623310081",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-09-16T23:31:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091722320010",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-17T22:32:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091902100103",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-19T02:10:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026091902540034",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-19T02:54:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M002",
+     "name": "板烧鸡腿堡",
+     "qty": 1,
+     "unitCents": 2589
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1691
+    },
+    {
+     "sku": "M011",
+     "name": "大杯可乐",
+     "qty": 1,
+     "unitCents": 2294
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026092301060017",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-09-23T01:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026092323040113",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-09-23T23:04:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026092622510089",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-26T22:51:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026092623020091",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-26T23:02:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026092723530125",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-27T23:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026092819460062",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-28T19:46:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M007",
+     "name": "双层吉士汉堡",
+     "qty": 1,
+     "unitCents": 1386
+    },
+    {
+     "sku": "M008",
+     "name": "麦麦脆汁鸡",
+     "qty": 1,
+     "unitCents": 1848
+    },
+    {
+     "sku": "M003",
+     "name": "麦香鱼",
+     "qty": 1,
+     "unitCents": 2209
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026092901260095",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-09-29T01:26:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026092902060156",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-09-29T02:06:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026093023380043",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-09-30T23:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026100223070035",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-10-02T23:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026100612340022",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-06T12:34:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026100623170001",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-06T23:17:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026100702280078",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-07T02:28:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026100801130052",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-08T01:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026100823580146",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-10-08T23:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026100923050122",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-09T23:05:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101002120187",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-10T02:12:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101012290032",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-10T12:29:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101019350053",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-10T19:35:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101100590174",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-11T00:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101102520170",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-11T02:52:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101112380087",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-10-11T12:38:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101222070150",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-12T22:07:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101222460164",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-10-12T22:46:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101312100158",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-13T12:10:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101322200028",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-13T22:20:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101402130084",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-10-14T02:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101501130046",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-10-15T01:13:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101519500185",
+   "storeId": "SZ-0775",
+   "storeName": "深圳南山书城店",
+   "city": "深圳",
+   "placedAt": "2026-10-15T19:50:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101602180074",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-16T02:18:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101602530075",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-16T02:53:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101623000000",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-16T23:00:00",
+   "isHoliday": true,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101702490058",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-17T02:49:00",
+   "isHoliday": false,
+   "isFirstDay": true,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101712090124",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-17T12:09:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101719590042",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-17T19:59:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101801580133",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-18T01:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101802000071",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-18T02:00:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101812390136",
+   "storeId": "SZ-0412",
+   "storeName": "深圳华强北店",
+   "city": "深圳",
+   "placedAt": "2026-10-18T12:39:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  },
+  {
+   "orderId": "NI2026101812580097",
+   "storeId": "SZ-0231",
+   "storeName": "深圳车公庙店",
+   "city": "深圳",
+   "placedAt": "2026-10-18T12:58:00",
+   "isHoliday": false,
+   "isFirstDay": false,
+   "items": [
+    {
+     "sku": "M001",
+     "name": "麦辣鸡腿堡",
+     "qty": 1,
+     "unitCents": 2250
+    }
+   ]
+  }
+ ]
+}
