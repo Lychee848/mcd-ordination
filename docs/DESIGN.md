@@ -4,6 +4,12 @@
 > 与 `麦当劳大赛_赛题分析与参赛Idea.md`（赛题分析 / 竞争调研 / 推演过程）分工不同：**那份是"为什么做这个"，这份是"做成什么样"**。
 > 改动规则：本文件是唯一的设计真源。代码与本文件冲突时，**以本文件为准并同步改代码**。
 
+> **落地位置对照**（本文早期以实验脚本名书写，仓库里已包化）：
+> `styles.py → src/mcd_ordination/styles.py`、`gacha.py → gacha.py`、`canon.py → canon.py`、
+> `sign.py → sign.py`、`render_card_v2.py → render_png.py`、`render_svg.py → render_svg.py`、
+> `animate.py → animate.py`；新增 `features.py`（归一化）、`piety.py`（九阶）、`deck.py`（编译）、
+> `plates.py`（L1.5 底图）、`fonts.py`（跨平台字体）、`mcp.py`（官方 MCP 客户端）、`cli.py`（命令行）。
+
 | 项 | 值 |
 |---|---|
 | 仓库名 | `mcd-ordination` |
