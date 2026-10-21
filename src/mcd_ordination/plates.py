@@ -11,8 +11,13 @@ plates.py —— 程序化底图（L1.5）
 """
 from __future__ import annotations
 
+import hashlib
 import math
+import os
 import random
+import shlex
+import subprocess
+from pathlib import Path
 
 from PIL import Image, ImageDraw
 
@@ -97,3 +102,86 @@ def procedural_plate(st: dict, kind: str = "effect", size: int = 1024) -> Image.
         de.rectangle([i, i, size - i, size - i], outline=min(255, 8 + i * 6))
     img = Image.composite(Image.new("RGB", (size, size), RS.mix(bg, (0, 0, 0), 0.18)), img, edge)
     return img
+
+
+# ---------------------------------------------------------------- 底图来源与变体
+#
+# 底图只有"画面窗里的那一张画"这一层，文字/星级/六维/编号永远是代码画的。
+# 三级来源，优先级从高到低：
+#   ① users/ 下这个用户自己的独版图（有就用，最贵但最独特）
+#   ② assets/plates/ 里按画派+卡种共享的底图（+ 确定性构图变体）
+#   ③ 程序化底图（plates.procedural_plate，零素材也能出卡）
+#
+# 为什么需要"变体"：共享底图意味着同画派的几百人会拿到同一张画。
+# 变体只改裁切/缩放/镜像，不改内容 —— 能拉开观感，但不能替代"每人一张"。
+
+REPO = Path(__file__).resolve().parent.parent.parent
+PLATE_DIR = REPO / "assets" / "plates"
+USER_DIR = PLATE_DIR / "users"
+
+ALIAS = {"item": "still", "spell": "still"}
+
+
+def _safe(s: str) -> str:
+    return "".join(c for c in str(s) if c.isalnum() or c in "-_") or "anon"
+
+
+def resolve(art_key: str, role: str, uid: str | None = None):
+    """返回 (路径, 来源)，来源 ∈ user / shared / None"""
+    if uid:
+        u = USER_DIR / f"{_safe(uid)}_{role}.png"
+        if u.exists():
+            return u, "user"
+    names = [f"plate_{art_key}_{role}.png"]
+    if role in ALIAS:
+        names.append(f"plate_{art_key}_{ALIAS[role]}.png")
+    names.append(f"plate_{art_key}.png")
+    for n in names:
+        p = PLATE_DIR / n
+        if p.exists():
+            return p, "shared"
+    return None, None
+
+
+def vary(src: Path, uid: str, out_dir: Path, version: int = 1) -> Path:
+    """同一张底图，按用户做确定性的构图变体：缩放 1.00–1.12、偏移 ±25%、50% 镜像。
+    同一用户永远同一版；换用户换一版。零成本，不调用任何模型。"""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    dst = out_dir / f"{src.stem}__{_safe(uid)[:14]}.png"
+    if dst.exists():
+        return dst
+
+    seed = int(hashlib.sha256(f"{uid}|plate-var-v{version}".encode()).hexdigest()[:8], 16)
+    rnd = random.Random(seed)
+    im = Image.open(src).convert("RGB")
+    w, h = im.size
+    zoom = 1.0 + rnd.random() * 0.12
+    cw, ch = int(w / zoom), int(h / zoom)
+    ox = int((w - cw) * (0.5 + (rnd.random() - 0.5) * 0.5))
+    oy = int((h - ch) * (0.5 + (rnd.random() - 0.5) * 0.5))
+    im = im.crop((ox, oy, ox + cw, oy + ch)).resize((w, h), Image.LANCZOS)
+    if rnd.random() < 0.5:
+        im = im.transpose(Image.FLIP_LEFT_RIGHT)
+    im.save(dst, quality=94)
+    return dst
+
+
+def generate(prompt: str, out_path: Path, timeout: int = 180) -> bool:
+    """
+    可选：把"出图"交给外部命令。设置环境变量后，本函数会用
+        {prompt} / {out} 两个占位符调用它。
+    例：
+        export MCD_PLATE_CMD='your-image-cli --prompt "{prompt}" --out "{out}"'
+    返回值只表示"命令是否成功"，不做内容检查。
+    """
+    cmd = os.environ.get("MCD_PLATE_CMD")
+    if not cmd:
+        return False
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    full = cmd.replace("{prompt}", shlex.quote(prompt)).replace("{out}", shlex.quote(str(out_path)))
+    try:
+        r = subprocess.run(full, shell=True, timeout=timeout,
+                           stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        return r.returncode == 0 and out_path.exists()
+    except Exception:
+        return False

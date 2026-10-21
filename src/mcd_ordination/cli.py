@@ -54,7 +54,7 @@ def cmd_demo(args) -> int:
     caveat = "  ← n<200，百分位含先验成分，仅供参考" if pi["n"] < 200 else ""
     print(f"  样本 n={pi['n']}{caveat}\n")
 
-    made = []
+    made, plate_levels = [], []
     for c in cards:
         st, data = c["style"], c["data"]
         role = c["role"]
@@ -65,10 +65,17 @@ def cmd_demo(args) -> int:
 
         if args.engine in ("png", "both"):
             try:
-                png_path = _render_png(out, uid, c, data, st)
+                png_path, plate_level = _render_png(out, uid, c, data, st)
                 made.append((role, "png", png_path, st, c))
+                plate_levels.append(plate_level)
             except ImportError:
                 print("  ! 没装 Pillow，跳过 PNG（L0 已生成，不影响可用）")
+
+    if plate_levels:
+        from collections import Counter
+        dist = Counter(plate_levels)
+        label = {"user": "独版", "shared": "共享+变体", "procedural": "程序化"}
+        print("  底图：" + " · ".join(f"{label.get(k, k)} {v} 张" for k, v in dist.items()))
 
     print("  卡面：")
     for role, kind, path, st, c in made:
@@ -92,40 +99,52 @@ def cmd_demo(args) -> int:
     return 0
 
 
-def _render_png(out: Path, uid: str, card: dict, data: dict, st: dict) -> Path:
+SUBJECT_PROMPT = {
+    "effect": "a Chinese person in their thirties, half-body, facing the viewer, "
+              "holding a wrapped burger in one hand and a paper cup in the other",
+    "item":   "a still life of a wrapped burger, a cone of fries and a paper cup on a ledge",
+    "spell":  "a close view of a hand writing with a marker on a plain paper bag",
+    "field":  "a small fast-food storefront at night, warm light inside, striped awning",
+}
+
+
+def _ensure_unique_plate(uid: str, card: dict, st: dict):
+    """只有稀有卡才值得单独出一张图（成本与稀有度绑定，见 docs/PLATES.md）。
+    没配置 MCD_PLATE_CMD 时静默跳过，不影响正常出卡。"""
+    from . import plates
+    from . import styles as S
+
+    if card.get("anim", 0) < 1:
+        return None
+    dst = plates.USER_DIR / f"{uid}_{card['role']}.png"
+    if dst.exists():
+        return dst
+    prompt = (f"{S.style_prompt_block(st)}. Subject: "
+              f"{SUBJECT_PROMPT.get(card['role'], SUBJECT_PROMPT['effect'])}. "
+              f"Square 1024. Art only: no text, no lettering, no border, no frame.")
+    return dst if plates.generate(prompt, dst) else None
+
+
+def _render_png(out: Path, uid: str, card: dict, data: dict, st: dict):
+    """返回 (文件路径, 底图来源)。来源 ∈ user（独版）/ shared（共享+构图变体）/ procedural"""
     from . import plates, render_png
 
+    _ensure_unique_plate(uid, card, st)
     art_key = next((k for k, v in _art_items() if v is st["art"]), "stained")
-    asset = _pick_plate(art_key, card["role"])
-    if asset:
-        plate = str(asset)
+    src, level = plates.resolve(art_key, card["role"], uid)
+
+    if src is not None:
+        plate = plates.vary(src, uid, out / "_plates") if level == "shared" else src
     else:
         plate_dir = out / "_plates"
         plate_dir.mkdir(exist_ok=True)
-        plate_path = plate_dir / f"proc_{art_key}_{card['role']}.png"
-        plates.procedural_plate(st, card["role"]).save(plate_path, quality=92)
-        plate = str(plate_path)
+        plate = plate_dir / f"proc_{art_key}_{card['role']}.png"
+        plates.procedural_plate(st, card["role"]).save(plate, quality=92)
+        level = "procedural"
 
     dst = out / f"card_{card['role']}.png"
-    render_png.render(plate, str(dst), dict(data), st)
-    return dst
-
-
-# 同一画派，不同卡种可以配不同主体：人物卡要有人，食物/行为卡要有一眼认得的物
-_PLATE_ALIAS = {"item": "still", "spell": "still"}
-
-
-def _pick_plate(art_key: str, role: str):
-    """按 > 具体到角色 > 同画派泛指 > 无 的顺序找底图；都没有就交给程序化底图"""
-    names = [f"plate_{art_key}_{role}.png"]
-    if role in _PLATE_ALIAS:
-        names.append(f"plate_{art_key}_{_PLATE_ALIAS[role]}.png")
-    names.append(f"plate_{art_key}.png")
-    for n in names:
-        p = REPO / "assets" / "plates" / n
-        if p.exists():
-            return p
-    return None
+    render_png.render(str(plate), str(dst), dict(data), st)
+    return dst, level
 
 
 def _art_items():
