@@ -47,6 +47,19 @@ git push -u origin main
 
 **社交预览图**：Settings → Social preview 上传 `docs/samples/three_personas.png`（1200×630 会自动裁切）。
 
+### 2.1 开 GitHub Pages（星数高的作品都有，别省）
+
+1. 先把你自己的仓库地址写进页面（`index.html` 里的 GitHub 链接默认是占位符）：
+   ```bash
+   REPO_URL="https://github.com/<你的用户名>/mcd-ordination" \
+   python scripts/gen_demo_site.py
+   git commit -am "chore: 指向真实仓库地址" && git push
+   ```
+2. GitHub → Settings → **Pages** → Source: *Deploy from a branch* → Branch: `main` / **`/ (root)`** → Save。
+3. 一两分钟后访问 `https://<你的用户名>.github.io/mcd-ordination/`，把这个地址填进 About 的 Website。
+
+页面是纯静态、零依赖：人设/卡种/暗号体裁切换、一键复制都能离线用，不请求任何接口。
+
 ---
 
 ## 3. 提 Issue（原文照抄）

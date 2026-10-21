@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麦门行传 · 把麦当劳用户行为写成一卷教义</title>
+<meta name="description" content="麦当劳用户行为 → 一套专属麦门卡证 + 一枚能写进订单备注的暗号。零 Key 可跑。">
+<style>
+:root{
+  --paper:#FBF7EF; --paper2:#F3ECE0; --ink:#1D1812; --ink2:#5A4F42; --ink3:#8B7F6E;
+  --red:#962E24; --red2:#B8432F; --blue:#1B4F8A; --gold:#C79A3A;
+  --line:rgba(29,24,18,.12); --line2:rgba(29,24,18,.06);
+  --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:.01em;margin:0}
+p{margin:0 0 14px}
+code{font-family:var(--mono);font-size:.88em;background:var(--paper2);
+  padding:2px 6px;border-radius:4px;border:1px solid var(--line2)}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.92);
+  backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:22px;height:58px}
+nav .brand{font-family:var(--serif);font-size:17px;letter-spacing:.06em}
+nav .brand b{color:var(--red);font-weight:500}
+nav .links{display:flex;gap:20px;margin-left:auto;font-size:13.5px;color:var(--ink2)}
+nav .links a{text-decoration:none}
+nav .links a:hover{color:var(--red)}
+nav .gh{font-family:var(--mono);font-size:12px;border:1px solid var(--line);
+  padding:6px 12px;border-radius:999px;text-decoration:none;color:var(--ink2)}
+nav .gh:hover{border-color:var(--red);color:var(--red)}
+
+header{padding:64px 0 20px}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--red);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.kicker:before{content:"";width:26px;height:1px;background:var(--red);display:inline-block}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.22;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--red)}
+.lede{font-size:17.5px;color:var(--ink2);max-width:660px;margin-top:20px;line-height:1.85}
+.cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:8px;
+  font-size:14.5px;text-decoration:none;border:1px solid transparent;transition:.15s}
+.btn.p{background:var(--ink);color:var(--paper)}
+.btn.p:hover{background:var(--red)}
+.btn.s{border-color:var(--line);color:var(--ink2)}
+.btn.s:hover{border-color:var(--ink);color:var(--ink)}
+
+.heroimg{margin:38px 0 0;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+  background:var(--paper2)}
+.heroimg img{display:block;width:100%}
+.cap{font-size:12.5px;color:var(--ink3);margin-top:10px;text-align:center}
+
+section{padding:64px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+.sec-num{font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.1em}
+h2{font-size:clamp(24px,3vw,31px)}
+.sub{color:var(--ink2);max-width:640px;margin:12px 0 30px;font-size:15.5px}
+
+/* demo */
+.demo{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:start}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tab{font-size:13.5px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--ink2);cursor:pointer;font-family:var(--sans)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.cardstage{position:relative;border-radius:12px;border:1px solid var(--line);
+  background:var(--paper2);padding:14px;display:flex;justify-content:center}
+.cardstage img{width:100%;max-width:390px;display:block;border-radius:6px;
+  box-shadow:0 10px 30px rgba(29,24,18,.12)}
+.thumbs{display:flex;gap:10px;margin-top:12px}
+.thumb{flex:1;border:1px solid var(--line);border-radius:8px;background:transparent;
+  padding:6px 4px;font-size:12px;color:var(--ink2);cursor:pointer;font-family:var(--sans)}
+.thumb[aria-selected="true"]{border-color:var(--red);color:var(--red);background:#fff}
+
+.panel{border:1px solid var(--line);border-radius:12px;background:#fff;padding:22px}
+.panel .who{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--red)}
+.who b{font-family:var(--serif);font-size:16px;font-weight:500}
+.who span{font-size:12.5px;color:var(--ink3)}
+.rankline{font-size:13px;color:var(--ink2);margin-bottom:18px}
+.rankline b{color:var(--red);font-weight:500}
+.signbox{background:var(--paper);border:1px dashed rgba(150,46,36,.4);border-radius:8px;
+  padding:16px;font-family:var(--serif);font-size:15.5px;line-height:1.9;min-height:96px}
+.signmeta{display:flex;justify-content:space-between;align-items:center;gap:12px;
+  margin-top:12px;font-size:12px;color:var(--ink3);font-family:var(--mono)}
+.copy{border:1px solid var(--line);background:#fff;border-radius:6px;padding:6px 12px;
+  font-size:12.5px;cursor:pointer;color:var(--ink2);font-family:var(--sans)}
+.copy:hover{border-color:var(--red);color:var(--red)}
+.facts{display:flex;gap:18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line2);
+  font-size:12.5px;color:var(--ink3);flex-wrap:wrap}
+.facts b{display:block;font-family:var(--serif);font-size:18px;color:var(--ink);font-weight:500}
+
+/* generic grids */
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.box{border:1px solid var(--line);border-radius:10px;padding:20px;background:#fff}
+.box h3{font-size:16px;margin-bottom:6px}
+.box p{font-size:13.5px;color:var(--ink2);margin:0}
+.box .n{font-family:var(--mono);font-size:11px;color:var(--red);letter-spacing:.12em;
+  display:block;margin-bottom:8px}
+
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line2)}
+th{font-weight:500;color:var(--ink3);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+td code{background:transparent;border:0;padding:0}
+
+.codeblk{background:var(--ink);color:#EDE6D8;border-radius:10px;padding:18px 20px;
+  font-family:var(--mono);font-size:13px;line-height:1.95;overflow:auto}
+.codeblk .c{color:#9C8F79}
+.codeblk .k{color:#E9B872}
+
+footer{border-top:1px solid var(--line);padding:36px 0 60px;color:var(--ink3);font-size:12.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media(max-width:900px){
+  .demo{grid-template-columns:1fr}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  nav .links{display:none}
+}
+@media(max-width:560px){
+  .grid2,.grid4{grid-template-columns:1fr}
+  header{padding-top:40px}
+  section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="brand">麦门<b>行传</b></div>
+  <div class="links">
+    <a href="#demo">现场试</a>
+    <a href="#what">两件产出</a>
+    <a href="#how">机制</a>
+    <a href="#run">跑起来</a>
+  </div>
+  <a class="gh" href="__REPO__" target="_blank" rel="noopener">GitHub ↗</a>
+</div></nav>
+
+<header><div class="wrap">
+  <div class="kicker">麦当劳中国 MCP 开发者挑战赛 · 参赛作品</div>
+  <h1>你说你是麦门信徒。<br>那你的教义，<em>写下来了吗？</em></h1>
+  <p class="lede">
+    把「麦当劳用户行为」当作 prompt，产出两样东西：<b>一套只属于你的麦门卡证</b>，
+    和<b>一枚能真的写进订单备注的麦门暗号</b>。
+    不代下单、不支付、不碰账号——它只负责把已经做过的那些事，变成一句能说出口的话。
+  </p>
+  <div class="cta">
+    <a class="btn p" href="#demo">先看一张卡 →</a>
+    <a class="btn s" href="#run">30 秒跑起来</a>
+  </div>
+  <figure class="heroimg">
+    <img src="docs/samples/three_personas.png" alt="三个人设生成的三张人物卡，板式一致但画派、框色、星级完全不同">
+  </figure>
+  <div class="cap">同一份代码、同一套板式：深圳的夜祷老客 / 成都的跨城巡礼者 / 哈尔滨刚入门的新客。</div>
+</div></header>
+
+<section id="demo"><div class="wrap">
+  <div class="sec-head"><span class="sec-num">01</span><h2>现场试：换个人，卡和暗号都变</h2></div>
+  <p class="sub">下面是三份合成人设的真实输出（离线生成，不调用任何接口）。切换人设、卡种、暗号体裁看看。</p>
+
+  <div class="demo">
+    <div>
+      <div class="tabs" id="personas" role="tablist"></div>
+      <div class="cardstage"><img id="cardimg" alt="卡面"></div>
+      <div class="thumbs" id="roles" role="tablist"></div>
+      <p class="cap" style="text-align:left;margin-top:10px">
+        这是 L2 成品卡（共享底图 + 每人不同的构图变体）。
+        零依赖的 L0 纯 SVG 版见 <a href="docs/samples/l0_card.svg">l0_card.svg</a>（6 KB，无位图）。
+      </p>
+    </div>
+
+    <div class="panel">
+      <div class="who"><span class="dot"></span><b id="pname"></b><span id="pcity"></span></div>
+      <div class="rankline" id="prank"></div>
+
+      <div class="tabs" id="genres" role="tablist"></div>
+      <div class="signbox" id="signtext"></div>
+      <div class="signmeta">
+        <span id="signmeta"></span>
+        <button class="copy" id="copybtn">复制这句</button>
+      </div>
+
+      <div class="facts" id="facts"></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="what"><div class="wrap">
+  <div class="sec-head"><span class="sec-num">02</span><h2>两件产出，其实是一件事</h2></div>
+  <p class="sub">卡负责被看见，暗号负责被回应。没有暗号，卡只是好看的截图；没有卡，暗号没有来历。</p>
+  <div class="grid2">
+    <div class="box">
+      <span class="n">OUTPUT 01</span>
+      <h3>卡证 · 四种信息结构</h3>
+      <p>人物卡答「他有多强」，食物卡答「这是什么」（六维取自官方营养表，一克不编），
+         行为卡答「什么时候能做一次什么」，地点卡答「这个地方长什么样」。
+         板式一致所以像一套，画派/框色/星级不同所以不是同一个人。</p>
+    </div>
+    <div class="box">
+      <span class="n">OUTPUT 02</span>
+      <h3>暗号 · 三种体裁</h3>
+      <p><b>问候</b>什么都不求；<b>请求</b>是一句一本正经的玩笑，店员照做是彩蛋、不照做也成立；
+         <b>接龙</b>留半句话给店员，下次你带着他写的那句再来，就是第二章。
+         勾选后可挂进订单备注。</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="sec-head"><span class="sec-num">03</span><h2>四步闭环</h2></div>
+  <p class="sub">每一步都只用官方 MCP 能拿到的东西，不猜、不编、不假装写入。</p>
+  <div class="grid4">
+    <div class="box"><span class="n">STEP 01</span><h3>拉行为</h3><p>订单、账户、券、抽奖、在售菜单。频次、时辰、门店、单品偏好。</p></div>
+    <div class="box"><span class="n">STEP 02</span><h3>归纳</h3><p>九阶品秩（四项加权百分位）+ 教义摘录（七典归组，互斥不共存）。金额不进公式。</p></div>
+    <div class="box"><span class="n">STEP 03</span><h3>编译</h3><p>四版式卡 + 八槽位暗号。同一份行为向量，所以卡上的数字和暗号里的说法永远对得上。</p></div>
+    <div class="box"><span class="n">STEP 04</span><h3>用出去</h3><p>勾选写进备注（能力探测：有字段就写，没有就给你可复制文本），店员回应 → 回报 → 下一章。</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><span class="sec-num">04</span><h2>九阶：把百分位翻译成身份</h2></div>
+  <p class="sub">不是排行榜。卡面永远不印百分位数字，只印品秩名——它描述你的修持轨迹，不给你发成绩单。</p>
+  <table>
+    <thead><tr><th>百分位</th><th>品秩</th><th>拉丁</th><th>光环</th></tr></thead>
+    <tbody>
+      <tr><td>≥ 99.5%</td><td>麦门在世</td><td><i>Summus Maimen</i></td><td>全幅圣光 + 彩窗</td></tr>
+      <tr><td>97 – 99.5%</td><td>枢机主教</td><td><i>Cardinalis</i></td><td>红金环 + 放射线</td></tr>
+      <tr><td>90 – 97%</td><td>主教</td><td><i>Episcopus</i></td><td>金环 + 多重同心环</td></tr>
+      <tr><td>80 – 90%</td><td>司铎</td><td><i>Presbyter</i></td><td>完整金环 + 细射线</td></tr>
+      <tr><td>65 – 80%</td><td>执事</td><td><i>Diaconus</i></td><td>分段金环</td></tr>
+      <tr><td>50 – 65%</td><td>传道员</td><td><i>Praedicator</i></td><td>分段金环</td></tr>
+      <tr><td>25 – 50%</td><td>门徒</td><td><i>Discipulus</i></td><td>细金线圈</td></tr>
+      <tr><td>10 – 25%</td><td>望教者</td><td><i>Catechumenus</i></td><td>仅一道细弧</td></tr>
+      <tr><td>&lt; 10%</td><td>慕道者</td><td><i>Auditor</i></td><td>无</td></tr>
+    </tbody>
+  </table>
+  <p class="cap" style="text-align:left;margin-top:14px">加权：频次 0.40 / 门店 0.25 / 纯度 0.20 / 夜祷 0.15。客单价、累计金额、券使用率均不进公式。</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><span class="sec-num">05</span><h2>抽卡：硬币是真实交易，而且能验算</h2></div>
+  <p class="sub">一单一抽，与金额无关；结果由 hash(订单号 + 用户盐 + 版本) 决定，任何人拿同一份数据都能复算出同一张卡。</p>
+  <div class="grid2">
+    <div class="box">
+      <h3>概率只看「这一单有多特别」</h3>
+      <p>凌晨 3–5 点 +3、跨城 +2、开业/新品首日 +4、生日 +4。连续 12 抽没出金闪，第 13 抽权重翻倍。</p>
+    </div>
+    <div class="box">
+      <h3>卡面印 <code>V XXXXX</code></h3>
+      <p>这串码由卡面 7 项公开量算出。你可以编一句更酷的暗号，但编不出能对上卡面的短码。</p>
+    </div>
+  </div>
+  <figure class="heroimg" style="margin-top:22px">
+    <img src="docs/samples/holo_demo.gif" alt="稀有卡扫光动效">
+  </figure>
+  <div class="cap">扫光只合成在画面窗内，文字与数值一点不受影响。</div>
+</div></section>
+
+<section id="run"><div class="wrap">
+  <div class="sec-head"><span class="sec-num">06</span><h2>30 秒跑起来</h2></div>
+  <p class="sub">不需要 MCP Token、不需要 API Key、不需要联网。仓库自带三份人设数据。</p>
+  <div class="codeblk"><span class="c"># 只装本包，不带任何第三方依赖</span>
+git clone &lt;repo&gt; &amp;&amp; cd mcd-ordination
+pip install -e .
+
+<span class="c"># 一次出全套卡 + 暗号</span>
+<span class="k">python</span> -m mcd_ordination demo
+
+<span class="c"># 只出暗号（问候 / 请求 / 接龙）</span>
+<span class="k">python</span> -m mcd_ordination sign --kind story
+
+<span class="c"># 挂进订单备注：有字段就写，没有就给你可复制文本</span>
+<span class="k">python</span> -m mcd_ordination order --kind ask</div>
+  <p class="sub" style="margin-top:20px">
+    不装 Pillow 也能跑：L0 是纯 SVG，一张卡 6 KB，全是矢量，任何浏览器直接打开。
+  </p>
+</div></section>
+
+<footer><div class="wrap">
+  <div>
+    <div style="font-family:var(--serif);font-size:15px;color:var(--ink);margin-bottom:6px">麦门行传 · Acta Maimen</div>
+    非官方粉丝二创，与麦当劳中国无隶属关系。不代下单、不支付、不接触账号凭证。
+  </div>
+  <div>
+    <a href="docs/DESIGN.md">设计文档</a> · <a href="docs/PLATES.md">底图说明</a> ·
+    <a href="docs/samples/sign_examples.md">暗号样例</a> · MIT License
+  </div>
+</div></footer>
+
+<script>
+const DATA = /*__DATA__*/;
+const ROLES = [["effect","人物卡"],["item","食物卡"],["spell","行为卡"],["field","地点卡"]];
+const GENRES = [["greet","问候"],["ask","请求"],["story","接龙"]];
+
+let pi = 0, ri = 0, gi = 0;
+const $ = id => document.getElementById(id);
+
+function tabs(el, items, cur, onPick, getLabel){
+  el.innerHTML = "";
+  items.forEach((it, i) => {
+    const b = document.createElement("button");
+    b.className = "tab"; b.type = "button"; b.setAttribute("role","tab");
+    b.textContent = getLabel(it, i);
+    b.setAttribute("aria-selected", i === cur ? "true" : "false");
+    b.onclick = () => onPick(i);
+    el.appendChild(b);
+  });
+}
+
+function roleThumbs(){
+  const el = $("roles"); el.innerHTML = "";
+  ROLES.forEach(([k, label], i) => {
+    const b = document.createElement("button");
+    b.className = "thumb"; b.type = "button";
+    b.textContent = label;
+    b.setAttribute("aria-selected", i === ri ? "true" : "false");
+    b.onclick = () => { ri = i; render(); };
+    el.appendChild(b);
+  });
+}
+
+function render(){
+  const p = DATA[pi];
+  $("cardimg").src = p.cards[ROLES[ri][0]];
+  $("cardimg").alt = p.label + " 的" + ROLES[ri][1];
+  $("pname").textContent = p.label;
+  $("pcity").textContent = "· " + p.city;
+  $("prank").innerHTML = "修持轨迹指向 <b>" + p.rank + "</b>（" + p.rank_lat + "）· 光环：" + p.halo;
+
+  const s = p.signs[GENRES[gi][0]];
+  $("signtext").textContent = s.short;
+  $("signmeta").textContent = s.label + " · " + s.note + " · 短码 " + s.code;
+  $("facts").innerHTML =
+    "<div><b>" + p.facts.orders + "</b>年礼拜</div>" +
+    "<div><b>" + p.facts.stores + "</b>家门店</div>" +
+    "<div><b>" + p.facts.cities + "</b>座城</div>" +
+    "<div><b>" + p.facts.purity + "%</b>专一</div>";
+
+  tabs($("personas"), DATA, pi, i => { pi = i; render(); }, it => it.label + " · " + it.city);
+  roleThumbs();
+  tabs($("genres"), GENRES, gi, i => { gi = i; render(); }, it => it[1]);
+}
+
+$("copybtn").onclick = async () => {
+  const txt = $("signtext").textContent;
+  try { await navigator.clipboard.writeText(txt); }
+  catch(e){
+    const t = document.createElement("textarea");
+    t.value = txt; document.body.appendChild(t); t.select();
+    document.execCommand("copy"); t.remove();
+  }
+  const b = $("copybtn"); const old = b.textContent;
+  b.textContent = "已复制"; setTimeout(() => b.textContent = old, 1300);
+};
+
+render();
+</script>
+</body>
+</html>

@@ -250,10 +250,13 @@ def draw_name(d, st, x, y, name, size=44):
     f = font(F_CN, size)
     if st["foil"]["gold_name"]:
         # 亮框（圣髑/同调）上金名会糊，按框的明度换墨色
+        # 按框底色明度决定墨色：金名压在橙框上对比度不足，
+        # 阈值取 130 而不是 180（橙色 153 会被判成"亮框"，实际读不出）
         lum = sum(st["frame"]["bg"]) / 3
-        if lum > 180:
-            d.text((x, y), name, font=f, fill=(158, 112, 36),
-                   stroke_width=2, stroke_fill=(255, 250, 236))
+        if lum > 130:
+            # 亮框上不要描边：汉字笔画细，2px 白描边会把深色填充吃掉，
+            # 远看反而像浅金色。深字压浅底，靠对比度本身就够。
+            d.text((x, y), name, font=f, fill=(122, 78, 14))
         else:
             d.text((x, y), name, font=f, fill=(238, 206, 130),
                    stroke_width=2, stroke_fill=(64, 42, 12))
