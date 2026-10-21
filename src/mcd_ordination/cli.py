@@ -149,12 +149,33 @@ def _sign(profile: str, kind: str = "auto", allow_t1: bool = False):
 
 
 def cmd_sign(args) -> int:
+    if args.list_asks:
+        mine = SG.load_user_asks()
+        print(f"\n你的投稿（{len(mine)} 句，存在 {SG._asks_path()}）：")
+        for i, a in enumerate(mine, 1):
+            print(f"  {i}. {a}")
+        if not mine:
+            print("  （还没有。用 --add-ask \"你的句子\" 加一句）")
+        print(f"\n内置 T0 语料 {len(SG.ASKS_T0)} 句、T1 {len(SG.ASKS_T1)} 句。")
+        return 0
+
+    if args.add_ask:
+        res = SG.add_user_ask(args.add_ask)
+        if not res["ok"]:
+            print(f"\n没收下：{res['reason']}")
+            return 2
+        print(f"\n已收下：「{res['text']}」")
+        print(f"  现在共 {res['total']} 句，命中率约 45%（其余仍用内置语料）")
+        return 0
+
     payload, feats, uid, pi, sg = _sign(args.profile, args.kind, args.allow_t1)
 
     print(f"\n{pi['rank']['cn']}（{pi['rank']['lat']}）")
     print(f"体裁：{sg['kind_cn']}（{SG.KINDS[sg['kind']]['desc']}）"
           + (f" · 第 {sg['story_chapter']} 章" if sg["kind"] == "story" else "")
-          + (f" · 请求档位 {sg['ask_tier']}" if sg["kind"] == "ask" else ""))
+          + (f" · 请求档位 {sg['ask_tier']}"
+             f"（{'你投的' if sg['ask_source'] == 'mine' else '内置' if sg['ask_source'] == 'builtin' else '小成本'}）"
+             if sg["kind"] == "ask" else ""))
     print("\n备注版（一键复制，可挂到订单备注）：\n  " + sg["short"])
     print(f"\n社交版：\n{sg['long']}")
     print(f"\n短码 {sg['code']}｜公开复算一致 = "
@@ -223,6 +244,8 @@ def main(argv=None) -> int:
                    help="允许问一句能不能多给一点（仍带「若不方便」）")
     s.add_argument("--wrote", default="",
                    help="店员在袋上写回来的那半句，记进本地账本供下次接龙")
+    s.add_argument("--add-ask", default="", help="投稿一句自己的零成本请求（会被校验）")
+    s.add_argument("--list-asks", action="store_true", help="查看自己投稿过的句子")
     s.set_defaults(func=cmd_sign)
 
     o = sub.add_parser("order", help="把暗号挂到订单备注（能力探测 + 降级）")

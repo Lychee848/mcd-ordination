@@ -1,0 +1,42 @@
+name: 投稿一句麦门暗号
+description: 写一句你想印在订单备注里的话。通过的会进内置语料，所有人都可能抽到。
+title: "[暗号投稿] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        投稿前请先确认三件事，它们不是形式，是这条线能不能继续存在的前提：
+
+        1. **零成本**：只请对方做一个动作或写一句话，不要实物。
+        2. **不好笑也没关系，但别有攻击性**：不指向具体店员、不含地域/性别/身材玩笑。
+        3. **不含个人信息**：不要电话、订单号、地址、社交账号。
+
+  - type: input
+    id: line
+    attributes:
+      label: 你的句子
+      description: 6–28 字。会被接在「麦门 XXXX｜你的自陈｜」后面，所以不用自己写称谓。
+      placeholder: 例：可否在袋上批注「已阅」，我回去好交差
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 好笑在哪（一句话就够）
+      description: 这句为什么值得被截图？如果只是为了要东西，它多半不会通过。
+      placeholder: 因为"已阅"是单位里的词，出现在快餐袋上有错位感。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: 确认
+      options:
+        - label: 这句话是零成本的（不要实物、不要免单、不要加量）
+          required: true
+        - label: 不含个人信息，也不指向具体的店员
+          required: true
+        - label: 同意以 MIT 协议随仓库分发，允许被改写
+          required: true

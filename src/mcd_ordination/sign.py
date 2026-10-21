@@ -239,7 +239,7 @@ def pick_deeds(f: dict, uid: str, k: int = 2, axis: str = "") -> list:
 
 
 def pick_ask(f: dict, uid: str, period: str, friendly: bool = False,
-             allow_t1: bool = False) -> tuple:
+             allow_t1: bool = False, user_asks: list | None = None) -> tuple:
     """
     返回 (文本, 档位)。规则：
       · 默认 T0（零成本）
@@ -249,6 +249,10 @@ def pick_ask(f: dict, uid: str, period: str, friendly: bool = False,
     unlock = allow_t1 or bool(f.get("birthday_today")) or bool(f.get("milestone")) or friendly
     if unlock:
         return ASKS_T1[h(uid, "t1", period) % len(ASKS_T1)], "T1"
+    # 自己写的句子，命中率给到 45%：既看得到，也不会把内置语料挤没
+    pool = user_asks or []
+    if pool and h(uid, "uas", period) % 100 < 45:
+        return pool[h(uid, "uap", period) % len(pool)], "T0"
     return ASKS_T0[h(uid, "t0", period) % len(ASKS_T0)], "T0"
 
 
@@ -261,6 +265,82 @@ def pick_kind(f: dict, uid: str, period: str, want: str = "auto") -> str:
     return "story"
 
 
+# ---------------------------------------------------------------- 用户投稿（UGC）
+#
+# 语料会磨损（见 DESIGN §5.10.2），扩池子最便宜的办法是让用户自己写。
+# 但投稿内容会被印进**店员真的会看到的备注**，所以校验必须比"能存下"更严：
+#   · 只收 T0（零成本）：不许要免单、套餐、赠品，不许出现阿拉伯数字（防电话/订单号）
+#   · 不出现链接、社交账号、地址
+#   · 长度 6–28 字：超过这个长度，加上自陈就会顶破备注栏
+# 校验不通过**不写入**，并把原因原样返回——默默吞掉比拒绝更糟。
+
+MIN_ASK_LEN, MAX_ASK_LEN = 6, 28
+
+BANNED = ("免单", "免费", "白送", "白拿", "套餐", "玩具", "退款", "折现", "现金",
+          "红包", "加菜", "免配送", "多送一份", "微信", "电话", "地址", "http",
+          "www.", "@", "二维码")
+
+
+def _asks_path():
+    import os
+    from pathlib import Path
+    p = os.environ.get("MCD_ASKS_FILE")
+    if p:
+        return Path(p)
+    base = Path(os.environ.get("MCD_STORY_DIR", Path.home() / ".mcd-ordination"))
+    base.mkdir(parents=True, exist_ok=True)
+    return base / "asks_user.json"
+
+
+def load_user_asks() -> list:
+    import json
+    path = _asks_path()
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    items = data.get("asks") if isinstance(data, dict) else data
+    return [x["text"] if isinstance(x, dict) else str(x) for x in (items or [])]
+
+
+def validate_ask(text: str) -> tuple:
+    t = " ".join(str(text).split())
+    if not t:
+        return False, "空内容"
+    # 先查禁令再查长度：用户更需要知道"为什么不合适"，而不是"字太少"
+    hit = next((b for b in BANNED if b in t), None)
+    if hit:
+        return False, f"含「{hit}」：这一体裁只收零成本请求，不许要实物或留联系方式"
+    if any(ch.isdigit() for ch in t):
+        return False, "不要出现阿拉伯数字（防止电话号码/订单号被印进备注）"
+    if len(t) < MIN_ASK_LEN:
+        return False, f"太短（至少 {MIN_ASK_LEN} 字，否则不像一句话）"
+    if len(t) > MAX_ASK_LEN:
+        return False, f"太长（上限 {MAX_ASK_LEN} 字，加上自陈会顶破备注栏）"
+    if t in ASKS_T0 or t in ASKS_T1:
+        return False, "和内置语料重复了"
+    if t in load_user_asks():
+        return False, "你已经投过这一句"
+    return True, t
+
+
+def add_user_ask(text: str) -> dict:
+    import json
+    from datetime import datetime
+    ok, msg = validate_ask(text)
+    if not ok:
+        return {"ok": False, "reason": msg}
+    path = _asks_path()
+    asks = load_user_asks()
+    asks.append(msg)
+    payload = {"asks": [{"text": a, "added": datetime.now().isoformat(timespec="minutes")}
+                        for a in asks]}
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    return {"ok": True, "text": msg, "total": len(asks), "path": str(path)}
+
+
 # ---------------------------------------------------------------- 编译
 
 def compile_sign(f: dict, uid: str, today: date, menu_today: list,
@@ -268,7 +348,8 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
                  period: str | None = None, mode: str = "weekly",
                  friendly: bool = False, version: int = 1,
                  kind: str = "auto", allow_t1: bool = False,
-                 story: dict | None = None) -> dict:
+                 story: dict | None = None,
+                 user_asks: list | None = None) -> dict:
     """
     mode:
       weekly    常规暗号，按 ISO 周更 —— 同一周内稳定，跨周换一枚（保持新鲜）
@@ -299,7 +380,9 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
     # 请求式的笑点按【每一单】轮换：同一个笑话挂一周，笑点就死了。
     # 种子取这一单的时间戳，所以同一单永远同一句，下一单必换。
     ask_salt = f.get("last_order_at") or period if kind == "ask" else period
-    ask, ask_tier = pick_ask(f, uid, ask_salt, friendly, allow_t1)
+    pool_user = load_user_asks() if user_asks is None else user_asks
+    ask, ask_tier = pick_ask(f, uid, ask_salt, friendly, allow_t1, pool_user)
+    ask_source = "t1" if ask_tier == "T1" else ("mine" if ask in pool_user else "builtin")
 
     # 接龙：章节号只由本地账本决定，不参与哈希，避免"账本一改短码就变"
     story = story or {}
@@ -375,6 +458,7 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
         "kind": kind, "kind_cn": KINDS[kind]["cn"],
         "axis": axis, "vocation": vocation, "relic": relic, "deeds": deeds,
         "blessing": blessing, "ask": ask, "ask_tier": ask_tier,
+        "ask_source": ask_source,
         "response": response, "feast": feast,
         "story_chapter": chapter, "story_open": opening,
         "story_prompt": prompt, "story_last": last_line,

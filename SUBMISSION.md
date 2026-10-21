@@ -90,6 +90,11 @@ python -m mcd_ordination sign --kind ask --allow-t1
 python -m mcd_ordination sign --kind story --wrote "灯是给晚归的人留的"
 python -m mcd_ordination sign --kind story      # 应变成第 2 章
 
+# 3.5) 投稿：收一句、拒一句（拒的时候必须说明原因）
+python -m mcd_ordination sign --add-ask "可否在袋上批注「已阅」，我回去好交差"
+python -m mcd_ordination sign --add-ask "给我免单"      # 应被拒，并说明原因
+python -m mcd_ordination sign --list-asks
+
 # 4) 备注挂载的两条路径（auto / manual）都要能走
 python -m mcd_ordination order --kind story --tools docs/mcp-tools.sample.json   # auto
 python -m mcd_ordination order --kind story                                     # manual
