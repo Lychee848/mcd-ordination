@@ -1,0 +1,16 @@
+[
+  {
+    "name": "create-order",
+    "description": "示例：用于演示 order.py 的能力探测。真实结构以 tools/list 返回为准。",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "storeId": {"type": "string"},
+        "diningType": {"type": "string"},
+        "items": {"type": "array"},
+        "remark": {"type": "string", "maxLength": 80}
+      },
+      "required": ["storeId", "items"]
+    }
+  }
+]

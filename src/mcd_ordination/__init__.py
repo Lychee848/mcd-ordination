@@ -7,7 +7,7 @@ mcd-ordination · 麦门行传
 
 __version__ = "0.1.0"
 __all__ = ["features", "piety", "canon", "sign", "gacha", "styles",
-           "deck", "render_svg", "render_png", "animate"]
+           "deck", "order", "render_svg", "render_png", "animate", "mcp"]
 
 
 def main():

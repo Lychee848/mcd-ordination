@@ -12,6 +12,7 @@ from pathlib import Path
 from . import canon as C
 from . import deck as D
 from . import features as F
+from . import order as O
 from . import piety as P
 from . import sign as SG
 
@@ -40,7 +41,10 @@ def cmd_demo(args) -> int:
     today = date.today()
     top = cr["printed"][0]
     sg = SG.compile_sign(feats, uid, today, _menu_names(),
-                         grace_id=top["id"], grace_creed=top["creed"])
+                         grace_id=top["id"], grace_creed=top["creed"],
+                         kind=getattr(args, "kind", "auto"),
+                         allow_t1=getattr(args, "allow_t1", False),
+                         story=SG.load_story(uid))
 
     out = Path(args.out) / args.profile
     out.mkdir(parents=True, exist_ok=True)
@@ -72,7 +76,10 @@ def cmd_demo(args) -> int:
             print(f"    {role:6s} {st['frame']['cn']:5s} {st['foil']['cn']:4s} "
                   f"{st['art']['cn']:6s} -> {path.relative_to(REPO) if str(path).startswith(str(REPO)) else path}")
 
-    print("\n  ── 暗号（备注版）──")
+    print(f"\n  ── 暗号 · 备注版（体裁：{sg['kind_cn']}"
+          + (f" · 第 {sg['story_chapter']} 章" if sg["kind"] == "story" else "")
+          + (f" · {sg['ask_tier']}" if sg["kind"] == "ask" else "")
+          + "）──")
     print(f"    {sg['short']}")
     print(f"    长度 {sg['len']} / 上限 {SG.REMARK_LIMIT}｜短码 {sg['code']}｜{sg['expires']}")
     print("\n  ── 暗号（社交版）──")
@@ -114,16 +121,50 @@ def SVG_RENDER(data, st, out):
     return render_svg.render(data, st, out)
 
 
-def cmd_sign(args) -> int:
-    _, feats, uid, pi, cr = _pipeline(args.profile)
+def _sign(profile: str, kind: str = "auto", allow_t1: bool = False):
+    payload, feats, uid, pi, cr = _pipeline(profile)
     top = cr["printed"][0]
     sg = SG.compile_sign(feats, uid, date.today(), _menu_names(),
-                         grace_id=top["id"], grace_creed=top["creed"])
+                         grace_id=top["id"], grace_creed=top["creed"],
+                         kind=kind, allow_t1=allow_t1,
+                         story=SG.load_story(uid))
+    return payload, feats, uid, pi, sg
+
+
+def cmd_sign(args) -> int:
+    payload, feats, uid, pi, sg = _sign(args.profile, args.kind, args.allow_t1)
+
     print(f"\n{pi['rank']['cn']}（{pi['rank']['lat']}）")
-    print("\n备注版（直接粘进订单备注）：\n  " + sg["short"])
+    print(f"体裁：{sg['kind_cn']}（{SG.KINDS[sg['kind']]['desc']}）"
+          + (f" · 第 {sg['story_chapter']} 章" if sg["kind"] == "story" else "")
+          + (f" · 请求档位 {sg['ask_tier']}" if sg["kind"] == "ask" else ""))
+    print("\n备注版（一键复制，可挂到订单备注）：\n  " + sg["short"])
     print(f"\n社交版：\n{sg['long']}")
     print(f"\n短码 {sg['code']}｜公开复算一致 = "
           f"{SG.verify_code(sg['claims']) == sg['code']}｜{sg['expires']}")
+
+    if args.wrote:
+        led = SG.append_story(uid, sg, args.wrote)
+        print(f"\n已记入本地接龙账本（第 {led['chapter']} 章）。"
+              f"下次运行会自动接上：「{led['last']}」")
+    return 0
+
+
+def cmd_order(args) -> int:
+    payload, feats, uid, pi, sg = _sign(args.profile, args.kind, args.allow_t1)
+    draft = O.build_draft(payload["orders"], feats)
+
+    tools = []
+    if args.tools:
+        tools = json.loads(Path(args.tools).read_text(encoding="utf-8"))
+    caps = O.probe(tools) if tools else {"field": None, "max_len": None, "checked": False}
+
+    res = O.attach(draft, sg, caps)
+    print(f"\n订单草稿：{draft['storeName']} · {len(draft['items'])} 件商品"
+          f"（复用 {draft['_sourceOrder']}）")
+    print(O.render(res))
+    if args.json:
+        print("\n" + json.dumps(res, ensure_ascii=False, indent=2))
     return 0
 
 
@@ -151,11 +192,31 @@ def main(argv=None) -> int:
     d.add_argument("--profile", default="night_owl")
     d.add_argument("--out", default="out")
     d.add_argument("--engine", choices=["svg", "png", "both"], default="both")
+    d.add_argument("--kind", default="auto",
+                   choices=["auto", "greet", "ask", "story"])
+    d.add_argument("--allow-t1", action="store_true")
     d.set_defaults(func=cmd_demo)
 
-    s = sub.add_parser("sign", help="只出暗号")
+    s = sub.add_parser("sign", help="只出暗号（三种体裁）")
     s.add_argument("--profile", default="night_owl")
+    s.add_argument("--kind", default="auto",
+                   choices=["auto", "greet", "ask", "story"],
+                   help="greet 问候 / ask 请求 / story 接龙 / auto 按行为选")
+    s.add_argument("--allow-t1", action="store_true",
+                   help="允许问一句能不能多给一点（仍带「若不方便」）")
+    s.add_argument("--wrote", default="",
+                   help="店员在袋上写回来的那半句，记进本地账本供下次接龙")
     s.set_defaults(func=cmd_sign)
+
+    o = sub.add_parser("order", help="把暗号挂到订单备注（能力探测 + 降级）")
+    o.add_argument("--profile", default="night_owl")
+    o.add_argument("--kind", default="auto",
+                   choices=["auto", "greet", "ask", "story"])
+    o.add_argument("--allow-t1", action="store_true")
+    o.add_argument("--tools", default="",
+                   help="tools/list 的 JSON 文件；给了就据此探测 create-order 是否有备注字段")
+    o.add_argument("--json", action="store_true", help="同时打印完整 payload")
+    o.set_defaults(func=cmd_order)
 
     doc = sub.add_parser("doctor", help="检查字体与依赖")
     doc.set_defaults(func=cmd_doctor)

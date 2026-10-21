@@ -56,18 +56,18 @@ git push -u origin main
 ### 标题
 
 ```
-【参赛申请】麦门行传｜把你的麦当劳用户行为，写成一卷属于你自己的教义
+【参赛申请】麦门行传｜把你的麦当劳用户行为写成一卷教义，再生成一枚能写进订单备注的麦门暗号
 ```
 
 ### 正文
 
 ```
-标题：麦门行传｜把你的麦当劳用户行为，写成一卷属于你自己的教义
+标题：麦门行传｜把你的麦当劳用户行为写成一卷教义，再生成一枚能写进订单备注的麦门暗号
 
 〖参赛申请〗
 项目名称：麦门行传（mcd-ordination）
 项目地址：https://github.com/<你的用户名>/mcd-ordination
-项目简介：麦门行传把「麦当劳用户行为」当作 prompt，为你即时生成一套专属麦门卡证——九阶品秩、教义摘录、四种版式的交换卡（人物/食物/行为/地点），以及一枚只属于你的「麦门暗号」。它不解决吃饭问题，解决「想表达」的问题：频次、时辰、门店、单品偏好这些散落的行为，会被编译成一册可以发出去的东西。三条硬线：卡面每个数字都能追溯到真实数据（不可伪造）、金额不进任何公式（不鼓励消费）、不填任何 Key 也能看见完整卡面（零依赖可跑）。卡面文字、星级、六维、编号全部由代码绘制，AI 只画画面，所以永远不会出现糊字和漂移。附带一个会产生线下行为的闭环：暗号写进订单备注 → 店员回应 → 回报 → 聚合成「友好门店地图」。仓库自带三份人设数据，clone 下来 30 秒就能看到成品卡。
+项目简介：麦门行传把「麦当劳用户行为」当作 prompt，产出两样东西：一套专属麦门卡证（九阶品秩、教义摘录、四种版式的交换卡），和一枚只属于你的「麦门暗号」。暗号有三种体裁——打招呼、创意地问一句能不能多给一块鸡块、或者留半句话请店员续写（下次你带着店员写的那句再来，就变成第二章连载）。勾选一下，暗号会挂到这一单的订单备注上，把一次交易变成一次真实互动。三条硬线：卡面每个数字都能追溯到真实数据（不可伪造）、金额不进任何公式（不鼓励消费）、不填任何 Key 也能看见完整卡面（零依赖可跑）。备注字段有没有、能不能自动写入，由每次运行时的 tools/list 能力探测决定：有就写进 payload，没有就给你一段可复制的文本加三步指引，绝不假装已经写进去。仓库自带三份人设数据，clone 下来 30 秒就能看到成品卡与三体裁暗号。
 ```
 
 ---
@@ -84,10 +84,17 @@ python -m mcd_ordination demo --engine svg
 # 2) 三种人设都能跑，且卡面不同
 for p in night_owl pilgrim beginner; do python -m mcd_ordination demo --profile $p --engine svg; done
 
-# 3) 暗号确定性：同一周期同一句，跨周必换
-python -m mcd_ordination sign --profile night_owl
+# 3) 暗号三种体裁都能出，且接龙能续章
+python -m mcd_ordination sign --kind greet
+python -m mcd_ordination sign --kind ask --allow-t1
+python -m mcd_ordination sign --kind story --wrote "灯是给晚归的人留的"
+python -m mcd_ordination sign --kind story      # 应变成第 2 章
 
-# 4) README 里的图片路径都存在
+# 4) 备注挂载的两条路径（auto / manual）都要能走
+python -m mcd_ordination order --kind story --tools docs/mcp-tools.sample.json   # auto
+python -m mcd_ordination order --kind story                                     # manual
+
+# 5) README 里的图片路径都存在
 grep -o 'docs/samples/[a-z_0-9.]*' README.md | sort -u | xargs ls -l
 ```
 

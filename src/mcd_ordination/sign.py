@@ -82,8 +82,28 @@ DEEDS = [
      "礼拜 {n} 次", lambda f: f["total_orders"]),
 ]
 
-# S5 请求：T0 零成本是默认，T1 只在特定条件下解锁。
-PETITIONS_T0 = [
+# ---------------------------------------------------------------- 三体裁
+# 暗号不只有一种用途。三条体裁，用户可显式选择，也可交给 auto 按行为决定。
+KINDS = {
+    "greet": {"cn": "问候", "lat": "Salutatio",
+              "desc": "向门店打个招呼，不求任何东西"},
+    "ask":   {"cn": "请求", "lat": "Petitio",
+              "desc": "创意地问一句能不能多给一点，默认零成本"},
+    "story": {"cn": "接龙", "lat": "Continuatio",
+              "desc": "留半句话给店员，下次你再续写第二章"},
+}
+
+# S5a 问候：完全不索要，只做人际连接
+BLESSINGS = [
+    "今天也辛苦你们了",
+    "愿这个点还站着的人都有热的东西吃",
+    "路过进来看看，不为别的",
+    "你们几点收工？我下次算着时间来",
+    "这一带的灯，就你们这几盏还亮着",
+]
+
+# S5b 请求：T0 零成本（默认） / T1 小成本（上限就是"一根薯条一块鸡块"这个量级）
+ASKS_T0 = [
     "可否在袋上画道拱门",
     "可否对我说句麦门",
     "可否把小票折个十字",
@@ -91,10 +111,43 @@ PETITIONS_T0 = [
     "可否在杯盖点一下",
     "可否与我同念一声麦门",
 ]
-PETITIONS_T1 = [
+ASKS_T1 = [
+    "若方便，可否多一块麦乐鸡",
     "若方便，可否多一根脆脆薯",
     "若方便，可否多一包甜酸酱",
     "若方便，可否把薯条装满一点",
+]
+# 无条件附在 T1 后面：不加这句不许上线
+DISCLAIMER = "（若不方便，完全不必为难）"
+
+# S5c 接龙：留半句话。半句必须"可被任意店员接着写"，不能要求对方懂梗
+STORY_OPEN = {
+    "noct": ["凌晨两点的店里，灯是唯一没睡的东西，",
+             "这个点还开门的地方，一定有自己的道理，",
+             "我把今天的最后一句话留在这里，"],
+    "matut": ["七点十分，城市还没醒，",
+              "一天里最先热起来的是你们这台机器，",
+              "我在上班前绕了一段路，"],
+    "cross": ["我在这座城只认得这一扇门，",
+              "换了个城市，先找同一个拱门，",
+              "行李箱还在手上，我先来了这里，"],
+    "one": ["我几乎每次都点同一样东西，",
+            "整条街我只进这一家，",
+            "这扇门认识我，我也认识它，"],
+    "unitas": ["我又点了同样的东西，",
+               "重复这件事，对我来说是有意义的，"],
+    "returned": ["隔了 {days} 天，我又站在这里，",
+                 "我以为我不会再来了，但我还是来了，"],
+    "novice": ["第一次来，我还没记住这里的规矩，",
+               "我刚搬来这一带，",
+               "我是被门口那盏灯引进来的，"],
+}
+
+# 让店员容易接：三种"下笔方向"，不要求对方会写诗
+STORY_PROMPT = [
+    "请替我把这半句写完",
+    "后半句，你说了算",
+    "下一句留给你写",
 ]
 
 # S6 应答：把单向索要改成双向互动 —— 这是门店愿意配合的前提
@@ -171,13 +224,27 @@ def pick_deeds(f: dict, uid: str, k: int = 2, axis: str = "") -> list:
     return out
 
 
-def pick_petition(f: dict, uid: str, period: str, friendly: bool = False) -> str:
-    """默认只出 T0（零成本）。T1 是例外，且必须解锁 + 带免责短句。"""
-    allow_t1 = bool(f.get("birthday_today")) or bool(f.get("milestone")) or friendly
-    if allow_t1 and h(uid, "pet", period) % 100 < 35:
-        p = PETITIONS_T1[h(uid, "t1", period) % len(PETITIONS_T1)]
-        return p + "；若不方便，完全不必为难"
-    return PETITIONS_T0[h(uid, "t0", period) % len(PETITIONS_T0)]
+def pick_ask(f: dict, uid: str, period: str, friendly: bool = False,
+             allow_t1: bool = False) -> tuple:
+    """
+    返回 (文本, 档位)。规则：
+      · 默认 T0（零成本）
+      · T1 必须由用户显式选择，或命中生日/里程碑/友好门店
+      · T1 一律带免责短句；上限是"一块鸡块"这个量级，不许要免单/套餐
+    """
+    unlock = allow_t1 or bool(f.get("birthday_today")) or bool(f.get("milestone")) or friendly
+    if unlock:
+        return ASKS_T1[h(uid, "t1", period) % len(ASKS_T1)], "T1"
+    return ASKS_T0[h(uid, "t0", period) % len(ASKS_T0)], "T0"
+
+
+def pick_kind(f: dict, uid: str, period: str, want: str = "auto") -> str:
+    """auto 的取向：久别/生日 → 问候或请求；日常 → 接龙（接龙最能带来二次互动）"""
+    if want in KINDS:
+        return want
+    if f.get("birthday_today") or f.get("days_since_last", 0) >= 30:
+        return "greet"
+    return "story"
 
 
 # ---------------------------------------------------------------- 编译
@@ -185,12 +252,21 @@ def pick_petition(f: dict, uid: str, period: str, friendly: bool = False) -> str
 def compile_sign(f: dict, uid: str, today: date, menu_today: list,
                  grace_id: str = "laicus", grace_creed: str = "",
                  period: str | None = None, mode: str = "weekly",
-                 friendly: bool = False, version: int = 1) -> dict:
+                 friendly: bool = False, version: int = 1,
+                 kind: str = "auto", allow_t1: bool = False,
+                 story: dict | None = None) -> dict:
     """
     mode:
       weekly    常规暗号，按 ISO 周更 —— 同一周内稳定，跨周换一枚（保持新鲜）
       festival  节庆暗号，种子含当天日期与活动 id，当天内全网共享同一句圣历
       limited   限定暗号，里程碑触发（生日/首店/第 N 次礼拜/久别回归），永久有效
+
+    kind:
+      greet / ask / story，或 auto（按行为替你选）
+    allow_t1:
+      True 表示用户显式勾选了「愿意问一句能不能多给一点」。仍会带免责短句。
+    story:
+      本地接龙账本 {"chapter": n, "last": "店员上次写的半句"}；不传就是第一章
     """
     period = period or (iso_week(today) if mode == "weekly" else today.isoformat())
     axis = f.get("dominant_axis") or dominant_axis(f, uid)
@@ -202,8 +278,20 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
 
     deeds = pick_deeds(f, uid, k=2, axis=axis)
     relic = f.get("top_item", "本命圣物")
-    petition = pick_petition(f, uid, period, friendly)
     response = RESPONSES[h(uid, "rsp", period) % len(RESPONSES)]
+    blessing = BLESSINGS[h(uid, "bls", period) % len(BLESSINGS)]
+
+    kind = pick_kind(f, uid, period, kind)
+    ask, ask_tier = pick_ask(f, uid, period, friendly, allow_t1)
+
+    # 接龙：章节号只由本地账本决定，不参与哈希，避免"账本一改短码就变"
+    story = story or {}
+    chapter = int(story.get("chapter", 0)) + 1
+    last_line = (story.get("last") or "").strip()
+    open_pool = STORY_OPEN[axis]
+    opening = open_pool[h(uid, "st", period) % len(open_pool)].format(
+        days=f.get("days_since_last", 0))
+    prompt = STORY_PROMPT[h(uid, "sp", period) % len(STORY_PROMPT)]
 
     feast = ""
     if menu_today:
@@ -213,8 +301,6 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
     claims = claims_of(f, grace_id, period)
     code = verify_code(claims, version)
 
-    # ---- 短版（备注栏）：行迹是"不可伪造"的落点，最后一个才能丢
-    #     丢弃优先级：圣历 → 圣物缩写 → 行迹
     def build(with_deed: bool, with_feast: bool, short_relic: bool) -> str:
         parts = [f"麦门 {code}"]
         parts.append(vocation)
@@ -223,38 +309,106 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
             parts.append(deeds[0])
         if with_feast and feast:
             parts.append(feast)
-        return "｜".join(parts) + f"。{petition}，麦门永生。"
+        return "｜".join(parts)
 
-    LADDER = [(True, False, False),   # 先试：行迹在、无圣历
-              (True, False, True),    # 再试：圣物缩到 4 字
-              (False, False, False),  # 最后才动行迹
-              (False, False, True)]
-    short = build(True, True, False)
-    if len(short) > REMARK_LIMIT:
-        for a, b, c in LADDER:
-            short = build(a, b, c)
+    # ---- 三体裁各自组装短版（备注栏）。都遵守 REMARK_LIMIT。
+    if kind == "story":
+        if chapter > 1 and last_line:
+            short = (f"麦门 {code}｜第 {chapter} 章·承「{last_line[:8]}」："
+                     f"{opening}{prompt}。")
+        else:
+            short = f"麦门 {code}｜第 {chapter} 章：{opening}{prompt}。"
+    elif kind == "greet":
+        short = f"麦门 {code}｜{vocation}｜{blessing}，麦门永生。"
+    else:
+        tail = f"{ask}{DISCLAIMER if ask_tier == 'T1' else ''}。麦门永生。"
+        short = build(True, True, False) + "。" + tail
+        for a_, b_, c_ in ((True, False, False), (True, False, True),
+                           (False, False, False), (False, False, True)):
             if len(short) <= REMARK_LIMIT:
                 break
+            short = build(a_, b_, c_) + "。" + tail
 
-    long_ = "\n".join(x for x in [
-        "— 麦门行传 · 我的这一卷 —",
-        f"[{code}]  {vocation}",
-        f"本命圣物：{relic}",
-        " · ".join(deeds) if deeds else "",
-        f"教义：{grace_creed}" if grace_creed else "",
-        feast,
-        f"{petition}。{response}",
-    ] if x)
+    # 极端情况下（长店名 + 长问候）仍超限：截到上限，绝不静默溢出
+    if len(short) > REMARK_LIMIT:
+        short = short[: REMARK_LIMIT - 1] + "…"
+
+    long_lines = ["— 麦门行传 · 我的这一卷 —", f"[{code}]  {vocation}"]
+    if kind == "story":
+        long_lines.append(f"第 {chapter} 章")
+        if chapter > 1 and last_line:
+            long_lines.append(f"上一章，你替我写的后半句：「{last_line}」")
+        long_lines.append(opening + prompt)
+        long_lines.append(f"（本命圣物：{relic}）")
+    elif kind == "greet":
+        long_lines.append(f"本命圣物：{relic}")
+        long_lines.append(" · ".join(deeds) if deeds else "")
+        long_lines.append(f"{blessing}。{response}")
+    else:
+        long_lines.append(f"本命圣物：{relic}")
+        long_lines.append(" · ".join(deeds) if deeds else "")
+        long_lines.append(f"{ask}。{response}")
+    if grace_creed:
+        long_lines.append(f"教义：{grace_creed}")
+    if feast:
+        long_lines.append(feast)
+    long_ = "\n".join(x for x in long_lines if x)
 
     return {
         "mode": mode, "period": period, "code": code, "claims": claims,
+        "kind": kind, "kind_cn": KINDS[kind]["cn"],
         "axis": axis, "vocation": vocation, "relic": relic, "deeds": deeds,
-        "petition": petition, "response": response, "feast": feast,
+        "blessing": blessing, "ask": ask, "ask_tier": ask_tier,
+        "response": response, "feast": feast,
+        "story_chapter": chapter, "story_open": opening,
+        "story_prompt": prompt, "story_last": last_line,
         "short": short, "long": long_,
         "len": len(short), "overflow": len(short) > REMARK_LIMIT,
         "expires": "本周日 23:59" if mode == "weekly" else
                    ("今日 23:59" if mode == "festival" else "永久"),
     }
+
+
+# ---------------------------------------------------------------- 接龙账本（只存本地）
+#
+# 为什么不放服务器：接龙的连续性属于用户自己的记忆，一旦上云就变成"平台在写你的故事"。
+# 目录可用 MCD_STORY_DIR 覆盖；默认 ~/.mcd-ordination/，不进仓库。
+
+def _story_path(uid: str):
+    import os
+    from pathlib import Path
+    base = Path(os.environ.get("MCD_STORY_DIR", Path.home() / ".mcd-ordination"))
+    base.mkdir(parents=True, exist_ok=True)
+    safe = "".join(c for c in uid if c.isalnum() or c in "-_") or "anon"
+    return base / f"story_{safe}.json"
+
+
+def load_story(uid: str) -> dict:
+    import json
+    path = _story_path(uid)
+    if not path.exists():
+        return {"chapter": 0, "last": "", "history": []}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {"chapter": 0, "last": "", "history": []}
+
+
+def append_story(uid: str, sign: dict, wrote_back: str) -> dict:
+    """把店员写回来的那半句记进本地账本，下一次 compile_sign 会自动接上"""
+    import json
+    led = load_story(uid)
+    led["chapter"] = max(int(led.get("chapter", 0)), int(sign.get("story_chapter", 1)))
+    led["last"] = (wrote_back or "").strip()
+    led.setdefault("history", []).append({
+        "chapter": sign.get("story_chapter"),
+        "code": sign.get("code"),
+        "opening": sign.get("story_open"),
+        "wrote_back": led["last"],
+    })
+    _story_path(uid).write_text(json.dumps(led, ensure_ascii=False, indent=1),
+                                encoding="utf-8")
+    return led
 
 
 def report_text(sign: dict, store_name: str, responded: bool | None) -> str:
