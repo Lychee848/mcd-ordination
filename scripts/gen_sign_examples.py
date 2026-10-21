@@ -23,7 +23,7 @@ def main():
     top = cr["printed"][0]
     menu = [v["name"] for k, v in D.load_nutrition().items() if not k.startswith("_")]
 
-    def make(kind, allow_t1=False, story=True):
+    def make(kind, allow_t1=True, story=True):
         return SG.compile_sign(feats, uid, date.today(), menu,
                                grace_id=top["id"], grace_creed=top["creed"],
                                kind=kind, allow_t1=allow_t1,
@@ -31,19 +31,26 @@ def main():
 
     g = make("greet")
 
-    # 请求式的笑点按每一单轮换：换三个 last_order_at 就能看到三句不同的
-    asks = []
-    for stamp in ("2026-10-05T19:12:00+08:00", "2026-10-11T22:40:00+08:00",
-                  "2026-10-16T02:07:00+08:00"):
-        feats2 = dict(feats, last_order_at=stamp)
-        asks.append(SG.compile_sign(feats2, uid, date.today(), menu,
-                                    grace_id=top["id"], grace_creed=top["creed"],
-                                    kind="ask", story=SG.load_story(uid)))
-    a1 = machine = SG.compile_sign(dict(feats, last_order_at="2026-10-16T02:07:00+08:00"),
-                                   uid, date.today(), menu,
-                                   grace_id=top["id"], grace_creed=top["creed"],
-                                   kind="ask", allow_t1=True,
-                                   story=SG.load_story(uid))
+    def collect(soft: bool, want: int = 3):
+        """按不同的下单时间扫出互不相同的句子（同单必同句，换单才换句）"""
+        seen, out = set(), []
+        for i in range(200):
+            f2 = dict(feats, last_order_at=f"2026-{1 + i % 9:02d}-{1 + i % 27:02d}"
+                                             f"T{i % 24:02d}:{(i * 7) % 60:02d}:00+08:00")
+            s2 = SG.compile_sign(f2, uid, date.today(), menu,
+                                 grace_id=top["id"], grace_creed=top["creed"],
+                                 kind="ask", soft=soft, story=SG.load_story(uid))
+            if s2["ask"] in seen:
+                continue
+            seen.add(s2["ask"])
+            out.append(s2)
+            if len(out) >= want:
+                break
+        return out
+
+    asks_t1 = collect(soft=False, want=3)
+    asks_t0 = collect(soft=True, want=2)
+    a1 = asks_t1[0]
     s1 = make("story")
     SG.append_story(uid, s1, "灯是给晚归的人留的")
     s2 = make("story")
@@ -53,6 +60,7 @@ def main():
 > 由 `python scripts/gen_sign_examples.py` 生成，不是手抄。
 > 「今日圣体」随当天在售菜单变化，所以这一行会和你在本地跑出来的略有不同；
 > 短码由卡面 7 项公开量决定，同一份数据永远算出同一串。
+> **短码不进备注正文**（店员看不懂），它印在卡面右下角、也出现在社交版首行。
 
 人设：`night_owl`（深圳，夜祷为主，执事 Diaconus）。备注栏上限按 `REMARK_LIMIT = 60` 计算。
 
@@ -64,23 +72,20 @@ def main():
 {g['short']}
 ```
 
-## 2. 请求 `ask` · T0 零成本（三句，按单轮换）
+## 2. 请求 `ask` · 默认（T1，真要一块鸡块）（{asks_t1[0]['len']} 字）
 
-主句是玩笑，不是诉求：店员照做是彩蛋，不照做这句话本身也成立。
-同一个笑话不会挂一周——种子取这一单的时间戳，下一单必换。
+主句必须让人**一眼知道你要什么**，笑点加在"要什么"后面，而不是替代它：
 
 ```text
-{asks[0]['short']}
-{asks[1]['short']}
-{asks[2]['short']}
+{chr(10).join(a['short'] for a in asks_t1)}
 ```
 
-## 3. 请求 `ask` · T1 小成本（{a1['len']} 字）
+## 3. 请求 `ask` · `--soft`（T0，只要一个动作）（{asks_t0[0]['len']} 字）
 
-只有用户显式勾选（或生日/里程碑/友好门店）才出现，且必须带免责句：
+不想开口要实物时降级到这一档：请对方写一句、画个勾，成本为零：
 
 ```text
-{a1['short']}
+{chr(10).join(a['short'] for a in asks_t0)}
 ```
 
 ## 4. 接龙 `story` · 第 1 章（{s1['len']} 字）
@@ -97,7 +102,7 @@ def main():
 {s2['short']}
 ```
 
-社交版（发帖用，带上一章的那句）：
+社交版（发帖用，带上一章的那句；短码在这里作为署名）：
 
 ```text
 {s2['long']}

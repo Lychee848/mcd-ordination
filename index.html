@@ -7,134 +7,203 @@
 <meta name="description" content="麦当劳用户行为 → 一套专属麦门卡证 + 一枚能写进订单备注的暗号。零 Key 可跑。">
 <style>
 :root{
-  --paper:#FBF7EF; --paper2:#F3ECE0; --ink:#1D1812; --ink2:#5A4F42; --ink3:#8B7F6E;
-  --red:#962E24; --red2:#B8432F; --blue:#1B4F8A; --gold:#C79A3A;
-  --line:rgba(29,24,18,.12); --line2:rgba(29,24,18,.06);
-  --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;
-  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  --red:#DA291C; --red-d:#A81C12; --red-l:#F0524A;
+  --yellow:#FFC72C; --yellow-d:#E9A800; --yellow-l:#FFE08A;
+  --cream:#FFF6E3; --cream-2:#FFEFCC; --white:#FFFFFF;
+  --ink:#201A14; --ink-2:#5C5248; --ink-3:#8C8074;
+  --line:rgba(32,26,20,.12); --line-2:rgba(32,26,20,.07);
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
   --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
-  --max:1120px;
+  --max:1140px;
+  --r:18px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
-  font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
 a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:.01em;margin:0}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.2}
 p{margin:0 0 14px}
-code{font-family:var(--mono);font-size:.88em;background:var(--paper2);
-  padding:2px 6px;border-radius:4px;border:1px solid var(--line2)}
+code{font-family:var(--mono);font-size:.86em;background:var(--cream-2);
+  padding:2px 6px;border-radius:5px}
 
-nav{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.92);
-  backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;gap:22px;height:58px}
-nav .brand{font-family:var(--serif);font-size:17px;letter-spacing:.06em}
-nav .brand b{color:var(--red);font-weight:500}
-nav .links{display:flex;gap:20px;margin-left:auto;font-size:13.5px;color:var(--ink2)}
-nav .links a{text-decoration:none}
-nav .links a:hover{color:var(--red)}
-nav .gh{font-family:var(--mono);font-size:12px;border:1px solid var(--line);
-  padding:6px 12px;border-radius:999px;text-decoration:none;color:var(--ink2)}
-nav .gh:hover{border-color:var(--red);color:var(--red)}
+/* 顶部红黄双条：麦当劳最省事、最像的识别符 */
+.stripe{height:8px;background:linear-gradient(var(--red) 0 50%,var(--yellow) 50% 100%)}
 
-header{padding:64px 0 20px}
-.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--red);margin-bottom:18px;display:flex;align-items:center;gap:10px}
-.kicker:before{content:"";width:26px;height:1px;background:var(--red);display:inline-block}
-h1{font-size:clamp(34px,5vw,56px);line-height:1.22;letter-spacing:-.01em}
-h1 em{font-style:normal;color:var(--red)}
-.lede{font-size:17.5px;color:var(--ink2);max-width:660px;margin-top:20px;line-height:1.85}
+nav{position:sticky;top:0;z-index:60;background:rgba(255,246,227,.94);
+  backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:20px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;
+  letter-spacing:-.01em;text-decoration:none}
+.brand svg{width:34px;height:26px;display:block}
+.brand b{color:var(--red);font-weight:800}
+.links{display:flex;gap:24px;margin-left:auto;font-size:14px;font-weight:600;color:var(--ink-2)}
+.links a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.links a:hover{color:var(--red);border-bottom-color:var(--yellow)}
+.gh{display:inline-flex;align-items:center;gap:7px;background:var(--ink);color:var(--cream);
+  font-size:13px;font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;
+  box-shadow:0 3px 0 rgba(0,0,0,.18)}
+.gh:hover{background:var(--red);box-shadow:0 3px 0 var(--red-d)}
+
+header{position:relative;overflow:hidden;padding:72px 0 48px}
+.archbg{position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='180' viewBox='0 0 240 180'><g fill='none' stroke='%23FFC72C' stroke-width='12' opacity='0.22'><path d='M20 180V74a30 30 0 0 1 60 0v106'/><path d='M100 180V74a30 30 0 0 1 60 0v106'/></g></svg>");
+  background-size:240px 180px;background-position:right -40px top 10px;background-repeat:repeat;
+  mask-image:linear-gradient(180deg,#000 0%,transparent 78%);
+  -webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 78%)}
+header .wrap{position:relative}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);
+  color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.08em;
+  padding:6px 14px;border-radius:999px;text-transform:uppercase}
+h1{font-size:clamp(38px,5.6vw,68px);margin:22px 0 0;max-width:16em}
+h1 .hl{position:relative;color:var(--red);white-space:nowrap}
+h1 .hl:after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.16em;
+  background:var(--yellow);z-index:-1;border-radius:3px}
+.lede{font-size:18px;color:var(--ink-2);max-width:680px;margin-top:20px;font-weight:500}
+.lede b{color:var(--ink);font-weight:800}
 .cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:8px;
-  font-size:14.5px;text-decoration:none;border:1px solid transparent;transition:.15s}
-.btn.p{background:var(--ink);color:var(--paper)}
-.btn.p:hover{background:var(--red)}
-.btn.s{border-color:var(--line);color:var(--ink2)}
-.btn.s:hover{border-color:var(--ink);color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:999px;
+  font-size:15px;font-weight:800;text-decoration:none;border:2px solid transparent;
+  transition:transform .12s ease, box-shadow .12s ease}
+.btn.p{background:var(--red);color:#fff;box-shadow:0 4px 0 var(--red-d)}
+.btn.p:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--red-d)}
+.btn.s{background:#fff;color:var(--ink);border-color:var(--ink);box-shadow:0 4px 0 var(--ink)}
+.btn.s:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--ink);background:var(--yellow)}
 
-.heroimg{margin:38px 0 0;border-radius:14px;overflow:hidden;border:1px solid var(--line);
-  background:var(--paper2)}
-.heroimg img{display:block;width:100%}
-.cap{font-size:12.5px;color:var(--ink3);margin-top:10px;text-align:center}
+.heroshot{position:relative;margin:44px 0 0;background:#fff;border:2px solid var(--ink);
+  border-radius:26px;padding:18px;box-shadow:0 10px 0 rgba(32,26,20,.10)}
+.heroshot img{display:block;width:100%;border-radius:14px}
+.cap{font-size:13px;color:var(--ink-3);margin:12px 0 0;font-weight:500}
 
-section{padding:64px 0;border-top:1px solid var(--line)}
-.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
-.sec-num{font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.1em}
-h2{font-size:clamp(24px,3vw,31px)}
-.sub{color:var(--ink2);max-width:640px;margin:12px 0 30px;font-size:15.5px}
+section{padding:76px 0;border-top:1px solid var(--line)}
+section.alt{background:#fff}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.sec-num{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;
+  border-radius:12px;background:var(--yellow);color:var(--ink);font-weight:800;font-size:15px;
+  box-shadow:0 3px 0 var(--yellow-d)}
+h2{font-size:clamp(26px,3.2vw,38px)}
+h2 .pt{color:var(--red)}
+.sub{color:var(--ink-2);max-width:680px;margin:14px 0 32px;font-size:16px;font-weight:500}
 
 /* demo */
-.demo{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:start}
+.demo{display:grid;grid-template-columns:1.02fr .98fr;gap:32px;align-items:start}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.tab{font-size:13.5px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);
-  background:transparent;color:var(--ink2);cursor:pointer;font-family:var(--sans)}
-.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.cardstage{position:relative;border-radius:12px;border:1px solid var(--line);
-  background:var(--paper2);padding:14px;display:flex;justify-content:center}
-.cardstage img{width:100%;max-width:390px;display:block;border-radius:6px;
-  box-shadow:0 10px 30px rgba(29,24,18,.12)}
-.thumbs{display:flex;gap:10px;margin-top:12px}
-.thumb{flex:1;border:1px solid var(--line);border-radius:8px;background:transparent;
-  padding:6px 4px;font-size:12px;color:var(--ink2);cursor:pointer;font-family:var(--sans)}
-.thumb[aria-selected="true"]{border-color:var(--red);color:var(--red);background:#fff}
+.tab{font-size:14px;font-weight:700;padding:9px 16px;border-radius:999px;
+  border:2px solid var(--line);background:#fff;color:var(--ink-2);cursor:pointer;
+  font-family:var(--sans);transition:.12s}
+.tab:hover{border-color:var(--ink);color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--red);border-color:var(--red);color:#fff;
+  box-shadow:0 3px 0 var(--red-d)}
+.cardstage{background:var(--cream-2);border:2px solid var(--ink);border-radius:22px;
+  padding:18px;display:flex;justify-content:center;box-shadow:0 6px 0 rgba(32,26,20,.10)}
+.cardstage img{width:100%;max-width:378px;display:block;border-radius:10px}
+.thumbs{display:flex;gap:10px;margin-top:14px}
+.thumb{flex:1;border:2px solid var(--line);border-radius:12px;background:#fff;
+  padding:9px 4px;font-size:12.5px;font-weight:700;color:var(--ink-2);cursor:pointer;
+  font-family:var(--sans);transition:.12s}
+.thumb:hover{border-color:var(--ink)}
+.thumb[aria-selected="true"]{border-color:var(--red);color:var(--red);background:#FFF1EE}
 
-.panel{border:1px solid var(--line);border-radius:12px;background:#fff;padding:22px}
-.panel .who{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--red)}
-.who b{font-family:var(--serif);font-size:16px;font-weight:500}
-.who span{font-size:12.5px;color:var(--ink3)}
-.rankline{font-size:13px;color:var(--ink2);margin-bottom:18px}
-.rankline b{color:var(--red);font-weight:500}
-.signbox{background:var(--paper);border:1px dashed rgba(150,46,36,.4);border-radius:8px;
-  padding:16px;font-family:var(--serif);font-size:15.5px;line-height:1.9;min-height:96px}
+.panel{background:#fff;border:2px solid var(--ink);border-radius:22px;padding:24px;
+  box-shadow:0 6px 0 rgba(32,26,20,.10)}
+.who{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--red);
+  box-shadow:0 0 0 4px rgba(218,41,28,.14)}
+.who b{font-size:17px;font-weight:800}
+.who span{font-size:13px;color:var(--ink-3);font-weight:600}
+.rankline{font-size:13.5px;color:var(--ink-2);margin-bottom:18px;font-weight:600}
+.rankline b{color:var(--red);font-weight:800}
+.signhead{display:flex;align-items:baseline;gap:10px;margin:4px 0 10px;
+  font-size:14px;font-weight:800;color:var(--ink)}
+.signhead span{font-size:11.5px;font-weight:600;color:var(--ink-3)}
+.signbox{background:var(--cream);border:2px dashed rgba(218,41,28,.42);border-radius:14px;
+  padding:18px;font-size:16px;line-height:1.85;min-height:104px;font-weight:600;
+  letter-spacing:.01em}
 .signmeta{display:flex;justify-content:space-between;align-items:center;gap:12px;
-  margin-top:12px;font-size:12px;color:var(--ink3);font-family:var(--mono)}
-.copy{border:1px solid var(--line);background:#fff;border-radius:6px;padding:6px 12px;
-  font-size:12.5px;cursor:pointer;color:var(--ink2);font-family:var(--sans)}
-.copy:hover{border-color:var(--red);color:var(--red)}
-.facts{display:flex;gap:18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line2);
-  font-size:12.5px;color:var(--ink3);flex-wrap:wrap}
-.facts b{display:block;font-family:var(--serif);font-size:18px;color:var(--ink);font-weight:500}
+  margin-top:14px;font-size:12px;color:var(--ink-3);font-family:var(--mono)}
+.copy{border:2px solid var(--ink);background:#fff;border-radius:999px;padding:7px 16px;
+  font-size:12.5px;font-weight:800;cursor:pointer;color:var(--ink);font-family:var(--sans)}
+.copy:hover{background:var(--yellow)}
+.more{margin-top:16px;border-top:1px solid var(--line-2);padding-top:14px}
+.more summary{cursor:pointer;font-size:12.5px;font-weight:800;color:var(--red);
+  list-style:none;display:flex;align-items:center;gap:6px}
+.more summary::-webkit-details-marker{display:none}
+.more summary:before{content:"＋";font-weight:800}
+.more[open] summary:before{content:"－"}
+.more pre{margin:10px 0 0;white-space:pre-wrap;font-family:var(--sans);font-size:13.5px;
+  line-height:1.85;color:var(--ink-2);background:var(--cream);border-radius:12px;padding:14px 16px}
 
-/* generic grids */
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.facts{display:flex;gap:22px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line-2);
+  font-size:12px;color:var(--ink-3);font-weight:600;flex-wrap:wrap}
+.facts b{display:block;font-size:24px;color:var(--ink);font-weight:800;line-height:1.3}
+
+/* 卡片 */
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.box{border:1px solid var(--line);border-radius:10px;padding:20px;background:#fff}
-.box h3{font-size:16px;margin-bottom:6px}
-.box p{font-size:13.5px;color:var(--ink2);margin:0}
-.box .n{font-family:var(--mono);font-size:11px;color:var(--red);letter-spacing:.12em;
-  display:block;margin-bottom:8px}
+.box{background:var(--cream);border:2px solid var(--ink);border-radius:18px;padding:22px;
+  box-shadow:0 4px 0 rgba(32,26,20,.08)}
+section.alt .box{background:var(--cream)}
+.box .n{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:700;
+  letter-spacing:.14em;color:var(--red);background:#fff;border:1px solid var(--line);
+  padding:3px 8px;border-radius:999px;margin-bottom:12px}
+.box h3{font-size:17px;margin-bottom:7px}
+.box p{font-size:14px;color:var(--ink-2);margin:0;font-weight:500}
+.box p b{color:var(--ink)}
 
-table{width:100%;border-collapse:collapse;font-size:14px}
-th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line2)}
-th{font-weight:500;color:var(--ink3);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
-td code{background:transparent;border:0;padding:0}
+table{width:100%;border-collapse:separate;border-spacing:0;font-size:14.5px;
+  border:2px solid var(--ink);border-radius:16px;overflow:hidden;background:#fff}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line-2)}
+th{background:var(--red);color:#fff;font-size:12px;font-weight:800;letter-spacing:.06em;
+  text-transform:uppercase;border-bottom:0}
+tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even) td{background:#FFFBF0}
+td:first-child{font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+td b{font-weight:800}
 
-.codeblk{background:var(--ink);color:#EDE6D8;border-radius:10px;padding:18px 20px;
-  font-family:var(--mono);font-size:13px;line-height:1.95;overflow:auto}
-.codeblk .c{color:#9C8F79}
-.codeblk .k{color:#E9B872}
+.codeblk{background:#2A1810;color:#FFF3D6;border-radius:16px;padding:22px 24px;
+  font-family:var(--mono);font-size:13.5px;line-height:2;overflow:auto;
+  border:2px solid #120B06;box-shadow:0 6px 0 rgba(32,26,20,.18)}
+.codeblk .c{color:#B9A58A}
+.codeblk .k{color:var(--yellow)}
 
-footer{border-top:1px solid var(--line);padding:36px 0 60px;color:var(--ink3);font-size:12.5px}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.note{display:flex;gap:12px;align-items:flex-start;background:var(--yellow);
+  border-radius:14px;padding:14px 18px;font-size:13.5px;font-weight:600;margin-top:18px}
+.note span{flex:none;font-weight:800}
+
+footer{background:var(--ink);color:#D8CFC2;padding:44px 0 56px;font-size:13px;font-weight:500}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:var(--yellow);text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var(--yellow) 50% 100%);
+  border-radius:999px;width:56px;margin-bottom:16px}
 
 @media(max-width:900px){
   .demo{grid-template-columns:1fr}
   .grid4{grid-template-columns:repeat(2,1fr)}
-  nav .links{display:none}
+  .links{display:none}
+  header{padding-top:52px}
 }
 @media(max-width:560px){
   .grid2,.grid4{grid-template-columns:1fr}
-  header{padding-top:40px}
-  section{padding:48px 0}
+  section{padding:56px 0}
+  .facts{gap:16px}
 }
 </style>
 </head>
 <body>
+<div class="stripe"></div>
 
 <nav><div class="wrap">
-  <div class="brand">麦门<b>行传</b></div>
+  <a class="brand" href="#top">
+    <svg viewBox="0 0 100 90" aria-hidden="true">
+      <path d="M14 88V40a36 36 0 0 1 72 0v48" fill="none" stroke="#DA291C" stroke-width="12"/>
+      <circle cx="50" cy="46" r="7" fill="#FFC72C"/>
+    </svg>
+    <span>麦门<b>行传</b></span>
+  </a>
   <div class="links">
     <a href="#demo">现场试</a>
     <a href="#what">两件产出</a>
@@ -144,26 +213,28 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <a class="gh" href="https://github.com/your-name/mcd-ordination" target="_blank" rel="noopener">GitHub ↗</a>
 </div></nav>
 
-<header><div class="wrap">
-  <div class="kicker">麦当劳中国 MCP 开发者挑战赛 · 参赛作品</div>
-  <h1>你说你是麦门信徒。<br>那你的教义，<em>写下来了吗？</em></h1>
-  <p class="lede">
-    把「麦当劳用户行为」当作 prompt，产出两样东西：<b>一套只属于你的麦门卡证</b>，
-    和<b>一枚能真的写进订单备注的麦门暗号</b>。
-    不代下单、不支付、不碰账号——它只负责把已经做过的那些事，变成一句能说出口的话。
-  </p>
-  <div class="cta">
-    <a class="btn p" href="#demo">先看一张卡 →</a>
-    <a class="btn s" href="#run">30 秒跑起来</a>
+<header id="top">
+  <div class="archbg"></div>
+  <div class="wrap">
+    <span class="pill">麦当劳中国 MCP 开发者挑战赛 · 参赛作品</span>
+    <h1>你说你是麦门信徒。<br>那你的教义，<span class="hl">写下来了吗？</span></h1>
+    <p class="lede">
+      把「麦当劳用户行为」当作 prompt，产出两样东西：<b>一套只属于你的麦门卡证</b>，
+      和<b>一枚能真的写进订单备注的麦门暗号</b>。
+      不代下单、不支付、不碰账号——它只负责把已经做过的那些事，变成一句能说出口的话。
+    </p>
+    <div class="cta">
+      <a class="btn p" href="#demo">先看一张卡 →</a>
+      <a class="btn s" href="#run">30 秒跑起来</a>
+    </div>
+    <figure class="heroshot">
+      <img src="docs/samples/three_personas.png" alt="三个人设生成的三张人物卡，板式一致但画派、框色、星级完全不同">
+    </figure>
   </div>
-  <figure class="heroimg">
-    <img src="docs/samples/three_personas.png" alt="三个人设生成的三张人物卡，板式一致但画派、框色、星级完全不同">
-  </figure>
-  <div class="cap">同一份代码、同一套板式：深圳的夜祷老客 / 成都的跨城巡礼者 / 哈尔滨刚入门的新客。</div>
-</div></header>
+</header>
 
 <section id="demo"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">01</span><h2>现场试：换个人，卡和暗号都变</h2></div>
+  <div class="sec-head"><span class="sec-num">01</span><h2>现场试：换个人，卡和暗号都变<span class="pt">。</span></h2></div>
   <p class="sub">下面是三份合成人设的真实输出（离线生成，不调用任何接口）。切换人设、卡种、暗号体裁看看。</p>
 
   <div class="demo">
@@ -171,10 +242,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="tabs" id="personas" role="tablist"></div>
       <div class="cardstage"><img id="cardimg" alt="卡面"></div>
       <div class="thumbs" id="roles" role="tablist"></div>
-      <p class="cap" style="text-align:left;margin-top:10px">
-        这是 L2 成品卡（共享底图 + 每人不同的构图变体）。
-        零依赖的 L0 纯 SVG 版见 <a href="docs/samples/l0_card.svg">l0_card.svg</a>（6 KB，无位图）。
-      </p>
+      <p class="cap">这是 L2 成品卡（共享底图 + 每人不同的构图变体）。零依赖的 L0 纯 SVG 版见
+        <a href="docs/samples/l0_card.svg">l0_card.svg</a>（6 KB，无位图）。</p>
     </div>
 
     <div class="panel">
@@ -182,19 +251,25 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="rankline" id="prank"></div>
 
       <div class="tabs" id="genres" role="tablist"></div>
+      <div class="signhead">专属麦门暗号<span>随这一单变化 · 可直接粘进备注</span></div>
       <div class="signbox" id="signtext"></div>
       <div class="signmeta">
         <span id="signmeta"></span>
         <button class="copy" id="copybtn">复制这句</button>
       </div>
 
+      <details class="more">
+        <summary>看社交版文案（发帖用）</summary>
+        <pre id="signlong"></pre>
+      </details>
+
       <div class="facts" id="facts"></div>
     </div>
   </div>
 </div></section>
 
-<section id="what"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">02</span><h2>两件产出，其实是一件事</h2></div>
+<section id="what" class="alt"><div class="wrap">
+  <div class="sec-head"><span class="sec-num">02</span><h2>两件产出，其实是一件事<span class="pt">。</span></h2></div>
   <p class="sub">卡负责被看见，暗号负责被回应。没有暗号，卡只是好看的截图；没有卡，暗号没有来历。</p>
   <div class="grid2">
     <div class="box">
@@ -215,7 +290,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </div></section>
 
 <section id="how"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">03</span><h2>四步闭环</h2></div>
+  <div class="sec-head"><span class="sec-num">03</span><h2>四步闭环<span class="pt">。</span></h2></div>
   <p class="sub">每一步都只用官方 MCP 能拿到的东西，不猜、不编、不假装写入。</p>
   <div class="grid4">
     <div class="box"><span class="n">STEP 01</span><h3>拉行为</h3><p>订单、账户、券、抽奖、在售菜单。频次、时辰、门店、单品偏好。</p></div>
@@ -225,28 +300,30 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   </div>
 </div></section>
 
-<section><div class="wrap">
-  <div class="sec-head"><span class="sec-num">04</span><h2>九阶：把百分位翻译成身份</h2></div>
+<section class="alt"><div class="wrap">
+  <div class="sec-head"><span class="sec-num">04</span><h2>九阶：把百分位翻译成身份<span class="pt">。</span></h2></div>
   <p class="sub">不是排行榜。卡面永远不印百分位数字，只印品秩名——它描述你的修持轨迹，不给你发成绩单。</p>
   <table>
     <thead><tr><th>百分位</th><th>品秩</th><th>拉丁</th><th>光环</th></tr></thead>
     <tbody>
-      <tr><td>≥ 99.5%</td><td>麦门在世</td><td><i>Summus Maimen</i></td><td>全幅圣光 + 彩窗</td></tr>
-      <tr><td>97 – 99.5%</td><td>枢机主教</td><td><i>Cardinalis</i></td><td>红金环 + 放射线</td></tr>
-      <tr><td>90 – 97%</td><td>主教</td><td><i>Episcopus</i></td><td>金环 + 多重同心环</td></tr>
-      <tr><td>80 – 90%</td><td>司铎</td><td><i>Presbyter</i></td><td>完整金环 + 细射线</td></tr>
-      <tr><td>65 – 80%</td><td>执事</td><td><i>Diaconus</i></td><td>分段金环</td></tr>
-      <tr><td>50 – 65%</td><td>传道员</td><td><i>Praedicator</i></td><td>分段金环</td></tr>
-      <tr><td>25 – 50%</td><td>门徒</td><td><i>Discipulus</i></td><td>细金线圈</td></tr>
-      <tr><td>10 – 25%</td><td>望教者</td><td><i>Catechumenus</i></td><td>仅一道细弧</td></tr>
-      <tr><td>&lt; 10%</td><td>慕道者</td><td><i>Auditor</i></td><td>无</td></tr>
+      <tr><td>≥ 99.5%</td><td><b>麦门在世</b></td><td><i>Summus Maimen</i></td><td>全幅圣光 + 彩窗</td></tr>
+      <tr><td>97 – 99.5%</td><td><b>枢机主教</b></td><td><i>Cardinalis</i></td><td>红金环 + 放射线</td></tr>
+      <tr><td>90 – 97%</td><td><b>主教</b></td><td><i>Episcopus</i></td><td>金环 + 多重同心环</td></tr>
+      <tr><td>80 – 90%</td><td><b>司铎</b></td><td><i>Presbyter</i></td><td>完整金环 + 细射线</td></tr>
+      <tr><td>65 – 80%</td><td><b>执事</b></td><td><i>Diaconus</i></td><td>分段金环</td></tr>
+      <tr><td>50 – 65%</td><td><b>传道员</b></td><td><i>Praedicator</i></td><td>分段金环</td></tr>
+      <tr><td>25 – 50%</td><td><b>门徒</b></td><td><i>Discipulus</i></td><td>细金线圈</td></tr>
+      <tr><td>10 – 25%</td><td><b>望教者</b></td><td><i>Catechumenus</i></td><td>仅一道细弧</td></tr>
+      <tr><td>&lt; 10%</td><td><b>慕道者</b></td><td><i>Auditor</i></td><td>无</td></tr>
     </tbody>
   </table>
-  <p class="cap" style="text-align:left;margin-top:14px">加权：频次 0.40 / 门店 0.25 / 纯度 0.20 / 夜祷 0.15。客单价、累计金额、券使用率均不进公式。</p>
+  <div class="note"><span>加权</span>
+    <div>频次 0.40 / 门店 0.25 / 纯度 0.20 / 夜祷 0.15。客单价、累计金额、券使用率均不进公式。</div>
+  </div>
 </div></section>
 
 <section><div class="wrap">
-  <div class="sec-head"><span class="sec-num">05</span><h2>抽卡：硬币是真实交易，而且能验算</h2></div>
+  <div class="sec-head"><span class="sec-num">05</span><h2>抽卡：硬币是真实交易，而且能验算<span class="pt">。</span></h2></div>
   <p class="sub">一单一抽，与金额无关；结果由 hash(订单号 + 用户盐 + 版本) 决定，任何人拿同一份数据都能复算出同一张卡。</p>
   <div class="grid2">
     <div class="box">
@@ -258,14 +335,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <p>这串码由卡面 7 项公开量算出。你可以编一句更酷的暗号，但编不出能对上卡面的短码。</p>
     </div>
   </div>
-  <figure class="heroimg" style="margin-top:22px">
+  <figure class="heroshot" style="margin:24px 0 0">
     <img src="docs/samples/holo_demo.gif" alt="稀有卡扫光动效">
   </figure>
-  <div class="cap">扫光只合成在画面窗内，文字与数值一点不受影响。</div>
+  <p class="cap">扫光只合成在画面窗内，文字与数值一点不受影响。</p>
 </div></section>
 
-<section id="run"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">06</span><h2>30 秒跑起来</h2></div>
+<section id="run" class="alt"><div class="wrap">
+  <div class="sec-head"><span class="sec-num">06</span><h2>30 秒跑起来<span class="pt">。</span></h2></div>
   <p class="sub">不需要 MCP Token、不需要 API Key、不需要联网。仓库自带三份人设数据。</p>
   <div class="codeblk"><span class="c"># 只装本包，不带任何第三方依赖</span>
 git clone &lt;repo&gt; &amp;&amp; cd mcd-ordination
@@ -279,14 +356,15 @@ pip install -e .
 
 <span class="c"># 挂进订单备注：有字段就写，没有就给你可复制文本</span>
 <span class="k">python</span> -m mcd_ordination order --kind ask</div>
-  <p class="sub" style="margin-top:20px">
+  <p class="sub" style="margin-top:22px">
     不装 Pillow 也能跑：L0 是纯 SVG，一张卡 6 KB，全是矢量，任何浏览器直接打开。
   </p>
 </div></section>
 
 <footer><div class="wrap">
   <div>
-    <div style="font-family:var(--serif);font-size:15px;color:var(--ink);margin-bottom:6px">麦门行传 · Acta Maimen</div>
+    <div class="fstripe"></div>
+    <div style="color:#fff;font-weight:800;font-size:15px;margin-bottom:6px">麦门行传 · Acta Maimen</div>
     非官方粉丝二创，与麦当劳中国无隶属关系。不代下单、不支付、不接触账号凭证。
   </div>
   <div>
@@ -296,7 +374,7 @@ pip install -e .
 </div></footer>
 
 <script>
-const DATA = [{"id": "night_owl", "label": "夜祷老客", "city": "深圳", "rank": "执事", "rank_lat": "Diaconus", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/night_owl/effect.jpg", "item": "docs/demo/night_owl/item.jpg", "spell": "docs/demo/night_owl/spell.jpg", "field": "docs/demo/night_owl/field.jpg"}, "signs": {"greet": {"short": "麦门 Z2QDQW｜我常在打烊之后受召｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n愿这个点还站着的人都有热的东西吃。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "Z2QDQW", "note": "不求任何东西"}, "ask": {"short": "麦门 Z2QDQW｜我常在打烊之后受召｜若这单出了错，请判我无罪。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n若这单出了错，请判我无罪。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "Z2QDQW", "note": "T0 零成本"}, "story": {"short": "麦门 Z2QDQW｜第 1 章：这个点还开门的地方，一定有自己的道理，下一句留给你写。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n第 1 章\n这个点还开门的地方，一定有自己的道理，下一句留给你写\n（本命圣物：麦辣鸡腿堡）\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "Z2QDQW", "note": "第 1 章"}}, "facts": {"orders": 188, "stores": 3, "cities": 1, "purity": 90}}, {"id": "pilgrim", "label": "跨城巡礼者", "city": "成都", "rank": "传道员", "rank_lat": "Praedicator", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/pilgrim/effect.jpg", "item": "docs/demo/pilgrim/item.jpg", "spell": "docs/demo/pilgrim/spell.jpg", "field": "docs/demo/pilgrim/field.jpg"}, "signs": {"greet": {"short": "麦门 17EXYT｜我跨过 3 座城，只为同一扇门｜这一带的灯，就你们这几盏还亮着，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n这一带的灯，就你们这几盏还亮着。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "17EXYT", "note": "不求任何东西"}, "ask": {"short": "麦门 17EXYT｜我跨过 3 座城，只为同一扇门｜可否在袋上画个勾，我拿回去当圣痕。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n可否在袋上画个勾，我拿回去当圣痕。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "17EXYT", "note": "T0 零成本"}, "story": {"short": "麦门 17EXYT｜第 1 章：换了个城市，先找同一个拱门，请替我把这半句写完。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n第 1 章\n换了个城市，先找同一个拱门，请替我把这半句写完\n（本命圣物：脆脆薯条（中））\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "17EXYT", "note": "第 1 章"}}, "facts": {"orders": 412, "stores": 5, "cities": 3, "purity": 18}}, {"id": "beginner", "label": "刚入门", "city": "哈尔滨", "rank": "望教者", "rank_lat": "Catechumenus", "halo": "仅一道细弧", "cards": {"effect": "docs/demo/beginner/effect.jpg", "item": "docs/demo/beginner/item.jpg", "spell": "docs/demo/beginner/spell.jpg", "field": "docs/demo/beginner/field.jpg"}, "signs": {"greet": {"short": "麦门 NG3CZZ｜我的早晨要先受召才肯开始｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n愿这个点还站着的人都有热的东西吃。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "NG3CZZ", "note": "不求任何东西"}, "ask": {"short": "麦门 NG3CZZ｜我的早晨要先受召才肯开始｜请在本单备注栏留一句判词，我好抄进教义。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n请在本单备注栏留一句判词，我好抄进教义。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "NG3CZZ", "note": "T0 零成本"}, "story": {"short": "麦门 NG3CZZ｜第 1 章：七点十分，城市还没醒，后半句，你说了算。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n第 1 章\n七点十分，城市还没醒，后半句，你说了算\n（本命圣物：猪柳蛋麦满分）\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "NG3CZZ", "note": "第 1 章"}}, "facts": {"orders": 9, "stores": 1, "cities": 1, "purity": 32}}];
+const DATA = [{"id": "night_owl", "label": "夜祷老客", "city": "深圳", "rank": "执事", "rank_lat": "Diaconus", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/night_owl/effect.jpg", "item": "docs/demo/night_owl/item.jpg", "spell": "docs/demo/night_owl/spell.jpg", "field": "docs/demo/night_owl/field.jpg"}, "signs": {"greet": {"short": "我常在打烊之后受召｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n愿这个点还站着的人都有热的东西吃。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "Z2QDQW", "note": "不求任何东西"}, "ask": {"short": "我常在打烊之后受召｜可否多给一块麦乐鸡？我拿它当今日的圣物（若不方便，完全不必为难）。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n可否多给一块麦乐鸡？我拿它当今日的圣物。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "Z2QDQW", "note": "T0 零成本"}, "story": {"short": "第 1 章：这个点还开门的地方，一定有自己的道理，下一句留给你写。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n第 1 章\n这个点还开门的地方，一定有自己的道理，下一句留给你写\n（本命圣物：麦辣鸡腿堡）\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "Z2QDQW", "note": "第 1 章"}}, "facts": {"orders": 188, "stores": 3, "cities": 1, "purity": 90}}, {"id": "pilgrim", "label": "跨城巡礼者", "city": "成都", "rank": "传道员", "rank_lat": "Praedicator", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/pilgrim/effect.jpg", "item": "docs/demo/pilgrim/item.jpg", "spell": "docs/demo/pilgrim/spell.jpg", "field": "docs/demo/pilgrim/field.jpg"}, "signs": {"greet": {"short": "我跨过 3 座城，只为同一扇门｜这一带的灯，就你们这几盏还亮着，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n这一带的灯，就你们这几盏还亮着。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "17EXYT", "note": "不求任何东西"}, "ask": {"short": "我跨过 3 座城，只为同一扇门｜若锅底还剩，可否多抓一把薯条？我今晚靠这个续命（若不方便，完全不必为难）。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n若锅底还剩，可否多抓一把薯条？我今晚靠这个续命。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "17EXYT", "note": "T0 零成本"}, "story": {"short": "第 1 章：换了个城市，先找同一个拱门，请替我把这半句写完。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n第 1 章\n换了个城市，先找同一个拱门，请替我把这半句写完\n（本命圣物：脆脆薯条（中））\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "17EXYT", "note": "第 1 章"}}, "facts": {"orders": 412, "stores": 5, "cities": 3, "purity": 18}}, {"id": "beginner", "label": "初闻道者", "city": "哈尔滨", "rank": "望教者", "rank_lat": "Catechumenus", "halo": "仅一道细弧", "cards": {"effect": "docs/demo/beginner/effect.jpg", "item": "docs/demo/beginner/item.jpg", "spell": "docs/demo/beginner/spell.jpg", "field": "docs/demo/beginner/field.jpg"}, "signs": {"greet": {"short": "我的早晨要先受召才肯开始｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n愿这个点还站着的人都有热的东西吃。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "NG3CZZ", "note": "不求任何东西"}, "ask": {"short": "我的早晨要先受召才肯开始｜可否多给一包甜酸酱？我要拿它蘸我的信仰（若不方便，完全不必为难）。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n可否多给一包甜酸酱？我要拿它蘸我的信仰。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "NG3CZZ", "note": "T0 零成本"}, "story": {"short": "第 1 章：七点十分，城市还没醒，后半句，你说了算。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n第 1 章\n七点十分，城市还没醒，后半句，你说了算\n（本命圣物：猪柳蛋麦满分）\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "NG3CZZ", "note": "第 1 章"}}, "facts": {"orders": 9, "stores": 1, "cities": 1, "purity": 32}}];
 const ROLES = [["effect","人物卡"],["item","食物卡"],["spell","行为卡"],["field","地点卡"]];
 const GENRES = [["greet","问候"],["ask","请求"],["story","接龙"]];
 
@@ -338,6 +416,7 @@ function render(){
   const s = p.signs[GENRES[gi][0]];
   $("signtext").textContent = s.short;
   $("signmeta").textContent = s.label + " · " + s.note + " · 短码 " + s.code;
+  $("signlong").textContent = s.long;
   $("facts").innerHTML =
     "<div><b>" + p.facts.orders + "</b>年礼拜</div>" +
     "<div><b>" + p.facts.stores + "</b>家门店</div>" +

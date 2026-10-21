@@ -88,7 +88,7 @@ def main():
           DOCS / "four_layouts.png")
 
     sheet([OUT / p / "card_effect.png" for p in ("night_owl", "pilgrim", "beginner")],
-          ["夜祷老客 · 深圳", "跨城巡礼者 · 成都", "刚入门 · 哈尔滨"],
+          ["夜祷老客 · 深圳", "跨城巡礼者 · 成都", "初闻道者 · 哈尔滨"],
           DOCS / "three_personas.png")
 
     shutil.copy(OUT / "pilgrim" / "card_effect.png", DOCS / "card_pilgrim.png")

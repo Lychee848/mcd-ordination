@@ -29,7 +29,7 @@ from mcd_ordination import canon as C, deck as D, features as F, piety as P, sig
 PERSONAS = [
     ("night_owl", "夜祷老客", "深圳"),
     ("pilgrim", "跨城巡礼者", "成都"),
-    ("beginner", "刚入门", "哈尔滨"),
+    ("beginner", "初闻道者", "哈尔滨"),
 ]
 ROLES = [("effect", "人物卡"), ("item", "食物卡"), ("spell", "行为卡"), ("field", "地点卡")]
 GENRES = ["greet", "ask", "story"]

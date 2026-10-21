@@ -157,12 +157,13 @@ def SVG_RENDER(data, st, out):
     return render_svg.render(data, st, out)
 
 
-def _sign(profile: str, kind: str = "auto", allow_t1: bool = False):
+def _sign(profile: str, kind: str = "auto", allow_t1: bool = True,
+          soft: bool = False):
     payload, feats, uid, pi, cr = _pipeline(profile)
     top = cr["printed"][0]
     sg = SG.compile_sign(feats, uid, date.today(), _menu_names(),
                          grace_id=top["id"], grace_creed=top["creed"],
-                         kind=kind, allow_t1=allow_t1,
+                         kind=kind, allow_t1=allow_t1, soft=soft,
                          story=SG.load_story(uid))
     return payload, feats, uid, pi, sg
 
@@ -187,7 +188,9 @@ def cmd_sign(args) -> int:
         print(f"  现在共 {res['total']} 句，命中率约 45%（其余仍用内置语料）")
         return 0
 
-    payload, feats, uid, pi, sg = _sign(args.profile, args.kind, args.allow_t1)
+    payload, feats, uid, pi, sg = _sign(args.profile, args.kind,
+                                       getattr(args, "allow_t1", True),
+                                       getattr(args, "soft", False))
 
     print(f"\n{pi['rank']['cn']}（{pi['rank']['lat']}）")
     print(f"体裁：{sg['kind_cn']}（{SG.KINDS[sg['kind']]['desc']}）"
@@ -208,7 +211,9 @@ def cmd_sign(args) -> int:
 
 
 def cmd_order(args) -> int:
-    payload, feats, uid, pi, sg = _sign(args.profile, args.kind, args.allow_t1)
+    payload, feats, uid, pi, sg = _sign(args.profile, args.kind,
+                                       getattr(args, "allow_t1", True),
+                                       getattr(args, "soft", False))
     draft = O.build_draft(payload["orders"], feats)
 
     tools = []
@@ -259,8 +264,10 @@ def main(argv=None) -> int:
     s.add_argument("--kind", default="auto",
                    choices=["auto", "greet", "ask", "story"],
                    help="greet 问候 / ask 请求 / story 接龙 / auto 按行为选")
-    s.add_argument("--allow-t1", action="store_true",
-                   help="允许问一句能不能多给一点（仍带「若不方便」）")
+    s.add_argument("--allow-t1", action="store_true", default=True,
+                   help="（默认开启）请求式可以要实物，上限一块鸡块")
+    s.add_argument("--soft", action="store_true",
+                   help="请求式降级为零成本（只求一个动作，不要实物）")
     s.add_argument("--wrote", default="",
                    help="店员在袋上写回来的那半句，记进本地账本供下次接龙")
     s.add_argument("--add-ask", default="", help="投稿一句自己的零成本请求（会被校验）")
@@ -271,7 +278,8 @@ def main(argv=None) -> int:
     o.add_argument("--profile", default="night_owl")
     o.add_argument("--kind", default="auto",
                    choices=["auto", "greet", "ask", "story"])
-    o.add_argument("--allow-t1", action="store_true")
+    o.add_argument("--allow-t1", action="store_true", default=True)
+    o.add_argument("--soft", action="store_true")
     o.add_argument("--tools", default="",
                    help="tools/list 的 JSON 文件；给了就据此探测 create-order 是否有备注字段")
     o.add_argument("--json", action="store_true", help="同时打印完整 payload")
