@@ -43,6 +43,29 @@ STAT_SIX = [
 ]
 
 
+def _bucket(hour: int) -> str:
+    for lo, hi, cn, _lat in ATTRS:
+        if lo <= hour <= hi:
+            return cn
+    return "午"
+
+
+def dominant_hour(orders: list) -> tuple[int, dict]:
+    """属性必须取「最常出现的时辰」，而不是最后一单的时辰。
+    否则会出现「午祷的第 6791 号」配一张深夜街景——卡面自己打自己。"""
+    from collections import Counter
+    cnt = Counter()
+    for o in orders[-200:]:
+        h = datetime.fromisoformat(o["placedAt"].replace("Z", "+00:00")).hour
+        cnt[_bucket(h)] += 1
+    want = cnt.most_common(1)[0][0] if cnt else "午"
+    rep = next((o for o in reversed(orders)
+                if _bucket(datetime.fromisoformat(
+                    o["placedAt"].replace("Z", "+00:00")).hour) == want), orders[-1])
+    hour = datetime.fromisoformat(rep["placedAt"].replace("Z", "+00:00")).hour
+    return hour, rep
+
+
 def attr_of(hour: int) -> tuple[str, str]:
     for lo, hi, cn, lat in ATTRS:
         if lo <= hour <= hi:
@@ -86,15 +109,16 @@ def build_deck(features: dict, canon_res: dict, piety_res: dict,
     """
     deck = []
     last = orders[-1]
-    hour = datetime.fromisoformat(last["placedAt"].replace("Z", "+00:00")).hour
+    # 代表单：主导时辰里最近的那一单。名字、属性、溯源、编号全部跟着它走
+    hour, rep = dominant_hour(orders)
     attr, attr_lat = attr_of(hour)
     rank = piety_res["rank"]
-    serial = serial_of(last["orderId"])
+    serial = serial_of(rep["orderId"])
 
     digest = str(S.h(uid, "deck-v1", season))
 
     # ---- ① 人物卡：信息重心是"这个人有多强"（星级 + 攻守）
-    g1 = G.draw(last["orderId"], uid, _flags(last, orders), piety_pct=piety_res["pct"])
+    g1 = G.draw(rep["orderId"], uid, _flags(rep, orders), piety_pct=piety_res["pct"])
     atk = 1200 + rank["level"] * 280 + int(features["purity"] * 400)
     dfn = 900 + rank["level"] * 160 + features["store_count"] * 12
     eff = []
@@ -116,7 +140,7 @@ def build_deck(features: dict, canon_res: dict, piety_res: dict,
             "kind_line": f"【侍者族／{rank['cn']}／{attr}祷】",
             "effects": eff,
             "atk": atk, "def": dfn, "serial": f"MM.{serial}",
-            "provenance": _prov(last),
+            "provenance": _prov(rep),
             "verify": g1["verify"],
             "flavor": "「" + _flavor(features, rank) + "」",
         },

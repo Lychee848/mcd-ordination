@@ -96,8 +96,8 @@ def _render_png(out: Path, uid: str, card: dict, data: dict, st: dict) -> Path:
     from . import plates, render_png
 
     art_key = next((k for k, v in _art_items() if v is st["art"]), "stained")
-    asset = REPO / "assets" / "plates" / f"plate_{art_key}.png"
-    if asset.exists():
+    asset = _pick_plate(art_key, card["role"])
+    if asset:
         plate = str(asset)
     else:
         plate_dir = out / "_plates"
@@ -109,6 +109,23 @@ def _render_png(out: Path, uid: str, card: dict, data: dict, st: dict) -> Path:
     dst = out / f"card_{card['role']}.png"
     render_png.render(plate, str(dst), dict(data), st)
     return dst
+
+
+# 同一画派，不同卡种可以配不同主体：人物卡要有人，食物/行为卡要有一眼认得的物
+_PLATE_ALIAS = {"item": "still", "spell": "still"}
+
+
+def _pick_plate(art_key: str, role: str):
+    """按 > 具体到角色 > 同画派泛指 > 无 的顺序找底图；都没有就交给程序化底图"""
+    names = [f"plate_{art_key}_{role}.png"]
+    if role in _PLATE_ALIAS:
+        names.append(f"plate_{art_key}_{_PLATE_ALIAS[role]}.png")
+    names.append(f"plate_{art_key}.png")
+    for n in names:
+        p = REPO / "assets" / "plates" / n
+        if p.exists():
+            return p
+    return None
 
 
 def _art_items():

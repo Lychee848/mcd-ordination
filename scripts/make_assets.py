@@ -111,6 +111,9 @@ def main():
 
     final = DOCS / "holo_demo.gif"
     shutil.move(gif, final)
+    webp = Path(gif).with_suffix(".webp")
+    if webp.exists():
+        shutil.move(str(webp), str(DOCS / "holo_demo.webp"))
     print(f"holo  -> {final.name}（{final.stat().st_size // 1024} KB，{note}）")
 
 

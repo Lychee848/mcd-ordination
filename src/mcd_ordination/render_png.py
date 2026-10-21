@@ -242,7 +242,7 @@ def attribute_badge(d, cx, cy, R, ch, lat, bright=False):
     d.text((cx - d.textlength(ch, font=fc) / 2, cy - 18), ch, font=fc, fill=(250, 244, 230))
     fl = font(F_LAT_CAP, 8)
     lw = tw(d, lat, fl, 0.8)
-    if lw <= 2 * R - 14:            # 放不下就省略，宁可没有，也不要压到圆边
+    if lw <= 2 * R - 24:            # 放不下就省略，宁可没有，也不要压到圆边
         letter(d, (cx - lw / 2, cy + 15), lat, fl, (200, 188, 164), tr=0.8)
 
 
@@ -327,10 +327,14 @@ def stat_grid(d, x, y, w, stats, ink, accent, rows=3, cols=2, row_h=46):
         for k in range(1, 5):
             tx = bx0 + (bx1 - bx0) * k / 5
             d.line([tx, by + 4, tx, by + 7], fill=(200, 186, 160), width=1)
+        # 数值与单位必须分开算宽度：原来单位固定在 cx+col_w-30，
+        # 三位数时数值会压到单位上，看起来像 "337kcal" 糊在一起
+        f_unit = font(F_LAT_SER, 11)
         vs = f"{val}"
+        uw = d.textlength(unit, font=f_unit)
         vw = d.textlength(vs, font=f_val)
-        d.text((cx + col_w - vw - 34, cy + 12), vs, font=f_val, fill=ink)
-        d.text((cx + col_w - 30, cy + 17), unit, font=font(F_LAT_SER, 11), fill=(120, 108, 92))
+        d.text((cx + col_w - uw, cy + 17), unit, font=f_unit, fill=(120, 108, 92))
+        d.text((cx + col_w - uw - vw - 6, cy + 12), vs, font=f_val, fill=ink)
 
 
 def footer(d, st, y, data, dark):
@@ -352,8 +356,7 @@ def footer(d, st, y, data, dark):
         vw = tw(d, vc, fv_, 1.8)
         letter(d, (W - 62 - vw, y + 30), vc, fv_,
                (150, 46, 36) if not st["foil"]["edge"] else mix(dark, (150, 46, 36), 0.35), tr=1.8)
-        d.rectangle([W - 62 - vw - 12, y + 29, W - 62 - vw - 4, y + 37],
-                    outline=(150, 46, 36), width=1)
+
 
 
 # ------------------------------------------------------------------ 版式

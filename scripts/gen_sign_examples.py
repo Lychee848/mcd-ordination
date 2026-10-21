@@ -30,8 +30,20 @@ def main():
                                story=SG.load_story(uid) if story else None)
 
     g = make("greet")
-    a0 = make("ask")
-    a1 = make("ask", allow_t1=True)
+
+    # 请求式的笑点按每一单轮换：换三个 last_order_at 就能看到三句不同的
+    asks = []
+    for stamp in ("2026-10-05T19:12:00+08:00", "2026-10-11T22:40:00+08:00",
+                  "2026-10-16T02:07:00+08:00"):
+        feats2 = dict(feats, last_order_at=stamp)
+        asks.append(SG.compile_sign(feats2, uid, date.today(), menu,
+                                    grace_id=top["id"], grace_creed=top["creed"],
+                                    kind="ask", story=SG.load_story(uid)))
+    a1 = machine = SG.compile_sign(dict(feats, last_order_at="2026-10-16T02:07:00+08:00"),
+                                   uid, date.today(), menu,
+                                   grace_id=top["id"], grace_creed=top["creed"],
+                                   kind="ask", allow_t1=True,
+                                   story=SG.load_story(uid))
     s1 = make("story")
     SG.append_story(uid, s1, "灯是给晚归的人留的")
     s2 = make("story")
@@ -52,12 +64,15 @@ def main():
 {g['short']}
 ```
 
-## 2. 请求 `ask` · T0 零成本（{a0['len']} 字）
+## 2. 请求 `ask` · T0 零成本（三句，按单轮换）
 
-默认档位，请求的是象征性动作：
+主句是玩笑，不是诉求：店员照做是彩蛋，不照做这句话本身也成立。
+同一个笑话不会挂一周——种子取这一单的时间戳，下一单必换。
 
 ```text
-{a0['short']}
+{asks[0]['short']}
+{asks[1]['short']}
+{asks[2]['short']}
 ```
 
 ## 3. 请求 `ask` · T1 小成本（{a1['len']} 字）

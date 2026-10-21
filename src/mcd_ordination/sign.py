@@ -88,7 +88,7 @@ KINDS = {
     "greet": {"cn": "问候", "lat": "Salutatio",
               "desc": "向门店打个招呼，不求任何东西"},
     "ask":   {"cn": "请求", "lat": "Petitio",
-              "desc": "创意地问一句能不能多给一点，默认零成本"},
+              "desc": "一句一本正经的玩笑，店员照做是彩蛋，不照做也成立"},
     "story": {"cn": "接龙", "lat": "Continuatio",
               "desc": "留半句话给店员，下次你再续写第二章"},
 }
@@ -102,20 +102,34 @@ BLESSINGS = [
     "这一带的灯，就你们这几盏还亮着",
 ]
 
-# S5b 请求：T0 零成本（默认） / T1 小成本（上限就是"一根薯条一块鸡块"这个量级）
+# S5b 请求：**这是全项目最需要"梗优先"的一格。**
+#
+# 设计取向（v3.4 重写）：请求式的首要目标不是"真的多拿一块鸡块"，
+# 而是让读的人笑一下、让发的人有面子。所以：
+#   · 主句永远是一个**笑话**，不是一个诉求
+#   · 就算店员什么都不做，这句话本身也成立、也值得截图
+#   · T0 默认请求的是"一个动作/一句批注"，成本为零
+#   · T1 才涉及实物，且必须"若今日有余"这种低压力措辞 + 免责短句
 ASKS_T0 = [
-    "可否在袋上画道拱门",
-    "可否对我说句麦门",
-    "可否把小票折个十字",
-    "可否在袋上写个麦字",
-    "可否在杯盖点一下",
-    "可否与我同念一声麦门",
+    "可否在袋上批注「已阅」，我回去好交差",
+    "可否在袋上写「此人已尽力」，我今天很需要",
+    "请在本单备注栏留一句判词，我好抄进教义",
+    "可否把番茄酱画成一颗星，我这单就封圣了",
+    "若这单出了错，请判我无罪",
+    "若见我站在门口发呆，请朝我点头，当作神迹",
+    "请务必假装不认识我，我在修行",
+    "可否用红笔圈一下我的名字，像教皇那样",
+    "可否在袋上画个勾，我拿回去当圣痕",
+    "请把这单当作一次小型封圣仪式，费用照付",
+    "这单若顺利，可否签个名，我要装裱",
+    "可否在袋上写「准予继续活着」，我今天靠这个",
 ]
 ASKS_T1 = [
-    "若方便，可否多一块麦乐鸡",
-    "若方便，可否多一根脆脆薯",
-    "若方便，可否多一包甜酸酱",
-    "若方便，可否把薯条装满一点",
+    "若今日神恩有余，可否多一块麦乐鸡",
+    "若今日圣物有剩，可否多一根脆脆薯",
+    "若锅底还剩，可否多给一勺新地",
+    "若正好方便，可否把薯条装满一点",
+    "若圣餐溢出，可否多一根薯条，我会记账",
 ]
 # 无条件附在 T1 后面：不加这句不许上线
 DISCLAIMER = "（若不方便，完全不必为难）"
@@ -282,7 +296,10 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
     blessing = BLESSINGS[h(uid, "bls", period) % len(BLESSINGS)]
 
     kind = pick_kind(f, uid, period, kind)
-    ask, ask_tier = pick_ask(f, uid, period, friendly, allow_t1)
+    # 请求式的笑点按【每一单】轮换：同一个笑话挂一周，笑点就死了。
+    # 种子取这一单的时间戳，所以同一单永远同一句，下一单必换。
+    ask_salt = f.get("last_order_at") or period if kind == "ask" else period
+    ask, ask_tier = pick_ask(f, uid, ask_salt, friendly, allow_t1)
 
     # 接龙：章节号只由本地账本决定，不参与哈希，避免"账本一改短码就变"
     story = story or {}
@@ -321,13 +338,12 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
     elif kind == "greet":
         short = f"麦门 {code}｜{vocation}｜{blessing}，麦门永生。"
     else:
-        tail = f"{ask}{DISCLAIMER if ask_tier == 'T1' else ''}。麦门永生。"
-        short = build(True, True, False) + "。" + tail
-        for a_, b_, c_ in ((True, False, False), (True, False, True),
-                           (False, False, False), (False, False, True)):
-            if len(short) <= REMARK_LIMIT:
-                break
-            short = build(a_, b_, c_) + "。" + tail
+        # 请求式刻意只保留"自陈 + 笑点"两个槽：
+        # 加圣物/行迹会让句子变成清单，笑点被稀释。短码仍然承担可复算。
+        tail = f"{ask}{DISCLAIMER if ask_tier == 'T1' else ''}。"
+        short = f"麦门 {code}｜{vocation}｜{tail}"
+        if len(short) > REMARK_LIMIT:          # 极端长自陈时，缩到只留暗号+笑点
+            short = f"麦门 {code}｜{tail}"
 
     # 极端情况下（长店名 + 长问候）仍超限：截到上限，绝不静默溢出
     if len(short) > REMARK_LIMIT:
