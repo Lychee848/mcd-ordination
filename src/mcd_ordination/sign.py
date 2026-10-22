@@ -90,7 +90,7 @@ KINDS = {
     "ask":   {"cn": "请求", "lat": "Petitio",
               "desc": "说清要什么，再补一句玩笑；照做是彩蛋，不照做也成立"},
     "story": {"cn": "接龙", "lat": "Continuatio",
-              "desc": "留半句话请店员续写，下次带着那句来就是第二章"},
+              "desc": "门店本就有一卷传说，你来求取下一段；下次带来的是续篇"},
 }
 
 # S5a 问候：完全不索要，只做人际连接
@@ -127,7 +127,9 @@ ASKS_T0 = [
 # 既知道该往哪看，也知道不必当成投诉。
 # 礼貌用语下沉到语料本身（"若今日还有余量""若锅底还剩"），比末尾补一句更自然。
 SIGN_ASK = "【麦门暗号skill】"
-SIGN_STORY = "【麦门传说skill】"
+# 接龙的收尾把"求一句"和来路并成一个印记：既表明这是求取下一段，也说明词出自哪个 skill。
+# 单独一个「敢请续墨」会被读成文学腔，单独一个 skill 名又看不出要做什么，合起来刚好。
+SIGN_STORY = "【敢请续墨·麦门传说skill】"
 
 # S5c 接龙：留半句话。半句必须"可被任意店员接着写"，不能要求对方懂梗
 STORY_OPEN = {
@@ -151,15 +153,6 @@ STORY_OPEN = {
                "我刚搬来这一带，",
                "我是被门口那盏灯引进来的，"],
 }
-
-# 让店员容易接：三种"下笔方向"，不要求对方会写诗。
-# v3.8：原句「下一句留给你写」是祈使句，像派活；改成敬语式的"敢请""敬候"，
-# 请求的意思没丢，姿态低了一档。
-STORY_PROMPT = [
-    "敢请续之一句",
-    "此句未竟，敢请续墨",
-    "余此半句，敬候君续",
-]
 
 # S6 应答：把单向索要改成双向互动 —— 这是门店愿意配合的前提
 RESPONSES = [
@@ -390,7 +383,7 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
     open_pool = STORY_OPEN[axis]
     opening = open_pool[h(uid, "st", period) % len(open_pool)].format(
         days=f.get("days_since_last", 0))
-    prompt = STORY_PROMPT[h(uid, "sp", period) % len(STORY_PROMPT)]
+    prompt = "敢请续墨"
 
     feast = ""
     if menu_today:
@@ -412,11 +405,12 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
 
     # ---- 三体裁各自组装短版（备注栏）。都遵守 REMARK_LIMIT。
     if kind == "story":
+        # opening 收尾是逗号，直接接【】会像断句错误；统一换成句号再接印记
+        body = opening.rstrip("，,。 ")
         if chapter > 1 and last_line:
-            short = (f"第 {chapter} 章·承「{last_line[:8]}」：{opening}{prompt}。"
-                     f"{SIGN_STORY}")
+            short = f"第 {chapter} 章·承「{last_line[:8]}」：{body}。{SIGN_STORY}"
         else:
-            short = f"第 {chapter} 章：{opening}{prompt}。{SIGN_STORY}"
+            short = f"第 {chapter} 章：{body}。{SIGN_STORY}"
     elif kind == "greet":
         short = f"{vocation}｜{blessing}，麦门永生。"
     else:
@@ -429,7 +423,7 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
 
     # 接龙超长：先缩引文，再丢「第 N 章·承…」前缀——署名比章节号重要
     if kind == "story" and len(short) > REMARK_LIMIT and chapter > 1 and last_line:
-        short = f"第 {chapter} 章：{opening}{prompt}。{SIGN_STORY}"
+        short = f"第 {chapter} 章：{body}。{SIGN_STORY}"
 
     # 极端情况下仍超限：截到上限，但**保住结尾的 skill 署名**，否则店员看不出这是什么
     if len(short) > REMARK_LIMIT:
@@ -441,8 +435,8 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
     if kind == "story":
         long_lines.append(f"第 {chapter} 章")
         if chapter > 1 and last_line:
-            long_lines.append(f"上一章，你替我写的后半句：「{last_line}」")
-        long_lines.append(opening + prompt)
+            long_lines.append(f"上一章，你续的那一句：「{last_line}」")
+        long_lines.append(f"{body}。{SIGN_STORY}")
         long_lines.append(f"（本命圣物：{relic}）")
     elif kind == "greet":
         long_lines.append(f"本命圣物：{relic}")

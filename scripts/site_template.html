@@ -129,6 +129,10 @@ h2 .pt{color:var(--red)}
 .signbox{background:var(--cream);border:2px dashed rgba(218,41,28,.42);border-radius:14px;
   padding:18px;font-size:16px;line-height:1.85;min-height:104px;font-weight:600;
   letter-spacing:.01em}
+/* 结尾那枚印记不许在中间折行：要么整枚落下，要么整枚换行 */
+.signbox .seal{white-space:nowrap;color:var(--red)}
+/* 结尾那枚印记不许在中间折行：要么整枚落下，要么整枚换行 */
+.signbox .seal{white-space:nowrap;color:var(--red)}
 .signmeta{display:flex;justify-content:space-between;align-items:center;gap:12px;
   margin-top:14px;font-size:12px;color:var(--ink-3);font-family:var(--mono)}
 .copy{border:2px solid var(--ink);background:#fff;border-radius:999px;padding:7px 16px;
@@ -229,8 +233,8 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
     <p class="lede">暗号写进备注，不是要优惠，是<b>发起一次互动</b>：</p>
     <ul class="why">
       <li><b>求圣物</b>　向店员开口要一件极小的东西——多一块麦乐鸡，量级止于此。</li>
-      <li><b>续传说</b>　留半句，请店员替你往下写；下次带着他那句话来，就是第二章。</li>
-      <li><b>具象化</b>　另一件产出是卡证：品秩、画派、本命圣物、时辰属性，全部由行为长出来。</li>
+      <li><b>续传说</b>　每家门店都有一卷自己的麦门传说。你不必先知道它，问一句就能取走这一段；下次再来，接下一段。</li>
+      <li><b>凝练凭证</b>　你的麦门属性被实例化：品秩、画派、本命圣物、时辰属性，都由行为长出来。</li>
     </ul>
     <div class="cta">
       <a class="btn p" href="#demo">先看一张卡 →</a>
@@ -292,8 +296,8 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
       <span class="n">OUTPUT 02</span>
       <h3>暗号 · 三种体裁</h3>
       <p><b>问候</b>什么都不求，只打个招呼。<b>请求</b>把话说明白——「可否多给一块麦乐鸡」，
-         然后才补一句玩笑，店员照做是彩蛋、不照做也读得懂。<b>接龙</b>留半句，请他替你续，
-         下次带着他写的那句再来，就是第二章。三者结尾都带 skill 署名，店员一眼知道这是什么。</p>
+         然后才补一句玩笑，店员照做是彩蛋、不照做也读得懂。<b>接龙</b>不是让店员创作，而是求取本店
+         已有传说的下一段，下次带来的是续篇。请求与接龙都以一枚印记收尾，店员一眼知道这是什么。</p>
     </div>
   </div>
 </div></section>
@@ -423,7 +427,12 @@ function render(){
   $("prank").innerHTML = "修持轨迹指向 <b>" + p.rank + "</b>（" + p.rank_lat + "）· 光环：" + p.halo;
 
   const s = p.signs[GENRES[gi][0]];
-  $("signtext").textContent = s.short;
+  // 印记单独包一层 span：否则「【敢请」会在行尾、剩下半枚掉到下一行
+  const raw = s.short, cut = raw.indexOf("【");
+  const esc = t => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  $("signtext").innerHTML = cut > 0
+    ? esc(raw.slice(0, cut)) + '<span class="seal">' + esc(raw.slice(cut)) + "</span>"
+    : esc(raw);
   $("signmeta").textContent = s.label + " · " + s.note + " · 短码 " + s.code;
   $("signlong").textContent = s.long;
   $("facts").innerHTML =
