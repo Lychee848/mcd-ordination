@@ -16,7 +16,7 @@
 
 ```bash
 cd mcd-ordination
-git remote add origin https://github.com/<你的用户名>/mcd-ordination.git
+git remote add origin https://github.com/Lychee848/mcd-ordination.git
 git push -u origin main
 ```
 
@@ -61,13 +61,13 @@ git status --short
 ### 2.1 开 GitHub Pages
 
 1. GitHub → Settings → **Pages** → Source: *Deploy from a branch* → Branch `main`、目录 **`/ (root)`** → Save。
-2. 等 1–2 分钟，访问 `https://<你的用户名>.github.io/mcd-ordination/`。
+2. 等 1–2 分钟，访问 <https://Lychee848.github.io/mcd-ordination/>。
 3. 把这个地址填回 About 的 Website。
 
 **不用改任何代码。** 页面里的 GitHub 按钮会在运行时按当前域名反推仓库
 （`xxx.github.io/mcd-ordination/` → `github.com/xxx/mcd-ordination`），所以忘了替换占位符也不会点错。
 
-只有一处需要你手动改：**README 首屏的“在线试玩”链接**，把 `<你的用户名>` 换成真实账号。
+README 首屏的“在线试玩”链接已经写成 <https://Lychee848.github.io/mcd-ordination/>，无需再改。
 
 ### 2.2 上线后自查（30 秒）
 
@@ -75,7 +75,7 @@ git status --short
 |---|---|
 | 首页三张卡是否显示 | 有图；若空白，多半是路径大小写或未 push `docs/` |
 | 点“现场试”切人设/卡种/体裁 | 卡和图同步变，暗号可复制 |
-| 右上 GitHub 按钮 | 指向你自己的仓库，不是 `your-name` |
+| 右上 GitHub 按钮 | 指向 <https://github.com/Lychee848/mcd-ordination> |
 | 手机打开 | 首屏能看到标题 + 一句话 + 卡（约一屏） |
 
 ---
@@ -97,7 +97,7 @@ git status --short
 
 〖参赛申请〗
 项目名称：麦门行传（mcd-ordination）
-项目地址：https://github.com/<你的用户名>/mcd-ordination
+项目地址：https://github.com/Lychee848/mcd-ordination
 项目简介：麦门行传把「麦当劳用户行为」当作 prompt，产出两样东西：一套专属麦门卡证（九阶品秩、教义摘录、四种版式的交换卡），和一枚只属于你的「麦门暗号」。暗号有三种体裁——打招呼、创意地问一句能不能多给一块鸡块、或者求取本店那卷麦门传说的下一段（每家店本来就有自己的传说，你是去取，不是让店员创作；下次带来的是续篇）。勾选一下，暗号会挂到这一单的订单备注上，把一次交易变成一次真实互动。三条硬线：卡面每个数字都能追溯到真实数据（不可伪造）、金额不进任何公式（不鼓励消费）、不填任何 Key 也能看见完整卡面（零依赖可跑）。备注字段有没有、能不能自动写入，由每次运行时的 tools/list 能力探测决定：有就写进 payload，没有就给你一段可复制的文本加三步指引，绝不假装已经写进去。仓库自带三份人设数据，clone 下来 30 秒就能看到成品卡与三体裁暗号。
 ```
 

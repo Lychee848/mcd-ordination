@@ -97,7 +97,7 @@ def main():
         })
 
     tpl = (ROOT / "scripts" / "site_template.html").read_text(encoding="utf-8")
-    repo = __import__("os").environ.get("REPO_URL", "https://github.com/your-name/mcd-ordination")
+    repo = __import__("os").environ.get("REPO_URL", "https://github.com/Lychee848/mcd-ordination")
     html = (tpl.replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False))
                .replace("__REPO__", repo))
     (ROOT / "index.html").write_text(html, encoding="utf-8")
