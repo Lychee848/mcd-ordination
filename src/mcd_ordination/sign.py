@@ -90,7 +90,7 @@ KINDS = {
     "ask":   {"cn": "请求", "lat": "Petitio",
               "desc": "说清要什么，再补一句玩笑；照做是彩蛋，不照做也成立"},
     "story": {"cn": "接龙", "lat": "Continuatio",
-              "desc": "留半句话给店员，下次你再续写第二章"},
+              "desc": "留半句话请店员续写，下次带着那句来就是第二章"},
 }
 
 # S5a 问候：完全不索要，只做人际连接
@@ -122,8 +122,12 @@ ASKS_T0 = [
     "可否在袋上写「此人已尽力」？我今天撑得很勉强",
     "可否用红笔圈一下我的名字？像教皇批文件那样",
 ]
-# 无条件附在 T1 后面：不加这句不许上线
-DISCLAIMER = "（若不方便，完全不必为难）"
+# T1 结尾不再挂「若不方便，完全不必为难」——它占字数，而且店员看到的只是一个
+# 陌生人的免责声明。改成 skill 署名：店员一眼知道「这是有人用工具生成的一句话」，
+# 既知道该往哪看，也知道不必当成投诉。
+# 礼貌用语下沉到语料本身（"若今日还有余量""若锅底还剩"），比末尾补一句更自然。
+SIGN_ASK = "【麦门暗号skill】"
+SIGN_STORY = "【麦门传说skill】"
 
 # S5c 接龙：留半句话。半句必须"可被任意店员接着写"，不能要求对方懂梗
 STORY_OPEN = {
@@ -148,11 +152,13 @@ STORY_OPEN = {
                "我是被门口那盏灯引进来的，"],
 }
 
-# 让店员容易接：三种"下笔方向"，不要求对方会写诗
+# 让店员容易接：三种"下笔方向"，不要求对方会写诗。
+# v3.8：原句「下一句留给你写」是祈使句，像派活；改成敬语式的"敢请""敬候"，
+# 请求的意思没丢，姿态低了一档。
 STORY_PROMPT = [
-    "请替我把这半句写完",
-    "后半句，你说了算",
-    "下一句留给你写",
+    "敢请续之一句",
+    "此句未竟，敢请续墨",
+    "余此半句，敬候君续",
 ]
 
 # S6 应答：把单向索要改成双向互动 —— 这是门店愿意配合的前提
@@ -407,22 +413,29 @@ def compile_sign(f: dict, uid: str, today: date, menu_today: list,
     # ---- 三体裁各自组装短版（备注栏）。都遵守 REMARK_LIMIT。
     if kind == "story":
         if chapter > 1 and last_line:
-            short = (f"第 {chapter} 章·承「{last_line[:8]}」：{opening}{prompt}。")
+            short = (f"第 {chapter} 章·承「{last_line[:8]}」：{opening}{prompt}。"
+                     f"{SIGN_STORY}")
         else:
-            short = f"第 {chapter} 章：{opening}{prompt}。"
+            short = f"第 {chapter} 章：{opening}{prompt}。{SIGN_STORY}"
     elif kind == "greet":
         short = f"{vocation}｜{blessing}，麦门永生。"
     else:
         # 请求式刻意只保留"自陈 + 笑点"两个槽：
         # 加圣物/行迹会让句子变成清单，笑点被稀释。短码仍然承担可复算。
-        tail = f"{ask}{DISCLAIMER if ask_tier == 'T1' else ''}。"
+        tail = f"{ask}。{SIGN_ASK}"
         short = f"{vocation}｜{tail}"
         if len(short) > REMARK_LIMIT:          # 极端长自陈时，只留笑点
             short = tail
 
-    # 极端情况下（长店名 + 长问候）仍超限：截到上限，绝不静默溢出
+    # 接龙超长：先缩引文，再丢「第 N 章·承…」前缀——署名比章节号重要
+    if kind == "story" and len(short) > REMARK_LIMIT and chapter > 1 and last_line:
+        short = f"第 {chapter} 章：{opening}{prompt}。{SIGN_STORY}"
+
+    # 极端情况下仍超限：截到上限，但**保住结尾的 skill 署名**，否则店员看不出这是什么
     if len(short) > REMARK_LIMIT:
-        short = short[: REMARK_LIMIT - 1] + "…"
+        sig = next((x for x in (SIGN_ASK, SIGN_STORY) if short.endswith(x)), "")
+        body = short[: len(short) - len(sig)]
+        short = body[: REMARK_LIMIT - len(sig) - 1] + "…" + sig
 
     long_lines = ["— 麦门行传 · 我的这一卷 —", f"[{code}]  {vocation}"]
     if kind == "story":

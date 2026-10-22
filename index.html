@@ -62,7 +62,14 @@ h1{font-size:clamp(38px,5.6vw,68px);margin:22px 0 0;max-width:16em}
 h1 .hl{position:relative;color:var(--red);white-space:nowrap}
 h1 .hl:after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.16em;
   background:var(--yellow);z-index:-1;border-radius:3px}
-.lede{font-size:18px;color:var(--ink-2);max-width:680px;margin-top:20px;font-weight:500}
+.hook{font-size:17px;font-weight:800;color:var(--ink);max-width:640px;margin-top:18px;
+  padding-left:14px;border-left:5px solid var(--yellow);line-height:1.55}
+.lede{font-size:17px;line-height:1.7;color:var(--ink-2);max-width:700px;margin-top:16px;font-weight:600}
+.why{list-style:none;margin:10px 0 0;padding:0;max-width:700px;display:grid;gap:7px}
+.why li{font-size:15.5px;line-height:1.6;color:var(--ink-2);padding-left:22px;position:relative}
+.why li:before{content:"";position:absolute;left:2px;top:.55em;width:9px;height:9px;
+  border-radius:50%;background:var(--yellow);box-shadow:0 0 0 3px rgba(255,199,44,.28)}
+.why b{color:var(--ink);font-weight:800}
 .lede b{color:var(--ink);font-weight:800}
 .cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:999px;
@@ -217,12 +224,14 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
   <div class="archbg"></div>
   <div class="wrap">
     <span class="pill">麦当劳中国 MCP 开发者挑战赛 · 参赛作品</span>
-    <h1>你说你是麦门信徒。<br>那你的教义，<span class="hl">写下来了吗？</span></h1>
-    <p class="lede">
-      把「麦当劳用户行为」当作 prompt，产出两样东西：<b>一套只属于你的麦门卡证</b>，
-      和<b>一枚能真的写进订单备注的麦门暗号</b>。
-      不代下单、不支付、不碰账号——它只负责把已经做过的那些事，变成一句能说出口的话。
-    </p>
+    <h1>一句<span class="hl">麦门暗号</span>，<br>写进你的下一单备注里。</h1>
+    <p class="hook">点过多少次麦当劳，就有多少种说法。<br>它长在时辰、门店、单品和稀有度上，不是模板。</p>
+    <p class="lede">暗号写进备注，不是要优惠，是<b>发起一次互动</b>：</p>
+    <ul class="why">
+      <li><b>求圣物</b>　向店员开口要一件极小的东西——多一块麦乐鸡，量级止于此。</li>
+      <li><b>续传说</b>　留半句，请店员替你往下写；下次带着他那句话来，就是第二章。</li>
+      <li><b>具象化</b>　另一件产出是卡证：品秩、画派、本命圣物、时辰属性，全部由行为长出来。</li>
+    </ul>
     <div class="cta">
       <a class="btn p" href="#demo">先看一张卡 →</a>
       <a class="btn s" href="#run">30 秒跑起来</a>
@@ -282,9 +291,9 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
     <div class="box">
       <span class="n">OUTPUT 02</span>
       <h3>暗号 · 三种体裁</h3>
-      <p><b>问候</b>什么都不求；<b>请求</b>是一句一本正经的玩笑，店员照做是彩蛋、不照做也成立；
-         <b>接龙</b>留半句话给店员，下次你带着他写的那句再来，就是第二章。
-         勾选后可挂进订单备注。</p>
+      <p><b>问候</b>什么都不求，只打个招呼。<b>请求</b>把话说明白——「可否多给一块麦乐鸡」，
+         然后才补一句玩笑，店员照做是彩蛋、不照做也读得懂。<b>接龙</b>留半句，请他替你续，
+         下次带着他写的那句再来，就是第二章。三者结尾都带 skill 署名，店员一眼知道这是什么。</p>
     </div>
   </div>
 </div></section>
@@ -374,7 +383,7 @@ pip install -e .
 </div></footer>
 
 <script>
-const DATA = [{"id": "night_owl", "label": "夜祷老客", "city": "深圳", "rank": "执事", "rank_lat": "Diaconus", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/night_owl/effect.jpg", "item": "docs/demo/night_owl/item.jpg", "spell": "docs/demo/night_owl/spell.jpg", "field": "docs/demo/night_owl/field.jpg"}, "signs": {"greet": {"short": "我常在打烊之后受召｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n愿这个点还站着的人都有热的东西吃。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "Z2QDQW", "note": "不求任何东西"}, "ask": {"short": "我常在打烊之后受召｜可否多给一块麦乐鸡？我拿它当今日的圣物（若不方便，完全不必为难）。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n可否多给一块麦乐鸡？我拿它当今日的圣物。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "Z2QDQW", "note": "T0 零成本"}, "story": {"short": "第 1 章：这个点还开门的地方，一定有自己的道理，下一句留给你写。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n第 1 章\n这个点还开门的地方，一定有自己的道理，下一句留给你写\n（本命圣物：麦辣鸡腿堡）\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "Z2QDQW", "note": "第 1 章"}}, "facts": {"orders": 188, "stores": 3, "cities": 1, "purity": 90}}, {"id": "pilgrim", "label": "跨城巡礼者", "city": "成都", "rank": "传道员", "rank_lat": "Praedicator", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/pilgrim/effect.jpg", "item": "docs/demo/pilgrim/item.jpg", "spell": "docs/demo/pilgrim/spell.jpg", "field": "docs/demo/pilgrim/field.jpg"}, "signs": {"greet": {"short": "我跨过 3 座城，只为同一扇门｜这一带的灯，就你们这几盏还亮着，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n这一带的灯，就你们这几盏还亮着。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "17EXYT", "note": "不求任何东西"}, "ask": {"short": "我跨过 3 座城，只为同一扇门｜若锅底还剩，可否多抓一把薯条？我今晚靠这个续命（若不方便，完全不必为难）。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n若锅底还剩，可否多抓一把薯条？我今晚靠这个续命。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "17EXYT", "note": "T0 零成本"}, "story": {"short": "第 1 章：换了个城市，先找同一个拱门，请替我把这半句写完。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n第 1 章\n换了个城市，先找同一个拱门，请替我把这半句写完\n（本命圣物：脆脆薯条（中））\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "17EXYT", "note": "第 1 章"}}, "facts": {"orders": 412, "stores": 5, "cities": 3, "purity": 18}}, {"id": "beginner", "label": "初闻道者", "city": "哈尔滨", "rank": "望教者", "rank_lat": "Catechumenus", "halo": "仅一道细弧", "cards": {"effect": "docs/demo/beginner/effect.jpg", "item": "docs/demo/beginner/item.jpg", "spell": "docs/demo/beginner/spell.jpg", "field": "docs/demo/beginner/field.jpg"}, "signs": {"greet": {"short": "我的早晨要先受召才肯开始｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n愿这个点还站着的人都有热的东西吃。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "NG3CZZ", "note": "不求任何东西"}, "ask": {"short": "我的早晨要先受召才肯开始｜可否多给一包甜酸酱？我要拿它蘸我的信仰（若不方便，完全不必为难）。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n可否多给一包甜酸酱？我要拿它蘸我的信仰。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "NG3CZZ", "note": "T0 零成本"}, "story": {"short": "第 1 章：七点十分，城市还没醒，后半句，你说了算。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n第 1 章\n七点十分，城市还没醒，后半句，你说了算\n（本命圣物：猪柳蛋麦满分）\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "NG3CZZ", "note": "第 1 章"}}, "facts": {"orders": 9, "stores": 1, "cities": 1, "purity": 32}}];
+const DATA = [{"id": "night_owl", "label": "夜祷老客", "city": "深圳", "rank": "执事", "rank_lat": "Diaconus", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/night_owl/effect.jpg", "item": "docs/demo/night_owl/item.jpg", "spell": "docs/demo/night_owl/spell.jpg", "field": "docs/demo/night_owl/field.jpg"}, "signs": {"greet": {"short": "我常在打烊之后受召｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n愿这个点还站着的人都有热的东西吃。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "Z2QDQW", "note": "不求任何东西"}, "ask": {"short": "我常在打烊之后受召｜可否多给一块麦乐鸡？我拿它当今日的圣物。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n可否多给一块麦乐鸡？我拿它当今日的圣物。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "Z2QDQW", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：这个点还开门的地方，一定有自己的道理，余此半句，敬候君续。【麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n第 1 章\n这个点还开门的地方，一定有自己的道理，余此半句，敬候君续\n（本命圣物：麦辣鸡腿堡）\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "Z2QDQW", "note": "第 1 章 · 待续"}}, "facts": {"orders": 188, "stores": 3, "cities": 1, "purity": 90}}, {"id": "pilgrim", "label": "跨城巡礼者", "city": "成都", "rank": "传道员", "rank_lat": "Praedicator", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/pilgrim/effect.jpg", "item": "docs/demo/pilgrim/item.jpg", "spell": "docs/demo/pilgrim/spell.jpg", "field": "docs/demo/pilgrim/field.jpg"}, "signs": {"greet": {"short": "我跨过 3 座城，只为同一扇门｜这一带的灯，就你们这几盏还亮着，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n这一带的灯，就你们这几盏还亮着。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "17EXYT", "note": "不求任何东西"}, "ask": {"short": "我跨过 3 座城，只为同一扇门｜若锅底还剩，可否多抓一把薯条？我今晚靠这个续命。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n若锅底还剩，可否多抓一把薯条？我今晚靠这个续命。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "17EXYT", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：换了个城市，先找同一个拱门，敢请续之一句。【麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n第 1 章\n换了个城市，先找同一个拱门，敢请续之一句\n（本命圣物：脆脆薯条（中））\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "17EXYT", "note": "第 1 章 · 待续"}}, "facts": {"orders": 412, "stores": 5, "cities": 3, "purity": 18}}, {"id": "beginner", "label": "初闻道者", "city": "哈尔滨", "rank": "望教者", "rank_lat": "Catechumenus", "halo": "仅一道细弧", "cards": {"effect": "docs/demo/beginner/effect.jpg", "item": "docs/demo/beginner/item.jpg", "spell": "docs/demo/beginner/spell.jpg", "field": "docs/demo/beginner/field.jpg"}, "signs": {"greet": {"short": "我的早晨要先受召才肯开始｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n愿这个点还站着的人都有热的东西吃。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "NG3CZZ", "note": "不求任何东西"}, "ask": {"short": "我的早晨要先受召才肯开始｜可否多给一包甜酸酱？我要拿它蘸我的信仰。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n可否多给一包甜酸酱？我要拿它蘸我的信仰。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "NG3CZZ", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：七点十分，城市还没醒，此句未竟，敢请续墨。【麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n第 1 章\n七点十分，城市还没醒，此句未竟，敢请续墨\n（本命圣物：猪柳蛋麦满分）\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "NG3CZZ", "note": "第 1 章 · 待续"}}, "facts": {"orders": 9, "stores": 1, "cities": 1, "purity": 32}}];
 const ROLES = [["effect","人物卡"],["item","食物卡"],["spell","行为卡"],["field","地点卡"]];
 const GENRES = [["greet","问候"],["ask","请求"],["story","接龙"]];
 

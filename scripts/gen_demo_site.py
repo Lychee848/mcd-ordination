@@ -58,8 +58,9 @@ def signs_for(profile: str) -> dict:
                             grace_id=top["id"], grace_creed=top["creed"], kind=g)
         out[g] = {"short": s["short"], "long": s["long"],
                   "label": s["kind_cn"], "code": s["code"],
-                  "note": (f"第 {s['story_chapter']} 章" if g == "story"
-                           else ("T0 零成本" if g == "ask" else "不求任何东西"))}
+                  "note": (f"第 {s['story_chapter']} 章 · 待续" if g == "story"
+                           else (f"{s['ask_tier']} · 求圣物" if g == "ask"
+                                 else "不求任何东西"))}
     return out
 
 
