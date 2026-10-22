@@ -106,7 +106,7 @@ README 首屏的“在线试玩”链接已经写成 <https://Lychee848.github.i
 ## 4. 提交前自检
 
 ```bash
-# 0) 装包（editable，不产生第三方依赖）
+# 0) 装包（editable，不产生第三方依赖）；不想装就在每条命令前加 PYTHONPATH=src
 pip install -e .
 
 # 1) 零依赖路径能跑（不装 Pillow 也得出完整 SVG）

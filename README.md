@@ -43,6 +43,12 @@ pip install -e .            # 只装本包，不带任何第三方依赖
 python -m mcd_ordination demo
 ```
 
+> 不想装包也行（评委最省事的一条路）：
+>
+> ```bash
+> PYTHONPATH=src python -m mcd_ordination demo
+> ```
+>
 > 想要 PNG 成品卡与动效，再补一句 `pip install Pillow`；不装就是纯 SVG 卡，一样完整。
 
 三种打法，任选：
