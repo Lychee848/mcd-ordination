@@ -221,7 +221,7 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
     <a href="#how">机制</a>
     <a href="#run">跑起来</a>
   </div>
-  <a class="gh" href="https://github.com/your-name/mcd-ordination" target="_blank" rel="noopener">GitHub ↗</a>
+  <a class="gh" href="https://github.com/your-name/mcd-ordination" target="_blank" rel="noopener" data-repo>GitHub ↗</a>
 </div></nav>
 
 <header id="top">
@@ -445,6 +445,15 @@ function render(){
   roleThumbs();
   tabs($("genres"), GENRES, gi, i => { gi = i; render(); }, it => it[1]);
 }
+
+// 页面可能被部署到任意账号的 Pages 上：能反推就反推，不必重新生成一次
+(function(){
+  const m = location.hostname.match(/^([a-z0-9-]+)\.github\.io$/i);
+  if (!m) return;
+  const seg = location.pathname.split("/").filter(Boolean)[0];
+  const repo = "https://github.com/" + m[1] + "/" + (seg && !seg.endsWith(".html") ? seg : "mcd-ordination");
+  document.querySelectorAll("a[data-repo]").forEach(a => { a.href = repo; });
+})();
 
 $("copybtn").onclick = async () => {
   const txt = $("signtext").textContent;

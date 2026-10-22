@@ -4,38 +4,49 @@
 
 ---
 
-## 0. 三件必须做的事（顺序不能反）
+## 0. 三件事，按顺序做
 
-1. 在 GitHub 建仓库 `mcd-ordination`（**Public**，不要勾选任何模板，不要勾 README）。
-2. 把本目录推上去（见下方命令）。
-3. 去赛事仓库提 Issue（见第 3 节），**标题和正文严格按格式**。
+1. 在 GitHub 建仓库 `mcd-ordination`（**Public**，不要勾模板、不要勾 README）。
+2. 推上去（本目录**已经** `git init` 并有提交，分支就是 `main`，不要重复 init）。
+3. 去赛事仓库提 Issue（第 3 节），标题与正文照抄。
 
 ---
 
-## 1. 推仓库
+## 1. 推仓库（三条命令）
 
 ```bash
 cd mcd-ordination
-git init
-git add .
-git commit -m "feat: 麦门行传 —— 把麦当劳用户行为编译成一套卡证"
-git branch -M main
 git remote add origin https://github.com/<你的用户名>/mcd-ordination.git
 git push -u origin main
 ```
 
+推之前先确认工作区是干净的（应该没有任何输出）：
+
+```bash
+git status --short
+```
+
+常见两种失败：
+
+| 报错 | 原因 | 处理 |
+|---|---|---|
+| `remote origin already exists` | 之前配过别的远端 | `git remote set-url origin <新地址>` |
+| `Updates were rejected` | 建仓库时勾了 README/LICENSE | `git pull --rebase origin main` 后再 push |
+
+体积参考：`.git` 约 45 MB、`assets/` 约 23 MB。首次 push 慢属于正常，之后只推增量。
+
 ---
 
-## 2. 仓库设置（直接影响能不能被搜到，别跳过）
+## 2. 仓库设置（影响能不能被搜到，别跳过）
 
 **About 栏（右上角齿轮）**
 
 - Description：
   ```
-  麦当劳用户行为 → 专属麦门卡证。九阶品秩 · 教义摘录 · 四版式交换卡 · 可复算的专属暗号。零 Key 可跑。
+  领取专属麦门暗号，寻觅你的麦乐鸡侠｜麦当劳用户行为 → 专属麦门卡证 + 可写进订单备注的暗号。零 Key 可跑。
   ```
-- Website：可填你的演示页；暂时没有就留空（**别填无效链接**）
-- Topics（按优先级，GitHub 最多 20 个）：
+- Website：填第 2.1 节生成的 Pages 地址（**别填无效链接**）
+- Topics（GitHub 最多 20 个，按优先级）：
   ```
   mcp  mcdonalds  mcdonalds-mcp  workbuddy-skill  mcd
   generative-art  trading-card-game  python  pillow  svg
@@ -43,22 +54,29 @@ git push -u origin main
   ```
 
 > 依据：统计 744 个参赛仓库后发现，`workbuddy-skill` / `mcd` / `mcdonalds-mcp` 三个 topic 的星数中位数最高；
-> `model-context-protocol` / `nutrition` / `meal-planner` 已经是红海（大量 0–3 星项目），不建议占用 topic 位。
+> `model-context-protocol` / `nutrition` / `meal-planner` 已经是红海，不建议占用 topic 位。
 
 **社交预览图**：Settings → Social preview 上传 `docs/samples/three_personas.png`（1200×630 会自动裁切）。
 
-### 2.1 开 GitHub Pages（星数高的作品都有，别省）
+### 2.1 开 GitHub Pages
 
-1. 先把你自己的仓库地址写进页面（`index.html` 里的 GitHub 链接默认是占位符）：
-   ```bash
-   REPO_URL="https://github.com/<你的用户名>/mcd-ordination" \
-   python scripts/gen_demo_site.py
-   git commit -am "chore: 指向真实仓库地址" && git push
-   ```
-2. GitHub → Settings → **Pages** → Source: *Deploy from a branch* → Branch: `main` / **`/ (root)`** → Save。
-3. 一两分钟后访问 `https://<你的用户名>.github.io/mcd-ordination/`，把这个地址填进 About 的 Website。
+1. GitHub → Settings → **Pages** → Source: *Deploy from a branch* → Branch `main`、目录 **`/ (root)`** → Save。
+2. 等 1–2 分钟，访问 `https://<你的用户名>.github.io/mcd-ordination/`。
+3. 把这个地址填回 About 的 Website。
 
-页面是纯静态、零依赖：人设/卡种/暗号体裁切换、一键复制都能离线用，不请求任何接口。
+**不用改任何代码。** 页面里的 GitHub 按钮会在运行时按当前域名反推仓库
+（`xxx.github.io/mcd-ordination/` → `github.com/xxx/mcd-ordination`），所以忘了替换占位符也不会点错。
+
+只有一处需要你手动改：**README 首屏的“在线试玩”链接**，把 `<你的用户名>` 换成真实账号。
+
+### 2.2 上线后自查（30 秒）
+
+| 检查 | 期望 |
+|---|---|
+| 首页三张卡是否显示 | 有图；若空白，多半是路径大小写或未 push `docs/` |
+| 点“现场试”切人设/卡种/体裁 | 卡和图同步变，暗号可复制 |
+| 右上 GitHub 按钮 | 指向你自己的仓库，不是 `your-name` |
+| 手机打开 | 首屏能看到标题 + 一句话 + 卡（约一屏） |
 
 ---
 
