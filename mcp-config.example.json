@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "mcd": {
+      "type": "http",
+      "url": "${MCD_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
+      }
+    }
+  }
+}

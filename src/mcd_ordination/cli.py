@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from datetime import date
 from pathlib import Path
@@ -12,6 +13,7 @@ from pathlib import Path
 from . import canon as C
 from . import deck as D
 from . import features as F
+from . import mcp as MCP
 from . import order as O
 from . import piety as P
 from . import sign as SG
@@ -24,8 +26,30 @@ def _menu_names() -> list:
     return [v["name"] for k, v in nut.items() if not k.startswith("_")]
 
 
-def _pipeline(profile: str):
-    payload = F.load_mock(profile)
+def _pipeline(profile: str, use_mcp: bool = False):
+    if use_mcp:
+        token = os.environ.get("MCD_MCP_TOKEN", "").strip()
+        if not token:
+            raise SystemExit(
+                "缺少 MCD_MCP_TOKEN。\n"
+                "  去 https://open.mcd.cn/mcp 申请自己的 Token，然后：\n"
+                "  export MCD_MCP_TOKEN=\"<你的 Token>\"\n"
+                "  不想配 Token 就先跑：python -m mcd_ordination demo（用合成人设）"
+            )
+        try:
+            payload = MCP.fetch(token)
+        except MCP.McpError as e:
+            raise SystemExit(
+                f"MCP 调用失败：{e}\n"
+                "  先确认 Token 有效（https://open.mcd.cn/mcp），或直接跑合成人设：\n"
+                "  python -m mcd_ordination demo"
+            )
+        payload.setdefault("uid", "mcp-account")
+        payload.setdefault("profile", {})
+        if not payload.get("orders"):
+            raise SystemExit("MCP 返回 0 条订单：这个账号还没有历史订单，长不出卡面。")
+    else:
+        payload = F.load_mock(profile)
     feats = F.build(payload)
     uid = payload.get("uid") or profile
     co = F.load_cohort()
@@ -35,7 +59,7 @@ def _pipeline(profile: str):
 
 
 def cmd_demo(args) -> int:
-    payload, feats, uid, pi, cr = _pipeline(args.profile)
+    payload, feats, uid, pi, cr = _pipeline(args.profile, getattr(args, "mcp", False))
     cards = D.build_deck(feats, cr, pi, payload["orders"], D.load_nutrition(), uid=uid)
 
     today = date.today()
@@ -158,8 +182,8 @@ def SVG_RENDER(data, st, out):
 
 
 def _sign(profile: str, kind: str = "auto", allow_t1: bool = True,
-          soft: bool = False):
-    payload, feats, uid, pi, cr = _pipeline(profile)
+          soft: bool = False, use_mcp: bool = False):
+    payload, feats, uid, pi, cr = _pipeline(profile, use_mcp)
     top = cr["printed"][0]
     sg = SG.compile_sign(feats, uid, date.today(), _menu_names(),
                          grace_id=top["id"], grace_creed=top["creed"],
@@ -190,7 +214,8 @@ def cmd_sign(args) -> int:
 
     payload, feats, uid, pi, sg = _sign(args.profile, args.kind,
                                        getattr(args, "allow_t1", True),
-                                       getattr(args, "soft", False))
+                                       getattr(args, "soft", False),
+                                       getattr(args, "mcp", False))
 
     print(f"\n{pi['rank']['cn']}（{pi['rank']['lat']}）")
     print(f"体裁：{sg['kind_cn']}（{SG.KINDS[sg['kind']]['desc']}）"
@@ -213,7 +238,8 @@ def cmd_sign(args) -> int:
 def cmd_order(args) -> int:
     payload, feats, uid, pi, sg = _sign(args.profile, args.kind,
                                        getattr(args, "allow_t1", True),
-                                       getattr(args, "soft", False))
+                                       getattr(args, "soft", False),
+                                       getattr(args, "mcp", False))
     draft = O.build_draft(payload["orders"], feats)
 
     tools = []
@@ -252,6 +278,8 @@ def main(argv=None) -> int:
 
     d = sub.add_parser("demo", help="跑一份人设，出全套卡 + 暗号")
     d.add_argument("--profile", default="night_owl")
+    d.add_argument("--mcp", action="store_true",
+                   help="用真实账号数据（需先 export MCD_MCP_TOKEN）")
     d.add_argument("--out", default="out")
     d.add_argument("--engine", choices=["svg", "png", "both"], default="both")
     d.add_argument("--kind", default="auto",
@@ -261,6 +289,8 @@ def main(argv=None) -> int:
 
     s = sub.add_parser("sign", help="只出暗号（三种体裁）")
     s.add_argument("--profile", default="night_owl")
+    s.add_argument("--mcp", action="store_true",
+                   help="用真实账号数据（需先 export MCD_MCP_TOKEN）")
     s.add_argument("--kind", default="auto",
                    choices=["auto", "greet", "ask", "story"],
                    help="greet 问候 / ask 请求 / story 接龙 / auto 按行为选")
@@ -276,6 +306,8 @@ def main(argv=None) -> int:
 
     o = sub.add_parser("order", help="把暗号挂到订单备注（能力探测 + 降级）")
     o.add_argument("--profile", default="night_owl")
+    o.add_argument("--mcp", action="store_true",
+                   help="用真实账号数据（需先 export MCD_MCP_TOKEN）")
     o.add_argument("--kind", default="auto",
                    choices=["auto", "greet", "ask", "story"])
     o.add_argument("--allow-t1", action="store_true", default=True)
