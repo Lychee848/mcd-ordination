@@ -202,6 +202,43 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
   section{padding:56px 0}
   .facts{gap:16px}
 }
+.btn.yellow{background:var(--yellow);color:var(--ink);box-shadow:0 4px 0 var(--yellow-d)}
+.btn.yellow:hover{box-shadow:0 2px 0 var(--yellow-d)}
+
+/* —— 常驻 Star 按钮：右下角，滚动时一直在 —— */
+.star-fab{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:11px;
+  max-width:calc(100vw - 24px);
+  max-width:calc(100vw - 24px);
+  background:var(--red);color:#fff;text-decoration:none;border-radius:999px;
+  padding:11px 16px 11px 13px;box-shadow:0 5px 0 var(--red-d),0 12px 28px rgba(32,26,20,.20);
+  transition:transform .12s ease,box-shadow .12s ease}
+.star-fab:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--red-d),0 7px 18px rgba(32,26,20,.16)}
+.star-fab:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.star-fab .ico{width:22px;height:22px;flex:0 0 22px}
+.star-fab .slg{display:flex;flex-direction:column;line-height:1.16;text-align:left}
+.star-fab .slg b{font-size:13.5px;font-weight:800;letter-spacing:.02em}
+.star-fab .slg i{font-style:normal;font-size:10.5px;font-weight:700;color:var(--yellow);letter-spacing:.03em}
+.star-fab .num{display:none;background:var(--yellow);color:var(--ink);border-radius:999px;
+  padding:4px 9px;font-size:12px;font-weight:800;min-width:30px;text-align:center}
+.star-fab.has-count .num{display:inline-block}
+
+/* —— 页中 Star 区 —— */
+#star .box{background:var(--red);color:#fff;border-radius:var(--r);padding:40px 44px;
+  display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap;
+  position:relative;overflow:hidden}
+#star h2{font-size:clamp(26px,3.4vw,38px);margin:0 0 10px;color:#fff;line-height:1.25}
+#star p{margin:0;color:#FFE6C2;max-width:560px;font-weight:600;font-size:15px}
+#star .act{display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative}
+#star .cnt{font-size:12.5px;color:#FFE6C2;font-weight:700}
+#star .cnt b{color:#fff;font-size:15px}
+#star .arc{position:absolute;right:-20px;bottom:-52px;width:230px;opacity:.15}
+@media(max-width:560px){
+  .star-fab{right:12px;bottom:12px;padding:9px 13px 9px 11px;gap:9px}
+  .star-fab .slg b{font-size:12.5px}
+  .star-fab .slg i{font-size:9.5px}
+  #star .box{padding:30px 24px}
+}
+
 </style>
 </head>
 <body>
@@ -280,6 +317,25 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
     </div>
   </div>
 </div></section>
+
+<section id="star"><div class="wrap">
+  <div class="box">
+    <svg class="arc" viewBox="0 0 200 140" aria-hidden="true">
+      <path d="M18 140V66a64 64 0 0 1 128 0v74" fill="none" stroke="#FFC72C" stroke-width="20"/>
+    </svg>
+    <div>
+      <h2>觉得这句暗号有意思？<br>给它一颗星。</h2>
+      <p>这个仓库没有推广预算，赛制只数 Star。去仓库点一下右上角的 ☆，十秒钟——
+         帮它被下一个麦门信徒刷到。</p>
+    </div>
+    <div class="act">
+      <a class="btn yellow" href="https://github.com/Lychee848/mcd-ordination" target="_blank" rel="noopener" data-repo>去仓库点 Star ↗</a>
+      <span class="cnt">MIT 开源，代码全在仓库里<span class="js-cnt" hidden> · 当前
+        <b class="js-stars"></b> 颗星</span></span>
+    </div>
+  </div>
+</div></section>
+
 
 <section id="what" class="alt"><div class="wrap">
   <div class="sec-head"><span class="sec-num">02</span><h2>两件产出，其实是一件事<span class="pt">。</span></h2></div>
@@ -374,6 +430,15 @@ pip install -e .
   </p>
 </div></section>
 
+<a class="star-fab" id="starfab" href="https://github.com/Lychee848/mcd-ordination" target="_blank" rel="noopener" data-repo
+   aria-label="喜欢就去 GitHub 点 Star">
+  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 2.4l2.95 6 6.6.95-4.78 4.66 1.13 6.58L12 17.48 6.1 20.6l1.13-6.58L2.45 9.35l6.6-.95z" fill="#FFC72C"/>
+  </svg>
+  <span class="slg"><b>我就喜欢</b><i>i'm lovin' it</i></span>
+  <span class="num js-stars"></span>
+</a>
+
 <footer><div class="wrap">
   <div>
     <div class="fstripe"></div>
@@ -381,13 +446,14 @@ pip install -e .
     非官方粉丝二创，与麦当劳中国无隶属关系。不代下单、不支付、不接触账号凭证。
   </div>
   <div>
+    <a href="https://github.com/Lychee848/mcd-ordination" target="_blank" rel="noopener" data-repo>GitHub 仓库</a> ·
     <a href="docs/DESIGN.md">设计文档</a> · <a href="docs/PLATES.md">底图说明</a> ·
     <a href="docs/samples/sign_examples.md">暗号样例</a> · MIT License
   </div>
 </div></footer>
 
 <script>
-const DATA = [{"id": "night_owl", "label": "夜祷老客", "city": "深圳", "rank": "执事", "rank_lat": "Diaconus", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/night_owl/effect.jpg", "item": "docs/demo/night_owl/item.jpg", "spell": "docs/demo/night_owl/spell.jpg", "field": "docs/demo/night_owl/field.jpg"}, "signs": {"greet": {"short": "我常在打烊之后受召｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n愿这个点还站着的人都有热的东西吃。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "Z2QDQW", "note": "不求任何东西"}, "ask": {"short": "我常在打烊之后受召｜可否多给一块麦乐鸡？我拿它当今日的圣物。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n可否多给一块麦乐鸡？我拿它当今日的圣物。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "Z2QDQW", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：这个点还开门的地方，一定有自己的道理。【敢请续墨·麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n第 1 章\n这个点还开门的地方，一定有自己的道理。【敢请续墨·麦门传说skill】\n（本命圣物：麦辣鸡腿堡）\n教义：我信的是麦麦，不是概率。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "Z2QDQW", "note": "第 1 章 · 待续"}}, "facts": {"orders": 188, "stores": 3, "cities": 1, "purity": 90}}, {"id": "pilgrim", "label": "跨城巡礼者", "city": "成都", "rank": "传道员", "rank_lat": "Praedicator", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/pilgrim/effect.jpg", "item": "docs/demo/pilgrim/item.jpg", "spell": "docs/demo/pilgrim/spell.jpg", "field": "docs/demo/pilgrim/field.jpg"}, "signs": {"greet": {"short": "我跨过 3 座城，只为同一扇门｜这一带的灯，就你们这几盏还亮着，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n这一带的灯，就你们这几盏还亮着。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "17EXYT", "note": "不求任何东西"}, "ask": {"short": "我跨过 3 座城，只为同一扇门｜若锅底还剩，可否多抓一把薯条？我今晚靠这个续命。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n若锅底还剩，可否多抓一把薯条？我今晚靠这个续命。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "17EXYT", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：换了个城市，先找同一个拱门。【敢请续墨·麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n第 1 章\n换了个城市，先找同一个拱门。【敢请续墨·麦门传说skill】\n（本命圣物：脆脆薯条（中））\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "17EXYT", "note": "第 1 章 · 待续"}}, "facts": {"orders": 412, "stores": 5, "cities": 3, "purity": 18}}, {"id": "beginner", "label": "初闻道者", "city": "哈尔滨", "rank": "望教者", "rank_lat": "Catechumenus", "halo": "仅一道细弧", "cards": {"effect": "docs/demo/beginner/effect.jpg", "item": "docs/demo/beginner/item.jpg", "spell": "docs/demo/beginner/spell.jpg", "field": "docs/demo/beginner/field.jpg"}, "signs": {"greet": {"short": "我的早晨要先受召才肯开始｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n愿这个点还站着的人都有热的东西吃。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "问候", "code": "NG3CZZ", "note": "不求任何东西"}, "ask": {"short": "我的早晨要先受召才肯开始｜可否多给一包甜酸酱？我要拿它蘸我的信仰。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n可否多给一包甜酸酱？我要拿它蘸我的信仰。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "请求", "code": "NG3CZZ", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：七点十分，城市还没醒。【敢请续墨·麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n第 1 章\n七点十分，城市还没醒。【敢请续墨·麦门传说skill】\n（本命圣物：猪柳蛋麦满分）\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：板烧鸡腿堡", "label": "接龙", "code": "NG3CZZ", "note": "第 1 章 · 待续"}}, "facts": {"orders": 9, "stores": 1, "cities": 1, "purity": 32}}];
+const DATA = [{"id": "night_owl", "label": "夜祷老客", "city": "深圳", "rank": "执事", "rank_lat": "Diaconus", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/night_owl/effect.jpg", "item": "docs/demo/night_owl/item.jpg", "spell": "docs/demo/night_owl/spell.jpg", "field": "docs/demo/night_owl/field.jpg"}, "signs": {"greet": {"short": "我常在打烊之后受召｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n愿这个点还站着的人都有热的东西吃。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：大杯可乐", "label": "问候", "code": "Z2QDQW", "note": "不求任何东西"}, "ask": {"short": "我常在打烊之后受召｜可否多给一块麦乐鸡？我拿它当今日的圣物。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n本命圣物：麦辣鸡腿堡\n专一 90% · 礼拜 188 次\n可否多给一块麦乐鸡？我拿它当今日的圣物。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我信的是麦麦，不是概率。\n今日圣体：大杯可乐", "label": "请求", "code": "Z2QDQW", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：这个点还开门的地方，一定有自己的道理。【敢请续墨·麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[Z2QDQW]  我常在打烊之后受召\n第 1 章\n这个点还开门的地方，一定有自己的道理。【敢请续墨·麦门传说skill】\n（本命圣物：麦辣鸡腿堡）\n教义：我信的是麦麦，不是概率。\n今日圣体：大杯可乐", "label": "接龙", "code": "Z2QDQW", "note": "第 1 章 · 待续"}}, "facts": {"orders": 188, "stores": 3, "cities": 1, "purity": 90}}, {"id": "pilgrim", "label": "跨城巡礼者", "city": "成都", "rank": "传道员", "rank_lat": "Praedicator", "halo": "分段（开口）金环", "cards": {"effect": "docs/demo/pilgrim/effect.jpg", "item": "docs/demo/pilgrim/item.jpg", "spell": "docs/demo/pilgrim/spell.jpg", "field": "docs/demo/pilgrim/field.jpg"}, "signs": {"greet": {"short": "我跨过 3 座城，只为同一扇门｜这一带的灯，就你们这几盏还亮着，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n这一带的灯，就你们这几盏还亮着。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：大杯可乐", "label": "问候", "code": "17EXYT", "note": "不求任何东西"}, "ask": {"short": "我跨过 3 座城，只为同一扇门｜若锅底还剩，可否多抓一把薯条？我今晚靠这个续命。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n本命圣物：脆脆薯条（中）\n走过 5 家门店 · 礼拜 412 次\n若锅底还剩，可否多抓一把薯条？我今晚靠这个续命。你若回我一句「麦门」，我今日的礼拜便算圆满。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：大杯可乐", "label": "请求", "code": "17EXYT", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：换了个城市，先找同一个拱门。【敢请续墨·麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[17EXYT]  我跨过 3 座城，只为同一扇门\n第 1 章\n换了个城市，先找同一个拱门。【敢请续墨·麦门传说skill】\n（本命圣物：脆脆薯条（中））\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：大杯可乐", "label": "接龙", "code": "17EXYT", "note": "第 1 章 · 待续"}}, "facts": {"orders": 412, "stores": 5, "cities": 3, "purity": 18}}, {"id": "beginner", "label": "初闻道者", "city": "哈尔滨", "rank": "望教者", "rank_lat": "Catechumenus", "halo": "仅一道细弧", "cards": {"effect": "docs/demo/beginner/effect.jpg", "item": "docs/demo/beginner/item.jpg", "spell": "docs/demo/beginner/spell.jpg", "field": "docs/demo/beginner/field.jpg"}, "signs": {"greet": {"short": "我的早晨要先受召才肯开始｜愿这个点还站着的人都有热的东西吃，麦门永生。", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n愿这个点还站着的人都有热的东西吃。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：大杯可乐", "label": "问候", "code": "NG3CZZ", "note": "不求任何东西"}, "ask": {"short": "我的早晨要先受召才肯开始｜可否多给一包甜酸酱？我要拿它蘸我的信仰。【麦门暗号skill】", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n本命圣物：猪柳蛋麦满分\n礼拜 9 次\n可否多给一包甜酸酱？我要拿它蘸我的信仰。你若只笑一下，也算你与我同门。\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：大杯可乐", "label": "请求", "code": "NG3CZZ", "note": "T1 · 求圣物"}, "story": {"short": "第 1 章：七点十分，城市还没醒。【敢请续墨·麦门传说skill】", "long": "— 麦门行传 · 我的这一卷 —\n[NG3CZZ]  我的早晨要先受召才肯开始\n第 1 章\n七点十分，城市还没醒。【敢请续墨·麦门传说skill】\n（本命圣物：猪柳蛋麦满分）\n教义：我相信秩序，一张券都不该浪费。\n今日圣体：大杯可乐", "label": "接龙", "code": "NG3CZZ", "note": "第 1 章 · 待续"}}, "facts": {"orders": 9, "stores": 1, "cities": 1, "purity": 32}}];
 const ROLES = [["effect","人物卡"],["item","食物卡"],["spell","行为卡"],["field","地点卡"]];
 const GENRES = [["greet","问候"],["ask","请求"],["story","接龙"]];
 
@@ -447,12 +513,36 @@ function render(){
 }
 
 // 页面可能被部署到任意账号的 Pages 上：能反推就反推，不必重新生成一次
+function loadStars(repo){
+  const api = repo.replace("https://github.com/", "https://api.github.com/repos/");
+  const key = "mcd.stars:" + repo;
+  const paint = n => {
+    document.querySelectorAll(".js-stars").forEach(e => e.textContent = n);
+    document.querySelectorAll(".js-cnt").forEach(e => e.hidden = false);
+    document.querySelectorAll(".star-fab").forEach(e => e.classList.add("has-count"));
+  };
+  try {
+    const c = JSON.parse(localStorage.getItem(key) || "null");
+    if (c && Date.now() - c.t < 600000) { paint(c.n); return; }
+  } catch(e){}
+  fetch(api, { headers: { Accept: "application/vnd.github+json" } })
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(d => {
+      paint(d.stargazers_count);
+      try { localStorage.setItem(key, JSON.stringify({ n: d.stargazers_count, t: Date.now() })); } catch(e){}
+    })
+    .catch(() => {});  // 断网或限流就干脆不显示数字，不显示"—"
+}
+
 (function(){
   const m = location.hostname.match(/^([a-z0-9-]+)\.github\.io$/i);
-  if (!m) return;
-  const seg = location.pathname.split("/").filter(Boolean)[0];
-  const repo = "https://github.com/" + m[1] + "/" + (seg && !seg.endsWith(".html") ? seg : "mcd-ordination");
+  let repo = "https://github.com/Lychee848/mcd-ordination";
+  if (m) {
+    const seg = location.pathname.split("/").filter(Boolean)[0];
+    repo = "https://github.com/" + m[1] + "/" + (seg && !seg.endsWith(".html") ? seg : "mcd-ordination");
+  }
   document.querySelectorAll("a[data-repo]").forEach(a => { a.href = repo; });
+  loadStars(repo);
 })();
 
 $("copybtn").onclick = async () => {

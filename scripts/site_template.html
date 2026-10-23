@@ -202,6 +202,43 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
   section{padding:56px 0}
   .facts{gap:16px}
 }
+.btn.yellow{background:var(--yellow);color:var(--ink);box-shadow:0 4px 0 var(--yellow-d)}
+.btn.yellow:hover{box-shadow:0 2px 0 var(--yellow-d)}
+
+/* —— 常驻 Star 按钮：右下角，滚动时一直在 —— */
+.star-fab{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:11px;
+  max-width:calc(100vw - 24px);
+  max-width:calc(100vw - 24px);
+  background:var(--red);color:#fff;text-decoration:none;border-radius:999px;
+  padding:11px 16px 11px 13px;box-shadow:0 5px 0 var(--red-d),0 12px 28px rgba(32,26,20,.20);
+  transition:transform .12s ease,box-shadow .12s ease}
+.star-fab:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--red-d),0 7px 18px rgba(32,26,20,.16)}
+.star-fab:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.star-fab .ico{width:22px;height:22px;flex:0 0 22px}
+.star-fab .slg{display:flex;flex-direction:column;line-height:1.16;text-align:left}
+.star-fab .slg b{font-size:13.5px;font-weight:800;letter-spacing:.02em}
+.star-fab .slg i{font-style:normal;font-size:10.5px;font-weight:700;color:var(--yellow);letter-spacing:.03em}
+.star-fab .num{display:none;background:var(--yellow);color:var(--ink);border-radius:999px;
+  padding:4px 9px;font-size:12px;font-weight:800;min-width:30px;text-align:center}
+.star-fab.has-count .num{display:inline-block}
+
+/* —— 页中 Star 区 —— */
+#star .box{background:var(--red);color:#fff;border-radius:var(--r);padding:40px 44px;
+  display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap;
+  position:relative;overflow:hidden}
+#star h2{font-size:clamp(26px,3.4vw,38px);margin:0 0 10px;color:#fff;line-height:1.25}
+#star p{margin:0;color:#FFE6C2;max-width:560px;font-weight:600;font-size:15px}
+#star .act{display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative}
+#star .cnt{font-size:12.5px;color:#FFE6C2;font-weight:700}
+#star .cnt b{color:#fff;font-size:15px}
+#star .arc{position:absolute;right:-20px;bottom:-52px;width:230px;opacity:.15}
+@media(max-width:560px){
+  .star-fab{right:12px;bottom:12px;padding:9px 13px 9px 11px;gap:9px}
+  .star-fab .slg b{font-size:12.5px}
+  .star-fab .slg i{font-size:9.5px}
+  #star .box{padding:30px 24px}
+}
+
 </style>
 </head>
 <body>
@@ -280,6 +317,25 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
     </div>
   </div>
 </div></section>
+
+<section id="star"><div class="wrap">
+  <div class="box">
+    <svg class="arc" viewBox="0 0 200 140" aria-hidden="true">
+      <path d="M18 140V66a64 64 0 0 1 128 0v74" fill="none" stroke="#FFC72C" stroke-width="20"/>
+    </svg>
+    <div>
+      <h2>觉得这句暗号有意思？<br>给它一颗星。</h2>
+      <p>这个仓库没有推广预算，赛制只数 Star。去仓库点一下右上角的 ☆，十秒钟——
+         帮它被下一个麦门信徒刷到。</p>
+    </div>
+    <div class="act">
+      <a class="btn yellow" href="__REPO__" target="_blank" rel="noopener" data-repo>去仓库点 Star ↗</a>
+      <span class="cnt">MIT 开源，代码全在仓库里<span class="js-cnt" hidden> · 当前
+        <b class="js-stars"></b> 颗星</span></span>
+    </div>
+  </div>
+</div></section>
+
 
 <section id="what" class="alt"><div class="wrap">
   <div class="sec-head"><span class="sec-num">02</span><h2>两件产出，其实是一件事<span class="pt">。</span></h2></div>
@@ -374,6 +430,15 @@ pip install -e .
   </p>
 </div></section>
 
+<a class="star-fab" id="starfab" href="__REPO__" target="_blank" rel="noopener" data-repo
+   aria-label="喜欢就去 GitHub 点 Star">
+  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 2.4l2.95 6 6.6.95-4.78 4.66 1.13 6.58L12 17.48 6.1 20.6l1.13-6.58L2.45 9.35l6.6-.95z" fill="#FFC72C"/>
+  </svg>
+  <span class="slg"><b>我就喜欢</b><i>i'm lovin' it</i></span>
+  <span class="num js-stars"></span>
+</a>
+
 <footer><div class="wrap">
   <div>
     <div class="fstripe"></div>
@@ -381,6 +446,7 @@ pip install -e .
     非官方粉丝二创，与麦当劳中国无隶属关系。不代下单、不支付、不接触账号凭证。
   </div>
   <div>
+    <a href="__REPO__" target="_blank" rel="noopener" data-repo>GitHub 仓库</a> ·
     <a href="docs/DESIGN.md">设计文档</a> · <a href="docs/PLATES.md">底图说明</a> ·
     <a href="docs/samples/sign_examples.md">暗号样例</a> · MIT License
   </div>
@@ -447,12 +513,36 @@ function render(){
 }
 
 // 页面可能被部署到任意账号的 Pages 上：能反推就反推，不必重新生成一次
+function loadStars(repo){
+  const api = repo.replace("https://github.com/", "https://api.github.com/repos/");
+  const key = "mcd.stars:" + repo;
+  const paint = n => {
+    document.querySelectorAll(".js-stars").forEach(e => e.textContent = n);
+    document.querySelectorAll(".js-cnt").forEach(e => e.hidden = false);
+    document.querySelectorAll(".star-fab").forEach(e => e.classList.add("has-count"));
+  };
+  try {
+    const c = JSON.parse(localStorage.getItem(key) || "null");
+    if (c && Date.now() - c.t < 600000) { paint(c.n); return; }
+  } catch(e){}
+  fetch(api, { headers: { Accept: "application/vnd.github+json" } })
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(d => {
+      paint(d.stargazers_count);
+      try { localStorage.setItem(key, JSON.stringify({ n: d.stargazers_count, t: Date.now() })); } catch(e){}
+    })
+    .catch(() => {});  // 断网或限流就干脆不显示数字，不显示"—"
+}
+
 (function(){
   const m = location.hostname.match(/^([a-z0-9-]+)\.github\.io$/i);
-  if (!m) return;
-  const seg = location.pathname.split("/").filter(Boolean)[0];
-  const repo = "https://github.com/" + m[1] + "/" + (seg && !seg.endsWith(".html") ? seg : "mcd-ordination");
+  let repo = "__REPO__";
+  if (m) {
+    const seg = location.pathname.split("/").filter(Boolean)[0];
+    repo = "https://github.com/" + m[1] + "/" + (seg && !seg.endsWith(".html") ? seg : "mcd-ordination");
+  }
   document.querySelectorAll("a[data-repo]").forEach(a => { a.href = repo; });
+  loadStars(repo);
 })();
 
 $("copybtn").onclick = async () => {

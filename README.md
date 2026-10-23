@@ -4,6 +4,7 @@
 
 *Acta Maimen — write your own canon*
 
+[![GitHub stars](https://img.shields.io/github/stars/Lychee848/mcd-ordination?style=social)](https://github.com/Lychee848/mcd-ordination)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1D9E75.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.9%2B-185FA5.svg)
 ![MCP](https://img.shields.io/badge/MCP-%E9%BA%A6%E5%BD%93%E5%8A%B3%E5%AE%98%E6%96%B9-993C1D.svg)
@@ -402,6 +403,21 @@ features.py   原始 MCP 返回 → 一份扁平行为向量（全流程唯一�
 - [ ] 「友好门店地图」issue 模板 + 聚合脚本
 - [ ] 星历：七段时辰各出一张样张，做 2×4 拼图
 - [ ] 卡背：印订单原文与信条注解
+
+---
+
+## 如果这句暗号让你笑了一下
+
+这个项目不投广告，名次只看 Star。**在仓库右上角点一下 ☆**，比转发更管用：
+
+[**→ 去仓库点 Star**](https://github.com/Lychee848/mcd-ordination)
+
+比 Star 更值钱的三件事，愿意的话：
+
+- 把 `python -m mcd_ordination sign --kind ask` 跑出来的那句贴到 Issue 里——
+  让下一个人看见它真的能跑；
+- 在真实门店试一次暗号，把店员反应开 Issue 告诉我们（会进「友好门店地图」）；
+- 文案、版式、代码有问题直接提 Issue，这比一颗星更能让项目活下来。
 
 ---
 
