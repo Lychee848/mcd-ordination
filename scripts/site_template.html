@@ -107,6 +107,18 @@ h2 .pt{color:var(--red)}
 .cardstage{background:var(--cream-2);border:2px solid var(--ink);border-radius:22px;
   padding:18px;display:flex;justify-content:center;box-shadow:0 6px 0 rgba(32,26,20,.10)}
 .cardstage img{width:100%;max-width:378px;display:block;border-radius:10px}
+.imglink{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;
+  color:var(--ink-3);text-decoration:none;border-bottom:1px dashed rgba(32,26,20,.25)}
+.imglink:hover{color:var(--red)}
+.cardacts{display:flex;gap:8px;margin-top:12px;align-items:center;flex-wrap:wrap}
+.cardacts .copy{padding:7px 14px;font-size:12.5px}
+.cardacts .mini{margin-left:auto;font-size:12px;font-weight:700;color:var(--ink-3);
+  text-decoration:none;border-bottom:1px dashed rgba(32,26,20,.25)}
+.cardacts .mini:hover{color:var(--red)}
+.toast{position:fixed;left:50%;bottom:104px;transform:translate(-50%,10px);z-index:95;
+  background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:13px;font-weight:700;
+  opacity:0;pointer-events:none;transition:opacity .18s ease,transform .18s ease}
+.toast.on{opacity:1;transform:translate(-50%,0)}
 .thumbs{display:flex;gap:10px;margin-top:14px}
 .thumb{flex:1;border:2px solid var(--line);border-radius:12px;background:#fff;
   padding:9px 4px;font-size:12.5px;font-weight:700;color:var(--ink-2);cursor:pointer;
@@ -279,6 +291,7 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
     </div>
     <figure class="heroshot">
       <img src="docs/samples/three_personas.png" alt="三个人设生成的三张人物卡，板式一致但画派、框色、星级完全不同">
+      <figcaption><a class="imglink" href="docs/samples/three_personas.png" download>↓ 保存这张拼图</a></figcaption>
     </figure>
   </div>
 </header>
@@ -290,7 +303,12 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
   <div class="demo">
     <div>
       <div class="tabs" id="personas" role="tablist"></div>
-      <div class="cardstage"><img id="cardimg" alt="卡面"></div>
+      <div class="cardstage"><img id="cardimg" alt="卡面" title="右键可另存为；也可以点下面的按钮"></div>
+      <div class="cardacts">
+        <button class="copy" id="dlcard" type="button">保存这张卡</button>
+        <button class="copy" id="cpcard" type="button">复制图片</button>
+        <a class="mini" id="openfull" href="#" target="_blank" rel="noopener">看原图 ↗</a>
+      </div>
       <div class="thumbs" id="roles" role="tablist"></div>
       <p class="cap">这是 L2 成品卡（共享底图 + 每人不同的构图变体）。零依赖的 L0 纯 SVG 版见
         <a href="docs/samples/l0_card.svg">l0_card.svg</a>（6 KB，无位图）。</p>
@@ -406,6 +424,8 @@ footer .fstripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var
   </div>
   <figure class="heroshot" style="margin:24px 0 0">
     <img src="docs/samples/holo_demo.gif" alt="稀有卡扫光动效">
+    <figcaption><a class="imglink" href="docs/samples/holo_demo.gif" download>↓ 保存动图</a>
+      <a class="imglink" href="docs/samples/holo_demo.webp" download>↓ 保存 WebP（体积更小）</a></figcaption>
   </figure>
   <p class="cap">扫光只合成在画面窗内，文字与数值一点不受影响。</p>
 </div></section>
@@ -487,6 +507,7 @@ function roleThumbs(){
 function render(){
   const p = DATA[pi];
   $("cardimg").src = p.cards[ROLES[ri][0]];
+  $("openfull").href = p.cards[ROLES[ri][0]];
   $("cardimg").alt = p.label + " 的" + ROLES[ri][1];
   $("pname").textContent = p.label;
   $("pcity").textContent = "· " + p.city;
@@ -544,6 +565,42 @@ function loadStars(repo){
   document.querySelectorAll("a[data-repo]").forEach(a => { a.href = repo; });
   loadStars(repo);
 })();
+
+let toastTimer = null;
+function toast(msg){
+  let el = document.querySelector(".toast");
+  if (!el) { el = document.createElement("div"); el.className = "toast"; document.body.appendChild(el); }
+  el.textContent = msg;
+  el.classList.add("on");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove("on"), 1800);
+}
+
+$("dlcard").onclick = () => {
+  const p = DATA[pi], src = $("cardimg").getAttribute("src");
+  const ext = (src.split(".").pop() || "jpg").toLowerCase();
+  const a = document.createElement("a");
+  a.href = src;
+  a.download = `麦门行传_${p.label}_${ROLES[ri][1]}.${ext}`;
+  document.body.appendChild(a); a.click(); a.remove();
+  toast("已开始下载");
+};
+
+$("cpcard").onclick = async () => {
+  try {
+    const src = $("cardimg").getAttribute("src");
+    const bmp = await createImageBitmap(await (await fetch(src)).blob());
+    const c = document.createElement("canvas");
+    c.width = bmp.width; c.height = bmp.height;
+    c.getContext("2d").drawImage(bmp, 0, 0);
+    const png = await new Promise(res => c.toBlob(res, "image/png"));
+    await navigator.clipboard.write([new ClipboardItem({ "image/png": png })]);
+    toast("已复制，可直接粘贴");
+  } catch (e) {
+    $("dlcard").click();
+    toast("这个浏览器不支持复制图片，已改为下载");
+  }
+};
 
 $("copybtn").onclick = async () => {
   const txt = $("signtext").textContent;
