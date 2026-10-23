@@ -1,6 +1,6 @@
 # mcd-ordination · 麦门行传
 
-**领取专属麦门暗号，寻觅你的麦乐鸡侠。**
+**领取专属麦门暗号，找到你的麦乐鸡侠。**
 
 *Acta Maimen — write your own canon*
 
